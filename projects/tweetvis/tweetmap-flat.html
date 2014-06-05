@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+ 
+<style>
+ 
+ body {
+  background: #fcfcfa;
+ }
+
+.foreground {
+  /*fill: rgba(70,130,180,.5);*/
+  fill: #d8ffff;
+  /*stroke: #333;
+  stroke-width: 1.5px;*/
+}
+
+.graticule {
+  fill: none;
+  stroke: #777;
+  stroke-width: .5px;
+  stroke-opacity: .5;
+}
+ 
+.land {
+  fill: #bbb;
+  /*fill: #dadac4;*/
+  /*fill: rgba(217,217,195);*/
+  /*fill: #d7c7ad;*/
+  stroke: #766951;
+  opacity: 0.5;
+}
+
+.point {
+  fill: red;
+  opacity: 0.1;
+}
+ 
+</style>
+<body>
+ 
+ 
+<h3>Geolocated tweets for Dec. 10th, 2013</h3>
+<div id="map"></div>
+ 
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script>
+ 
+var diameter = 450,
+    radius = diameter/2,
+    velocity = .01,
+    then = Date.now(),
+    width = 960,
+    height = 480;
+
+/* 
+var projection = d3.geo.orthographic()
+    .scale(radius - 2)
+    .translate([radius, radius])
+    .clipAngle(90);
+*/
+
+var projection = d3.geo.equirectangular()
+    .scale(153)
+    .translate([width / 2, height / 2])
+    .precision(.1);
+ 
+var svg = d3.select("#map").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+ 
+var path = d3.geo.path()
+    .projection(projection)
+    .pointRadius(function(d) { return d.radius;});
+ 
+var globe = {type: "Sphere"};
+svg.append("path")
+    .datum(globe)
+    .attr("class", "foreground")
+    .attr("d", path);
+/* 
+d3.csv("2013-12-10-11.csv", function(error, data) {
+  points = data;
+//  points.forEach(function(d) {
+//    svg.append("path")
+//      .datum({type: "Point", coordinates: [+d.lon, +d.lat]})
+//      .attr("d", path.pointRadius(2.5));
+  //    d.point = projection([+d.lat, +d.lon]);
+//  }); 
+});
+ */
+d3.json("./world-110m.json", function(error, world) {
+ 
+  var land = topojson.feature(world, world.objects.land),
+      globe = {type: "Sphere"};
+ 
+      svg.insert("path")
+      .datum(topojson.feature(world, world.objects.land))
+      .attr("class", "land")
+      .attr("d", path);
+
+
+  /*
+  svg.selectAll("path.point")
+    .data(points)
+  .enter().append("path")
+    .datum(function(d) {
+       return {type: "Point", coordinates: [+d.lon, +d.lat], radius: 1.5};
+    })
+    .attr("class", "point")
+    .attr("d", path);
+  */
+ 
+  d3.csv("2013-12-10.csv", function(error, data) {
+    points = data;
+    points.forEach(function(d) {
+      svg.append("path")
+        .datum({type: "Point", coordinates: [+d.lon, +d.lat]})
+        .attr("d", path.pointRadius(1.5))
+        .attr("class", "point");
+    //    d.point = projection([+d.lat, +d.lon]);
+    }); 
+  });
+
+/*
+  d3.timer(function() {
+    var angle = velocity * (Date.now() - then);
+    projection.rotate([angle,0,0]);
+    svg.selectAll("path")
+      .attr("d", path.projection(projection));
+  });
+*/
+});
+ 
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<style>
+  svg {
+    font-family: "Helvetica Neue", Helvetica;
+  }
+
+  .line {
+    fill: none;
+    stroke: #8a89a6;
+    stroke-width: 1.5px;
+  }
+
+  .axis text {
+    font: 10px sans-serif;
+  }
+
+  rect {
+    fill: #ddd;
+  }
+
+  .axis path 
+  {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+  .axis .minor line {
+    stroke: #777;
+    stroke-dasharray: 2,2;
+  }
+
+  .axis  line {
+    stroke: #777;
+    shape-rendering: crispEdges;
+  }
+</style>
+
+<body>
+  <div id = "vis1"></div>
+  <div id = "vis2"></div>
+  
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="tweet-series.js"></script>
+  <script>
+    d3.json("2014-01-07-tweet-summary.json", function(data) {
+      var parseDate = d3.time.format("%y%m%d%H%M").parse;
+      var series = [{"key":"count", "values":[], "maxPrice":0, "sumPrice":0}, 
+                    {"key":"en", "values":[], "maxPrice":0, "sumPrice":0}, 
+                    {"key":"es", "values":[], "maxPrice":0, "sumPrice":0},
+                    {"key":"fr", "values":[], "maxPrice":0, "sumPrice":0},
+                    {"key":"ar", "values":[], "maxPrice":0, "sumPrice":0},
+                    {"key":"ru", "values":[], "maxPrice":0, "sumPrice":0},
+                    {"key":"zh", "values":[], "maxPrice":0, "sumPrice":0},
+                    {"key":"id", "values":[], "maxPrice":0, "sumPrice":0},
+                    {"key":"ko", "values":[], "maxPrice":0, "sumPrice":0},
+                    {"key":"ja", "values":[], "maxPrice":0, "sumPrice":0}];
+
+      for (var key in data) {
+        if (data.hasOwnProperty(key)) {
+          var date = parseDate(key);
+          series[0].values.push({"date":date, "price":data[key].count});
+
+          if (series[1].key in data[key].languages) {
+            series[1].values.push({"date":date, "price":data[key].languages[series[1].key]});  
+          } else {
+            series[1].values.push({"date":date, "price":0});
+          }
+          if (series[2].key in data[key].languages) {
+            series[2].values.push({"date":date, "price":data[key].languages[series[2].key]});  
+          } else {
+            series[2].values.push({"date":date, "price":0});
+          }
+          if (series[3].key in data[key].languages) {
+            series[3].values.push({"date":date, "price":data[key].languages[series[3].key]});  
+          } else {
+            series[3].values.push({"date":date, "price":0});
+          }
+          if (series[4].key in data[key].languages) {
+            series[4].values.push({"date":date, "price":data[key].languages[series[4].key]});  
+          } else {
+            series[4].values.push({"date":date, "price":0});
+          }
+          if (series[5].key in data[key].languages) {
+            series[5].values.push({"date":date, "price":data[key].languages[series[5].key]});  
+          } else {
+            series[5].values.push({"date":date, "price":0});
+          }
+          if (series[6].key in data[key].languages) {
+            series[6].values.push({"date":date, "price":data[key].languages[series[6].key]});  
+          } else {
+            series[6].values.push({"date":date, "price":0});
+          }
+          if (series[7].key in data[key].languages) {
+            series[7].values.push({"date":date, "price":data[key].languages[series[7].key]});  
+          } else {
+            series[7].values.push({"date":date, "price":0});
+          }
+          if (series[8].key in data[key].languages) {
+            series[8].values.push({"date":date, "price":data[key].languages[series[8].key]});  
+          } else {
+            series[8].values.push({"date":date, "price":0});
+          }
+          if (series[9].key in data[key].languages) {
+            series[9].values.push({"date":date, "price":data[key].languages[series[9].key]});  
+          } else {
+            series[9].values.push({"date":date, "price":0});
+          }
+          /*
+          series[1].values.push({"date":date, "price":data[key].languages[series[1].key]});
+          series[2].values.push({"date":date, "price":data[key].languages[series[2].key]});
+          series[3].values.push({"date":date, "price":data[key].languages[series[3].key]});
+          series[4].values.push({"date":date, "price":data[key].languages[series[4].key]});
+          series[5].values.push({"date":date, "price":data[key].languages[series[5].key]});
+          series[6].values.push({"date":date, "price":data[key].languages[series[6].key]});  
+          series[7].values.push({"date":date, "price":data[key].languages[series[7].key]});
+          series[8].values.push({"date":date, "price":data[key].languages[series[8].key]});
+          series[9].values.push({"date":date, "price":data[key].languages[series[9].key]});
+          */
+        }
+      }
+
+      series.forEach(function(s) {
+        s.maxPrice = d3.max(s.values, function(d) { return d.price; });
+        s.sumPrice = d3.sum(s.values, function(d) { return d.price; });
+      });
+
+      // sort by max, descending
+      series.sort(function(a, b) { return b.maxPrice - a.maxPrice; });
+
+/*
+      d3.json("2014-01-06-tweet-summary.json", function(data) {
+        var parseDate = d3.time.format("%y%m%d%H%M").parse;
+        var series2 = [{"key":"count", "values":[], "maxPrice":0, "sumPrice":0}, 
+                      {"key":"en", "values":[], "maxPrice":0, "sumPrice":0}, 
+                      {"key":"es", "values":[], "maxPrice":0, "sumPrice":0},
+                      {"key":"fr", "values":[], "maxPrice":0, "sumPrice":0},
+                      {"key":"ar", "values":[], "maxPrice":0, "sumPrice":0},
+                      {"key":"ru", "values":[], "maxPrice":0, "sumPrice":0},
+                      {"key":"zh", "values":[], "maxPrice":0, "sumPrice":0},
+                      {"key":"id", "values":[], "maxPrice":0, "sumPrice":0},
+                      {"key":"ko", "values":[], "maxPrice":0, "sumPrice":0},
+                      {"key":"ja", "values":[], "maxPrice":0, "sumPrice":0}];
+
+        for (var key in data) {
+          if (data.hasOwnProperty(key)) {
+            var date = parseDate(key);
+            series2[0].values.push({"date":date, "price":data[key].count});
+            series2[1].values.push({"date":date, "price":data[key].languages[series2[1].key]});
+            series2[2].values.push({"date":date, "price":data[key].languages[series2[2].key]});
+            series2[3].values.push({"date":date, "price":data[key].languages[series2[3].key]});
+            series2[4].values.push({"date":date, "price":data[key].languages[series2[4].key]});
+            series2[5].values.push({"date":date, "price":data[key].languages[series2[5].key]});
+            series2[6].values.push({"date":date, "price":data[key].languages[series2[6].key]});
+            series2[7].values.push({"date":date, "price":data[key].languages[series2[7].key]});
+            series2[8].values.push({"date":date, "price":data[key].languages[series2[8].key]});
+            series2[9].values.push({"date":date, "price":data[key].languages[series2[9].key]});
+          }
+        }
+
+        series2.forEach(function(s) {
+          s.maxPrice = d3.max(s.values, function(d) { return d.price; });
+          s.sumPrice = d3.sum(s.values, function(d) { return d.price; });
+        });
+
+        // sort by max, descending
+        series2.sort(function(a, b) { return b.maxPrice - a.maxPrice; });
+
+        create_series_vis(series2, "#vis1");
+
+      });
+*/      
+      create_series_vis(series, "#vis2");
+
+    });
+
+
+    /*
+    d3.csv("stocks.csv", function(data) {
+      var parse = d3.time.format("%b %Y").parse;
+
+      // Nest stock values by symbol.
+      symbols = d3.nest()
+          .key(function(d) { return d.symbol; })
+          .entries(data);
+
+      // Parse dates and numbers. We assume values are sorted by date.
+      // Also compute the maximum price per symbol, needed for the y-domain.
+      symbols.forEach(function(s) {
+        s.values.forEach(function(d) { d.date = parse(d.date); d.price = +d.price; });
+        s.maxPrice = d3.max(s.values, function(d) { return d.price; });
+        s.sumPrice = d3.sum(s.values, function(d) { return d.price; });
+      });
+
+      // Sort by maximum price, descending.
+      symbols.sort(function(a, b) { return b.maxPrice - a.maxPrice; });
+      
+      create_series_vis(symbols, "#vis");
+    });
+    */
+  </script>
+</body>
