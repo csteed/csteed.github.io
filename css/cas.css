@@ -6,88 +6,107 @@ body {
     
     /* Warning: if you want alternate font weights, you need to go back to Google Web Fonts and include them in the collection that gets included via <link> */
     font-weight: 300;
-    font-family: 'Helvetica Neue','Open Sans',Helvetica,Arial,sans-serif;
+    font-family: "Georgia", 'Helvetica Neue', 'Source Sans Pro', 'Open Sans',Helvetica,Arial,sans-serif;
     font-size: 15px;
 }
 
-a {
-  color: #240759;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #432b80;
-  text-decoration: underline;
-}
-/*
 a,a:hover {
-    color: #990615;
-}
-*/
-
-.table th, .table td {
-    border-top: 0px;
+    color: #4F4F79;
 }
 
-h5 {
-    margin-bottom: 0px;
-    margin-top: 20px;
+.label-msb {
+    background-color: #4F4F79;
 }
-
-p {
-    margin-bottom: 20px;
-}
-
 
 /* bootstrap properties */
 
-#msbnav.navbar-static-top {
-    padding-bottom: 25px;
-}
-
-#msbnav .navbar-inner {
-  /*background-color: #7D0612;*/
-  /*background-color: #240759;*/
-  /*background-color: rgb(88,142,222);*/
-  /*background-image: none;*/
-  /*background-repeat: no-repeat;*/
-  /*filter: none;*/
-  background-image: -moz-linear-gradient(top, #555, #222);
-  background-image: -ms-linear-gradient(top, #555, #222);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#555), to(#222));
-  background-image: -webkit-linear-gradient(top, #555, #222);
-  background-image: -o-linear-gradient(top, #555, #222);
-  background-image: linear-gradient(top, #555, #222);
-
+#msbnav {
+  background-color: #4F4F79; /*blue*/
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
   border-color: #777777;
 }
 
-#msbnav .brand {
-    color: #DCDCDC;
-    font-size: 32px;
-    /*font-family:"Yanone Kaffeesatz","Lato",'Helvetica Neue',Helvetica,Arial,sans-serif;*/
-    /*font-family:"Oleo Script Swash Caps","Lato",'Helvetica Neue',Helvetica,Arial,sans-serif;*/
-    font-family:"Molle","Lato",'Helvetica Neue',Helvetica,Arial,sans-serif;
+#msbnav .navbar-brand {
+    color: #CDCDCD; /* gray */
+    font-size: 2.5em;
+    font-family:"Oswald",'Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: 400;
-    /*text-transform: uppercase;*/
-    line-height: 1.2;
+    text-transform: uppercase;
 }
 
-.sidenav > .nav-list {
-  border: 1px solid #CCCCCC;
+#msbnav .navbar-brand a {
+    color: #CDCDCD;
+}
+
+#msbnav .navbar-brand a:hover {
+    color: #FFCC00; /* orange */
+    text-decoration: none;
+}
+
+.navbar-brand,.navbar-nav li a {
+    line-height: 1.5em;
+    height: 1.5em;
+    padding-top: 0;
+}
+
+/* expand the navbar at the top when you're on mobile */
+@media (max-width: 768px) {
+    #msbnav {
+      min-height: 115px;
+    }
+}
+
+.sidenav {
+  margin-top: 20px;
+}
+
+/* Adapted from the Bootstrap docs for sidebar navigation + scrollspy */
+.sidenav .nav > li > a {
+  display: block;
+  padding: 5px 20px;
+}
+.sidenav .nav > li > a:hover,
+.sidenav .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #e5e3e9;
+  border-right: 1px solid #4F4F79;
+}
+.sidenav .nav > .active > a,
+.sidenav .nav > .active:hover > a,
+.sidenav .nav > .active:focus > a {
+  font-weight: bold;
+  background-color: transparent;
+  border-right: 1px solid #4F4F79;
+}
+
+/* Nav: second level */
+.sidenav .nav .nav {
+    margin-bottom: 8px;
+}
+
+.sidenav .nav .nav > li > a {
+  padding-top:    3px;
+  padding-bottom: 3px;
+  padding-left: 30px;
+  font-size: 90%;
+}
+
+@media(max-width:1000px){
+  .sidenav.affix {
+    position: static;
+    width: auto;
+    top: 0;
+  }
 }
 
 .nav-list > .active > a,
 .nav-list > .active > a:hover {
-  background-color: #7D0612;
+  background-color: #4F4F79;
 }
 
-.table-condensed {
-    margin-bottom: 0px;
-}
-.table-condensed td {
-    padding: 0px 0px;
-}
+
 
 .text-success {
     font-variant:small-caps;
@@ -97,27 +116,28 @@ p {
     font-weight: normal;
 }
 
-
-
-/* msb-defined properties */
-
 .paperimage {
     border: 1px solid #787878;
-    min-width: 100px;
-    max-width: 100px;
-    min-height: 70px;
-    max-height: 70px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    width: 100%;
+    overflow: hidden;
 }
 
-.papers tr.old {
+.papers .old {
     display: none;
 }
 
-.papers td {
+.papers .paper-row {
+    margin-bottom: 10px;
     vertical-align: top;
     padding-left: 0px;
+}
+
+.vital-info {
+    margin-top: 10px;
+}
+
+.vital-info h5 {
+    margin-bottom: 0;
 }
 
 .olddate, .olddate a {
@@ -130,4 +150,13 @@ p {
 
 .btn-link {
     padding: 0px 0px 30px 0px;
+}
+
+.past-course {
+    display: none;
+}
+
+.award {
+ /* more in label-msb */
+ margin-right: 10px;
 }
