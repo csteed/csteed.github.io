@@ -52,11 +52,11 @@ a,a:hover {
 }
 
 /* expand the navbar at the top when you're on mobile */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     #msbnav {
       min-height: 115px;
     }
-}
+}*/
 
 .sidenav {
   margin-top: 20px;
