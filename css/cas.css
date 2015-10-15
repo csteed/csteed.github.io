@@ -1,9 +1,9 @@
 /* general body properties */
 
 body {
-    /* This defaults to Helvetica Neue if the viewer has it installed (e.g., Macs) 
+    /* This defaults to Helvetica Neue if the viewer has it installed (e.g., Macs)
        and use a lighter font weight. If they don't have it, we use a decent font from Google Web Fonts. */
-    
+
     /* Warning: if you want alternate font weights, you need to go back to Google Web Fonts and include them in the collection that gets included via <link> */
     font-weight: 300;
     font-family: "Georgia", 'Helvetica Neue', 'Source Sans Pro', 'Open Sans',Helvetica,Arial,sans-serif;
@@ -105,8 +105,6 @@ a,a:hover {
 .nav-list > .active > a:hover {
   background-color: #4F4F79;
 }
-
-
 
 .text-success {
     font-variant:small-caps;
