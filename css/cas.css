@@ -6,8 +6,10 @@ body {
 
     /* Warning: if you want alternate font weights, you need to go back to Google Web Fonts and include them in the collection that gets included via <link> */
     font-weight: 300;
-    font-family: "Georgia", 'Helvetica Neue', 'Source Sans Pro', 'Open Sans',Helvetica,Arial,sans-serif;
+    font-family: "Lato", 'Helvetica Neue', 'Source Sans Pro', 'Open Sans',Helvetica,Arial,sans-serif;
     font-size: 15px;
+    line-height: 1.42857143;
+    color: #2c3e50;
 }
 
 a,a:hover {

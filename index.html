@@ -3,14 +3,17 @@
 <html>
 <head>
     <title>Chad A.&nbsp;Steed&thinsp;&middot;&thinsp;Interactive Data Science</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Chad A. Steed is a senior researcher at Oak Ridge National Laboratory. He studies interactive data visualization and analysis.">
     <meta property="og:image" content="http://csteed.com/publications/DVVA2013/DVVA2013.png" />
     <meta property="og:image:width" content="839" />
     <meta property="og:image:height" content="374" />
 
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Oswald:400,700' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/cas.css" rel="stylesheet">
 
     <style type="text/css">
@@ -49,7 +52,7 @@
             <div class="col-md-9">
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-xs-9">
-                        <img id="msb-img" src="img/cas-portrait-new.jpg" class="img-responsive" style="margin-bottom: 10px;">
+                        <img id="msb-img" src="img/cas-portrait-new.jpg" class="img-responsive" style="margin-bottom: 10px; border-radius: 10%">
                     </div> <!-- /col-md-4 -->
                     <div class="col-md-8 col-sm-6 col-xs-12">
                         <p class="lead">I design interactive data visualization and analysis systems to enhance human exploration and comprehension of complex data.  My research combines data-guided, machine-enabled, and human-directed techniques with cross-cutting scientific applications.</p>
@@ -59,6 +62,7 @@
                     <p><strong>Bio</strong>&nbsp;&middot;&nbsp;Dr.&nbsp;Chad A.&nbsp;Steed is a Senior Research Staff member in the <a href="http://cda.ornl.gov" target="_blank">Computational Data Analytics Group</a> at the <a href="http://www.ornl.gov" target="_blank">Oak Ridge National Laboratory (ORNL)</a>.  He holds a Joint Faculty Appointment with the <a href="http://eecs.utk.edu" target="_blank">University of Tennessee's Electrical Engineering and Computer Science Department</a> and he is an Adjunct Professor with <a href="http://cse.msstate.edu" target="_blank">Mississippi State University's Department of Computer Science and Engineering</a>.  Before joining ORNL in 2010, he spent nine years as a scientist with the Naval Research Laboratory.  Dr.&nbsp;Steed has a Ph.D.&nbsp;degree in Computer Science from Mississippi State University, where he studied visualization and computer graphics.  He also received a B.S.&nbsp;in Software Engineering and a M.S.&nbsp;in Hydrographic Science from the University of Southern Mississippi.  Dr.&nbsp;Steed's research spans the life cycle of data science including interactive data visualization, data mining, human-computer interaction, visual perception, databases, and graphical design. His current focus is to design systems that combine automated analytics with interactive visualizations to enhance human exploration and comprehension of complex data.  Dr.&nbsp;Steed is a research affiliate with the <a href="http://climatechangescience.ornl.gov" target="_blank">ORNL Climate Change Science Institute</a>, the <a href="http://cisml.utk.edu" target="_blank">UTK EECS Center for Intelligent Systems and Machine Learning</a>, and the <a href="http://bsec.ornl.gov" target="_blank">ORNL Biomedical Science and Engineering Center</a>. He is the recipient of the 2014 UT-Battelle Early Career Researcher Award, the 2014 ORNL Technology Commercialization Award, the 2013 R&amp;D 100 Award, and the 2013 ORNL Technology Commercialization Award.  Dr.&nbsp;Steed has 80 publications as well as 1 approved and 2 pending patents.  In addition to being a senior member of the IEEE and IEEE Computer Society, he is a member of the ACM, ACM SIGGRAPH, and ACM SIGCHI.</p>
                 </div>
 
+                <h3>Selected Publications</h3>
                 <div class="papers" id="papers" style="margin-top: 15px;">
                   <div class='row paper-row' id='2016'>
                     <div class='col-md-2 col-xs-4'>
@@ -372,13 +376,13 @@
                 <hr>
 
                 <div class="vital-info">
-                  <div><a href='https://github.com/csteed/vitae/raw/master/chadsteed_cv.pdf'>Curriculum vitae</a> <span class="label label-msb award">Updated</span></div>
+                  <div><a href='https://github.com/csteed/vitae/raw/master/chadsteed_cv.pdf'>Curriculum vitae</a> </div>
                   <div><a href="./publications/index.html">All publications</a></div>
                 </div>
 
                 <hr>
 
-                <div class="well well-sm vital-info" style="background-color: #fff5cc; box-shadow: 2px 2px 18px #8a5ed3;">
+                <div class="well well-sm vital-info" style="background-color: #fff5cc; box-shadow: 2px 2px 18px #8a5ed3; border-radius: 10%;">
                   <div><strong><center><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>&nbsp;Selected Work&nbsp;<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></center></strong></div>
                   <div><a href="./drawings/index.html">Art - Drawings</a></div>
                   <div><a href="./art/index.html">Art - iPad Drawings</a></div>
@@ -411,21 +415,22 @@
       </script>
       </p>
     </center>
-        <!-- ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/cas.js"></script>
-        <script type="text/javascript">
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-39778348-1']);
-          _gaq.push(['_trackPageview']);
 
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-        </script>
+    <!-- ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/cas.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39778348-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </body>
 </html>
