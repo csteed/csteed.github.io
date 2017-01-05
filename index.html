@@ -1,481 +1,133 @@
 
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Chad A.&nbsp;Steed&thinsp;&middot;&thinsp;Interactive Data Science</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Chad A. Steed is a senior researcher at Oak Ridge National Laboratory. He studies interactive data visualization and analysis.">
-    <meta property="og:image" content="http://csteed.com/publications/DVVA2013/DVVA2013.png" />
-    <meta property="og:image:width" content="839" />
-    <meta property="og:image:height" content="374" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Chad A.&nbsp;Steed&thinsp;&middot;&thinsp;Visual Data Science</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Oswald:400,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="css/cas.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
-    <style type="text/css">
-      /*@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);*/
-      /*@import url(http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700);*/
-      /*@import url(http://fonts.googleapis.com/css?family=Molle:400italic);*/
-      body {
-        padding-top: 70px;
-      }
-    </style>
+  <link href="css/csteed.css" rel="stylesheet" type="text/css" />
 
-    <!-- javascript includes are at the bottom of the document -->
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-     <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="shortcut icon" href="./favicon.ico">
 </head>
 
 <body>
 
-<div id="msbnav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-brand">
-      <a href="http://www.csteed.com/">Chad A.&nbsp;Steed</a><span class="hidden-sm hidden-xs">&nbsp;&middot;&nbsp;<div class="hidden-md hidden-lg"></div><a href="http://www.csteed.com/">Interactive Data Science</a></span>
+<div id="info">
+  <div id="contact">
+    <h2 id="name"><a href="http://www.csteed.com">chad a.&nbsp;steed</a></h2>
+
+    <p>Team Leader and Senior Research Staff<br/>
+    Interactive Data Science Team<br/>
+    <a href="https://www.ornl.gov/division/csed/computational-data">Computational Data Analytics Group</a><br/>
+    <a href="https://www.ornl.gov/division/csed">Computational Sciences and Engineering</a><br/>
+    <a href="http://www.ornl.gov">Oak Ridge National Laboratory</a>
+    </p>
+
+    <p>
+    Joint Faculty Appointment<br/>
+    <a href="http://www.eecs.utk.edu/">EECS</a>, <a href="http://www.utk.edu/">University of Tennessee</a><br/>
+    </p>
+
+    <p>
+    Adjunct Professor<br/>
+    <a href="http://web.cse.msstate.edu">CSE</a>, <a href="http://www.msstate.edu">Mississippi State University</a><br/>
+    </p>
+
+    <p>
+    One Bethel Valley Road<br/>
+    P.O. Box 2008, MS-6085<br/>
+    Oak Ridge, TN  37831-6085<br/>
+    csteed (at) acm.org<br/>
+    </p>
+
+    <p>
+    Twitter: <a href="http://twitter.com/docchad">@docchad</a>
+    </p>
+
+    <div id="navigate">
+      <h1>about</h1>
+      <h1><a class="nav" href="./projects/index.html">projects</a></h1>
+      <h1><a class="nav" href="./publications/index.html">publications</a></h1>
+      <h1><a class="nav" href="http://github.com/csteed/">code</a></h1>
+      <h1><a class="nav" href="./art/index.html">art</a></h1>
+      <h1><a class="nav" href="./bio/index.html">bio</a></h1>
+      <h1><a class="nav" href="https://github.com/csteed/vitae/raw/master/chadsteed_cv.pdf" onclick="var that=this;_gaq.push(['_trackEvent','Download CV','PDF',this.href]);setTimeout(function(){location.href=that.href;},200);return false;">vita</a></h1>
+      </h1>
     </div>
+
   </div>
 </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 col-xs-9">
-                        <img id="msb-img" src="img/cas-portrait-new.jpg" class="img-responsive" style="margin-bottom: 10px; border-radius: 10%">
-                    </div> <!-- /col-md-4 -->
-                    <div class="col-md-8 col-sm-6 col-xs-12">
-                        <p class="lead">I design interactive data visualization and analysis systems to enhance human exploration and comprehension of complex data.  My research combines data-guided, machine-enabled, and human-directed techniques with cross-cutting scientific applications.</p>
-                    </div> <!-- /col-md-8 -->
-                </div> <!-- row -->
-                <div class="bio">
-                    <p><strong>Bio</strong>&nbsp;&middot;&nbsp;Dr.&nbsp;Chad A.&nbsp;Steed is a Senior Research Staff member in the <a href="http://cda.ornl.gov" target="_blank">Computational Data Analytics Group</a> at the <a href="http://www.ornl.gov" target="_blank">Oak Ridge National Laboratory (ORNL)</a>.  He holds a Joint Faculty Appointment with the <a href="http://eecs.utk.edu" target="_blank">University of Tennessee's Electrical Engineering and Computer Science Department</a> and he is an Adjunct Professor with <a href="http://cse.msstate.edu" target="_blank">Mississippi State University's Department of Computer Science and Engineering</a>.  Before joining ORNL in 2010, he spent nine years as a scientist with the Naval Research Laboratory.  Dr.&nbsp;Steed has a Ph.D.&nbsp;degree in Computer Science from Mississippi State University, where he studied visualization and computer graphics.  He also received a B.S.&nbsp;in Software Engineering and a M.S.&nbsp;in Hydrographic Science from the University of Southern Mississippi.  Dr.&nbsp;Steed's research spans the life cycle of data science including interactive data visualization, data mining, human-computer interaction, visual perception, databases, and graphical design. His current focus is to design systems that combine automated analytics with interactive visualizations to enhance human exploration and comprehension of complex data.  Dr.&nbsp;Steed is a research affiliate with the <a href="http://climatechangescience.ornl.gov" target="_blank">ORNL Climate Change Science Institute</a>, the <a href="http://cisml.utk.edu" target="_blank">UTK EECS Center for Intelligent Systems and Machine Learning</a>, and the <a href="http://bsec.ornl.gov" target="_blank">ORNL Biomedical Science and Engineering Center</a>. He is the recipient of the 2014 UT-Battelle Early Career Researcher Award, the 2014 ORNL Technology Commercialization Award, the 2013 R&amp;D 100 Award, and the 2013 ORNL Technology Commercialization Award.  Dr.&nbsp;Steed has 80 publications as well as 1 approved and 2 pending patents.  In addition to being a senior member of the IEEE and IEEE Computer Society, he is a member of the ACM, ACM SIGGRAPH, and ACM SIGCHI.</p>
-                </div>
 
-                <h3>Selected Publications</h3>
-                <div class="papers" id="papers" style="margin-top: 15px;">
-                  <div class='row paper-row' id='2016'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='./publications/LDAV2016/LDAV2016-Abstract.pdf'>
-                        <img class='paperimage img img-responsive' src='publications/LDAV2016/LDAV2016.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='./publications/LDAV2016/LDAV2016-Abstract.pdf'>Segmented Time Series Visualization Tool for Additive Manufacturing</a>
-                      </div>
-                      <div>William Halsey, <strong>Chad A.&nbsp;Steed</strong>, Ryan Dehoff, Vincent Paquit, and Sean Yoder</div>
-                      <div>IEEE Large Data Analysis and Visualization (LDAV) Symposium Posters Compendium, 2016</div>
-                      <div>
-                        <a href='./publications/LDAV2016/LDAV2016-Abstract.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='./publications/LDAV2016/LDAV2016-Poster.pdf'>poster</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2016'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1016/j.procs.2016.05.344'>
-                        <img class='paperimage img img-responsive' src='publications/ICCS2016/ICCS2016.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1016/j.procs.2016.05.344'>In Situ Data Infrastructure for Scientific Unit Testing Platform</a>
-                      </div>
-                      <div>Dali Wang, Zhuo Yao, Yulu Xu, <strong>Chad A.&nbsp;Steed</strong>, Scott Atchley, Jamison Daniel, and Brian Smith</div>
-                      <div>IEEE International Conference on Computational Science (ICCS) 2016</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1016/j.procs.2016.05.344'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2016'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='./publications/IA2016/IA2016.pdf'>
-                        <img class='paperimage img img-responsive' src='publications/IA2016/IA2016.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='./publications/IA2016/IA2016.pdf'>Immersive Visual Analytics for Transformative Neutron Scattering Science</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Jamison Daniel, Margaret Drouhard, Steven Hahn, and Thomas Proffen</div>
-                      <div>Immersive Analytics Workshop at IEEE VR 2016</div>
-                      <div>
-                        <a href='./publications/IA2016/IA2016.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='./publications/IA2016/presentation/index.html'>slides</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2015'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://doi.org/10.3389/fpubh.2015.00182'>
-                        <img class='paperimage img img-responsive' src='publications/FrontiersORBit2015/FrontiersORBiT2015.gif' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://doi.org/10.3389/fpubh.2015.00182'>Discovering Multi-scale Co-occurrence Patterns of Asthma and Influenza with Oak Ridge Bio-surveillance Toolkit</a>
-                      </div>
-                      <div>Arvind Ramanathan, Laura L.&nbsp;Pullum, Tanner C.&nbsp;Hobson, Christopher G.&nbsp;Stahl, <strong>Chad A.&nbsp;Steed</strong>, Shannon P.&nbsp;Quinn, Chakra S.&nbsp;Chennubhotla, and Silvia Valkova</div>
-                      <div>Frontiers in Public Health, 3(2015):182, 2015</div>
-                      <div>
-                        <a href='http://doi.org/10.3389/fpubh.2015.00182'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2015'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='./publications/VPA2015/VPA2015.pdf'>
-                        <img class='paperimage img img-responsive' src='publications/VPA2015/VPA2015.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='./publications/VPA2015/VPA2015.pdf'>Visualizing Execution Traces with Task Dependencies</a>
-                      </div>
-                      <div>Blake Haugen, Stephen Richmond, Jakub Kurzak, <strong>Chad A.&nbsp;Steed</strong>, and Jack Dongarra</div>
-                      <div>2nd Workshop on Visual Performance Analysis 2015 at SC 2015</div>
-                      <div>
-                        <a href='./publications/VPA2015/VPA2015.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2015'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='./publications/BigData2015/Steed-etal-Matisse-BigData15.pdf'>
-                        <img class='paperimage img img-responsive' src='publications/BigData2015/bigdata15.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='./publications/BigData2015/Steed-etal-Matisse-BigData15.pdf'>Matisse: A Visual Analytics System for Exploring Emotion Trends in Social Media Text Streams</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Margaret
-                      Drouhard, Justin Beaver, Joshua Pyle, and Paul L.&nbsp;Bogen II</div>
-                      <div>IEEE International Conference on Big Data&nbsp;2015</div>
-                      <div>
-                        <a href='./publications/BigData2015/Steed-etal-Matisse-BigData15.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='publications/BigData2015/Steed-etal-Matisse-BigData15-Slides.pdf'>slides</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2015'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='./publications/ASH2015/ASH2015.pdf'>
-                        <img class='paperimage img img-responsive' src='publications/ASH2015/ASH2015.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='./publications/ASH2015/ASH2015.pdf'>Immersive Visualization for Materials Science Data Analysis using the Oculus Rift</a>
-                      </div>
-                      <div>Margaret Drouhard, <strong>Chad A.&nbsp;Steed</strong>, Steven Hahn, Thomas Proffen,
-                      Jamison Daniel, and Michael Matheson</div>
-                      <div>2nd Workshop on Advances in Software and Hardware for Big Data to Knowledge Discovery 2015 at IEEE Big Data 2015</div>
-                      <div>
-                        <a href='./publications/ASH2015/ASH2015.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2015'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1186/s40679-015-0006-6'>
-                        <img class='paperimage img img-responsive' src='publications/ASCI-2015/ASCI-2015.jpg' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1186/s40679-015-0006-6'>Big Data and
-                          Deep Data in Scanning and Electron Microscopies: Deriving Functionality from Multidimensional Data Sets</a>
-                      </div>
-                      <div>Alex Belianinov, Rama K. Vasudevan, Evgheni Strelcov, <strong>Chad Steed</strong>, Sang Mo Yang, Alexander Tselev, Stephen Jesse, Michael Biegalski, Galen Shipman, Christopher Symons, Albina Borisevich, Richard Archibald, and Sergei Kalinin</div>
-                      <div>Advanced Structural and Chemical Imaging, 1(6):1-25, 2015</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1186/s40679-015-0006-6'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2015'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://vialab.science.uoit.ca/textvis2015/papers/Steed-textvis2015.pdf'>
-                        <img class='paperimage img img-responsive' src='publications/TEXTVIS2015/TEXTVIS2015.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://vialab.science.uoit.ca/textvis2015/papers/Steed-textvis2015.pdf'>Text Stream Trend Analysis using Multiscale Visual Analytics with Applications to Social Media Systems</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Justin Beaver, Paul L.&nbsp;Bogen II, Margaret Drouhard, and Joshua Pyle</div>
-                      <div>ACM IUI Workshop on Visual Text Analytics</div>
-                      <div>
-                        <a href='http://vialab.science.uoit.ca/textvis2015/papers/Steed-textvis2015.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='publications/TEXTVIS2015/Matisse-IUITextVis15-Steed.pdf'>slides</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2014'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1109/BigData.2014.7004255'>
-                        <img class='paperimage img img-responsive' src='publications/BigData2014/BigData14.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/BigData.2014.7004255'>Web-based Visual Analytics for Extreme Scale Climate Science</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Katherine J.&nbsp;Evans, John F.&nbsp;Harney, Brian C.&nbsp;Jewell, Galen Shipman, Brian E.&nbsp;Smith, Peter E.&nbsp;Thornton, and Dean N.&nbsp;Williams</div>
-                      <div>IEEE International Conference on Big Data&nbsp;2014</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/BigData.2014.7004255'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' >
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1016/j.envsoft.2014.01.015'>
-                        <img class='paperimage img img-responsive' src='publications/EMS2014/EMS14.gif' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1016/j.envsoft.2014.01.015'>A Functional Test Platform for the Community Land Model</a>
-                      </div>
-                      <div>Dali Wang, Yang Xu, Peter Thornton, Anthony King, <strong>Chad Steed</strong>, Lianhong Gu, and Joseph Schuchart</div>
-                      <div>Environmental Modeling &amp; Software, 55:25-31, 2014</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1016/j.envsoft.2014.01.015'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2013'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://sc13.supercomputing.org/sites/default/files/WorkshopsArchive/pdfs/wp130s1.pdf'>
-                        <img class='paperimage img img-responsive' src='publications/SC2013/SC13.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://sc13.supercomputing.org/sites/default/files/WorkshopsArchive/pdfs/wp130s1.pdf'>Extreme Scale Visual Analytics</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Thomas E.&nbsp;Potok, Laura L.&nbsp;Pullum, Arvind Ramanathan, Galen Shipman, and Peter E.&nbsp;Thornton</div>
-                      <div>4th SC Workshop on Petascale (Big) Data Analytics @ SC 2013, 2013</div>
-                      <div>
-                        <a href='http://sc13.supercomputing.org/sites/default/files/WorkshopsArchive/pdfs/wp130s1.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
+<div id="main">
 
-                  <div class='row paper-row' >
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://vialab.science.uoit.ca/textvis2013/papers/Ramanathan-TextVis2013.pdf'>
-                        <img class='paperimage img img-responsive' src='publications/TEXTVIS2013/TEXTVIS2013.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://vialab.science.uoit.ca/textvis2013/papers/Ramanathan-TextVis2013.pdf'>Integrating Heterogeneous Healthcare Datasets and Visual Analytics for Disease Bio-surveillance and Dynamics</a>
-                      </div>
-                      <div>Arvind Ramanathan, Laura L.&nbsp;Pullum, <strong>Chad A.&nbsp;Steed</strong>, Shannon S.&nbsp;Quinn, Chakra S.&nbsp;Chennubhotla, and Tara Parker</div>
-                      <div>3rd Interactive Visual Text Analytics Workshop @ IEEE VIS, 2013</div>
-                      <div>
-                        <a href='http://vialab.science.uoit.ca/textvis2013/papers/Ramanathan-TextVis2013.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
+  <!-- <h2>about &nbsp;&nbsp;&nbsp;
+    <a class="nav" href="projects/">projects</a>&nbsp;&nbsp;&nbsp;
+    <a class="nav" href="publications/">publications</a>
+  </h2> -->
+  <div id="about">
+    <p>
+    I design interactive data visualization and analysis systems to enhance human
+    exploration and comprehension of large and complex data.  My research spans
+    the full life cycle of data science including interactive data visualization,
+    data mining, human-computer interaction, visual perception, databases,
+    and graphic design.
+    </p>
+    <p>My current focus is to design systems that combine
+    automated statistical analytics with interactive data visualization to
+    enhance human exploration and comprenhension of data.  The resulting
+    techniques and tools that arise from my research are evaluated in the
+    context of many data-rich, scientific domains, such as additive manufacturing, climate,
+    neutron scattering, text mining, health care, and cyber security.
+    </p>
+    <p>
+    My projects usually begin with a domain expert who needs to analyze
+    a complex data set that exceeds the capabilities of ordinary data
+    visualization tools.  Working closely with the experts, we design new tools
+    using the latest advances in interactive data visualization.  The tools
+    often feature new visual representations of data, new interaction methods
+    with the representations, and automatic statistical analytics that guide
+    the user to the more important patterns.  As new techniques are added to the
+    tools, updated releases are provided to the experts and evaluated in real
+    data analysis scenarios.  As the
+    systems evolves, the scientists embrace the tools as co-designers and the
+    tools respond to their actual needs.
+    </p>
+  </div>
 
-                  <div class='row paper-row' >
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://www.cc.gatech.edu/gvu/ii/PublicHealthVis/Papers/OrBIT_PHDecisionMaking_F.pdf'>
-                        <img class='paperimage img img-responsive' src='publications/VASTHEALTH2013/VASTHEALTH2013.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://www.cc.gatech.edu/gvu/ii/PublicHealthVis/Papers/OrBIT_PHDecisionMaking_F.pdf'>Oak Ridge Bio-surveillance Toolkit (ORBiT): Integrating Big-Data Analytics with Visual Analysis for Public Health Dynamics</a>
-                      </div>
-                      <div>Arvind Ramanathan, Laura L.&nbsp;Pullum, <strong>Chad A.&nbsp;Steed</strong>, Shannon S.&nbsp;Quinn,
-                Chakra S.&nbsp;Chennubhotla</div>
-                      <div>IEEE VAST Workshop on Public Health's Wicked Problems: Can InfoVis Save Lives?, 2013</div>
-                      <div>
-                        <a href='http://www.cc.gatech.edu/gvu/ii/PublicHealthVis/Papers/OrBIT_PHDecisionMaking_F.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
+  <div id="about_imgs">
+    <table width="0" border="0" cellspacing="2" cellpadding="2">
+      <tr>
+        <td><a href="projects/"><img src="img/aerial-pcp.png" alt="aerial perspective shading on parallel coordinates" width="140"
+          height="173"/></a></td>
+        <td><a href="projects/"><img src="img/illustrative_hurricane_vis.png" alt="illustrative visualization of hurricane advisories" width="140"
+              height="173"/></a></td>
 
-                  <div class='row paper-row' >
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1016/j.cageo.2013.07.025'>
-                        <img class='paperimage img img-responsive' src='publications/CAGEO2013/CAGEO2013.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1016/j.cageo.2013.07.025'>Big Data Visual Analytics for Earth System Simulation Analysis.</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Daniel M.&nbsp;Ricciuto, Galen Shipman, Brian Smith, Peter E.&nbsp;Thornton, Dali Wang, and Dean N.&nbsp;Williams</div>
-                      <div>Computers &amp; Geosciences, 61:71-82, 2013</div>
-                      <div>
-                        <span class="label label-msb award"><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>&nbsp;2013 best paper award</span><a href='http://dx.doi.org/10.1016/j.cageo.2013.07.025'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
+        <td rowspan="2"><a href="projects/"><img src="img/jray-perlin.png" alt="Java ray tracer showing Perlin noise texture on a sphere" width="140"
+          height="354"/></a></td>
+        <td><a href="projects/"><img src="img/waterfall.png" alt="waterfall visualization for time series data" width="140"
+            height="173"/></a></td>
+        <!-- <td><a href="projects/"><img src="img/everest.png" alt="EDEN" width="280" height="173" /></a></td>
+        <td><a href="projects/"><img src="img/waterfall.png" alt="Matisse" width="280" height="173" /></a></td> -->
+      </tr>
+      <tr>
+        <td colspan="2"><a href="projects/"><img src="img/everest.png" alt="EDEN on EVEREST" width="288"
+          height="173"/></a></td>
+        <td><a href="projects/"><img src="img/matisse.png" alt="time-oriented visualization of social media sentiment" width="140"
+          height="173"/></a></td>
+        <!-- <td><a href="projects/"><img src="images/gryffin-thumbnail.png" alt="Gryffin" width="280" height="173" /></a></td>
+        <td><a href="projects/"><img src="images/mdx_thumbnail.png" alt="MDX" width="280" height="173" /></a></td> -->
+      </tr>
+    </table>
+  </div>
+</div>
 
-                  <div class='row paper-row' >
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1109/MC.2013.119'>
-                        <img class='paperimage img img-responsive' src='publications/UVCDAT2013/UVCDAT2013.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/MC.2013.119'>The Ultra-scale Visualization Climate data Analysis Tools (UV-CDAT): Data Analysis and Visualization for Geoscience Data</a>
-                      </div>
-                      <div>Dean N.&nbsp;Williams, Timo Bremer, Charles Doutriaux, John Patchett, Sean Williams, Galen Shipman, Ross Miller, David R.&nbsp;Pugmire, Brian Smith, <strong>Chad A.&nbsp;Steed</strong>, E.&nbsp;Wes Bethel, Hank Childs, Harinarayan Krishnan, Prabhat, Claudio T.&nbsp;Silva, Emanuele Santos, David Koop, Tommy Ellqvist, Jorge Poco, Berk Geveci, Aashish Chaudhary, Andy Bauer, Alexander Pletzer, Dave Kindig, Gerald L.&nbsp;Potter, and Thomas P.&nbsp;Maxwell</div>
-                      <div>IEEE Computer, 46(9):68-76, 2013</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/MC.2013.119'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' >
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.4018/978-1-4666-4309-3.ch002'>
-                        <img class='paperimage img img-responsive' src='publications/DVVA2013/DVVA2013.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.4018/978-1-4666-4309-3.ch002'>A Visual Analytics Approach for Correlation, Classification, and Regression Analysis</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, J.&nbsp;Edward Swan II, Patrick J.&nbsp;Fitzpatrick, T.J.&nbsp;Jankun-Kelly</div>
-                      <div>Innovative Approaches of Data Visualization and Visual Analytics, pp.&nbsp;25-45, 2013</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.4018/978-1-4666-4309-3.ch002'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' >
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1007/978-3-642-39640-3_36'>
-                        <img class='paperimage img img-responsive' src='publications/ICCSA2013/ICCSA2013.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1007/978-3-642-39640-3_36'>Observing Community Resiliency in Social Media</a>
-                      </div>
-                      <div>Robert Patton, <strong>Chad A.&nbsp;Steed</strong>, Chris G.&nbsp;Stahl, and Jim N.&nbsp;Treadwell</div>
-                      <div>International Conference on Computational Science and Applications (ICCSA 2013), 2013</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1007/978-3-642-39640-3_36'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' >
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1016/j.procs.2013.05.408'>
-                        <img class='paperimage img img-responsive' src='publications/ICCS2013/ICCS2013.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1016/j.procs.2013.05.408'>ParCAT: Parallel Climate Analysis Toolkit</a>
-                      </div>
-                      <div>Brian Smith, Daniel M.&nbsp;Ricciuto, Peter E.&nbsp;Thornton, Galen Shipman, <strong>Chad A.&nbsp;Steed</strong>, and Dean Williams</div>
-                      <div>International Conference on Computational Science, 2013</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1016/j.procs.2013.05.408'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-                <a class="btn btn-link" style="margin-left" href="./publications/index.html">more publications...</a>
-
-              </div> <!-- /col-md-9 -->
-
-              <div class="col-md-3">
-                <div class="vital-info">
-                  <div>Team Leader and Senior Research Staff</div>
-                  Interactive Data Science Team
-                  <div><a href="https://www.ornl.gov/division/csed/computational-data">Computational Data Analytics</a></div>
-                  <div><a href="https://www.ornl.gov/division/csed">Computational Sciences &amp; Engineering</a></div>
-                  <div><a href="http://www.ornl.gov/">Oak Ridge National Laboratory</a></div>
-                </div>
-
-                <div class="vital-info">
-                  <div><a href="mailto:csteed@acm.org">csteed@acm.org</a></div>
-                  <div>Twitter: <a href="http://www.twitter.com/docchad">@docchad</a></div>
-                  <div>LinkedIn: <a href="http://www.linkedin.com/in/chadsteed">chadsteed</a></div>
-                </div>
-
-                <div class="vital-info">
-                  <div>One Bethel Valley Road</div>
-                  <div>P.O.&nbsp;Box 2008, MS-6085</div>
-                  <div>(865) 574-7168</div>
-                </div>
-
-                <hr>
-
-                <div class="vital-info">
-                  <div><a href='https://github.com/csteed/vitae/raw/master/chadsteed_cv.pdf' onclick="var that=this;_gaq.push(['_trackEvent','Download CV','PDF',this.href]);setTimeout(function(){location.href=that.href;},200);return false;">Curriculum vitae</a> </div>
-                  <div><a href="./publications/index.html">All publications</a></div>
-                </div>
-
-                <hr>
-
-                <div class="well well-sm vital-info" style="background-color: #fff5cc; box-shadow: 2px 2px 18px #8a5ed3; border-radius: 10%;">
-                  <div><strong><center><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>&nbsp;Selected Work&nbsp;<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></center></strong></div>
-                  <div><a href="./drawings/index.html">Art - Drawings</a></div>
-                  <div><a href="./art/index.html">Art - iPad Drawings</a></div>
-                  <div><a href="http://github.com/csteed/eden/" http://github.com/csteed/>EDEN System</a></div>
-                  <div><a href="http://github.com/csteed/edenfx/" http://github.com/csteed/>EDENFX System</a></div>
-                  <div><a href="http://github.com/csteed/falcon/" http://github.com/csteed/>Falcon System</a></div>
-                  <div><a href="./projects/index.html">Web Vis Work</a></div>
-                  <div><a href="http://csteed.com/multivar/">MultiVar Project</a></div>
-                  <div><a href="http://github.com/csteed/"  target="_blank">Code Repositories</a></div>
-                </div>
-
-                <hr>
-
-                <table width=100% id=desktopFeed>
-                <tr>
-                  <!--<td><h5>Tweets</h5></td>-->
-                  <td align=right><h5>
-                  <a class="twitter-timeline" href="https://twitter.com/docchad" data-widget-id="295367312196898816">Tweets by @docchad</a>
-                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></h5></td>
-                </tr>
-                </table>
-              </div>
-      </div> <!-- /row -->
-
-
-    </div> <!-- /container -->
-
-    <center>
-      <p>&copy; Chad A. Steed
-      <script type="text/javascript">
-        document.write(new Date().getFullYear());
-      </script>
-      </p>
-    </center>
-
-    <!-- ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/cas.js"></script>
-    <script type="text/javascript">
+  <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-39778348-1']);
       _gaq.push(['_trackPageview']);
@@ -485,6 +137,7 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-    </script>
-  </body>
+  </script>
+
+</body>
 </html>

@@ -1,1287 +1,476 @@
-
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Chad A.&nbsp;Steed&thinsp;&middot;&thinsp;Publications</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chad A. Steed is a researcher at Oak Ridge National Laboratory. He studies interactive data visualization and analysis.">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Chad A.&nbsp;Steed&thinsp;&middot;&thinsp;Visual Data Science</title>
 
-    <!-- to see or edit this font collection, go to http://www.google.com/webfonts#UsePlace:use/Collection:Lato|Open+Sans:300italic,400italic,400,300,700 -->
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Oswald:400,700' rel='stylesheet' type='text/css'>
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="../css/cas.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
-    <style type="text/css">
-      /*@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);*/
-      /*@import url(http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700);*/
-      /*@import url(http://fonts.googleapis.com/css?family=Molle:400italic);*/
-      body {
-        padding-top: 70px;
-      }
-    </style>
+  <link href="../css/csteed.css" rel="stylesheet" type="text/css" />
 
-    <!-- javascript includes are at the bottom of the document -->
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-    <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16">
+  <link rel="shortcut icon" href="../favicon.ico">
 </head>
 
+<body>
 
-<body data-spy="scroll" data-target=".sidenav">
-    <div id="msbnav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-brand">
-                <!-- <div class="head_decoration_maroon"></div>
-                <div class="head_decoration_white"></div>
-                <div class="head_decoration_grey"></div> -->
-                <a href="http://www.csteed.com/">Chad A.&nbsp;Steed</a><span class="hidden-sm hidden-xs">&nbsp;&middot;&nbsp;<div class="hidden-md hidden-lg"></div><a href="http://www.csteed.com/">Interactive Data Science</a></span>
-            </div>
-        </div>
+<div id="info">
+  <div id="contact">
+    <h2 id="name"><a href="http://www.csteed.edu">chad a.&nbsp;steed</a></h2>
+
+    <p>Team Leader and Senior Research Staff<br/>
+    Interactive Data Science Team<br/>
+    <a href="https://www.ornl.gov/division/csed/computational-data">Computational Data Analytics Group</a><br/>
+    <a href="https://www.ornl.gov/division/csed">Computational Sciences and Engineering</a><br/>
+    <a href="http://www.ornl.gov">Oak Ridge National Laboratory</a>
+    </p>
+
+    <p>
+    Joint Faculty Appointment<br/>
+    <a href="http://www.eecs.utk.edu/">EECS</a>, <a href="http://www.utk.edu/">University of Tennessee</a><br/>
+    </p>
+
+    <p>
+    Adjunct Professor<br/>
+    <a href="http://web.cse.msstate.edu">CSE</a>, <a href="http://www.msstate.edu">Mississippi State University</a><br/>
+    </p>
+
+    <p>
+    One Bethel Valley Road<br/>
+    P.O. Box 2008, MS-6085<br/>
+    Oak Ridge, TN  37831-6085<br/>
+    csteed (at) acm.org<br/>
+    </p>
+
+    <p>
+    Twitter: <a href="http://twitter.com/docchad">@docchad</a>
+    </p>
+
+    <div id="navigate">
+      <h1><a class="nav" href="../index.html">about</a></h1>
+      <h1><a class="nav" href="../projects/index.html">projects</a></h1>
+      <h1>publications</h1>
+      <h1><a class="nav" href="http://github.com/csteed/">code</a></h1>
+      <h1><a class="nav" href="../art/index.html">art</a></h1>
+      <h1><a class="nav" href="../bio/index.html">bio</a></h1>
+      <h1><a class="nav" href="https://github.com/csteed/vitae/raw/master/chadsteed_cv.pdf" onclick="var that=this;_gaq.push(['_trackEvent','Download CV','PDF',this.href]);setTimeout(function(){location.href=that.href;},200);return false;">vita</a></h1>
+      </h1>
     </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2">
-                <div class="sidenav" data-spy="affix">
-                    <ul class="nav nav-stacked">
-                        <li><a href="#2016">2016</a></li>
-                        <li><a href="#2015">2015</a></li>
-                        <li><a href="#2014">2014</a></li>
-                        <li><a href="#2013">2013</a></li>
-                        <li><a href="#2012">2012</a></li>
-                        <li><a href="#2011">2011</a></li>
-                        <li><a href="#2010">2010</a></li>
-                        <li><a href="#2009">2009</a></li>
-                        <li><a href="#2008">2008</a></li>
-                        <li><a href="#2007">2007</a></li>
-                        <li><a href="#2006">2006</a></li>
-                        <li><a href="#2005">2005</a></li>
-                        <li><a href="#2004">2004</a></li>
-                        <li><a href="#2003">2003</a></li>
-                        <li><a href="#2002">2002</a></li>
-                    </ul>
-                </div>
-            </div> <!-- /col-md-3 -->
-
-            <div class="col-md-10">
-                <div class="papers" id="papers" style="margin-top: 15px;">
-                  <div class='row paper-row' id='2016'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='./LDAV2016/LDAV2016-Abstract.pdf'>
-                        <img class='paperimage img img-responsive' src='./LDAV2016/LDAV2016.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='./LDAV2016/LDAV2016-Abstract.pdf'>Segmented Time Series Visualization Tool for Additive Manufacturing</a>
-                      </div>
-                      <div>William Halsey, <strong>Chad A.&nbsp;Steed</strong>, Ryan Dehoff, Vincent Paquit, and Sean Yoder</div>
-                      <div>IEEE Large Data Analysis and Visualization (LDAV) Symposium Posters Compendium, 2016</div>
-                      <div>
-                        <a href='./LDAV2016/LDAV2016-Abstract.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='./LDAV2016/LDAV2016-Poster.pdf'>poster</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2016'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1016/j.procs.2016.05.344'>
-                        <img class='paperimage img img-responsive' src='./ICCS2016/ICCS2016.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1016/j.procs.2016.05.344'>In Situ Data Infrastructure for Scientific Unit Testing Platform</a>
-                      </div>
-                      <div>Dali Wang, Zhuo Yao, Yulu Xu, <strong>Chad A.&nbsp;Steed</strong>, Scott Atchley, Jamison Daniel, and Brian Smith</div>
-                      <div>IEEE International Conference on Computational Science (ICCS) 2016</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1016/j.procs.2016.05.344'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2016'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='./IA2016/IA2016.pdf'>
-                        <img class='paperimage img img-responsive' src='./IA2016/IA2016.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='./IA2016/IA2016.pdf'>Immersive Visual Analytics for Transformative Neutron Scattering Science</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Jamison Daniel, Margaret Drouhard, Steven Hahn, and Thomas Proffen</div>
-                      <div>Immersive Analytics Workshop at IEEE VR 2016</div>
-                      <div>
-                        <a href='./IA2016/IA2016.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='./IA2016/presentation/index.html'>slides</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2015'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://doi.org/10.3389/fpubh.2015.00182'>
-                        <img class='paperimage img img-responsive' src='./FrontiersORBit2015/FrontiersORBiT2015.gif' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://doi.org/10.3389/fpubh.2015.00182'>Discovering Multi-scale Co-occurrence Patterns of Asthma and Influenza with Oak Ridge Bio-surveillance Toolkit</a>
-                      </div>
-                      <div>Arvind Ramanathan, Laura L.&nbsp;Pullum, Tanner C.&nbsp;Hobson, Christopher G.&nbsp;Stahl, <strong>Chad A.&nbsp;Steed</strong>, Shannon P.&nbsp;Quinn, Chakra S.&nbsp;Chennubhotla, and Silvia Valkova</div>
-                      <div>Frontiers in Public Health, 3(2015):182, 2015</div>
-                      <div>
-                        <a href='http://doi.org/10.3389/fpubh.2015.00182'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2015'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='./VPA2015/VPA2015.pdf'>
-                        <img class='paperimage img img-responsive' src='./VPA2015/VPA2015.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='./VPA2015/VPA2015.pdf'>Visualizing Execution Traces with Task Dependencies</a>
-                      </div>
-                      <div>Blake Haugen, Stephen Richmond, Jakub Kurzak, <strong>Chad A.&nbsp;Steed</strong>, and Jack Dongarra</div>
-                      <div>2nd Workshop on Visual Performance Analysis 2015 at SC 2015</div>
-                      <div>
-                        <a href='./VPA2015/VPA2015.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2015'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='./BigData2015/Steed-etal-Matisse-BigData15.pdf'>
-                        <img class='paperimage img img-responsive' src='./BigData2015/bigdata15.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='./BigData2015/Steed-etal-Matisse-BigData15.pdf'>Matisse: A Visual Analytics System for Exploring Emotion Trends in Social Media Text Streams</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Margaret
-                      Drouhard, Justin Beaver, Joshua Pyle, and Paul L.&nbsp;Bogen II</div>
-                      <div>IEEE International Conference on Big Data&nbsp;2015</div>
-                      <div>
-                        <a href='./BigData2015/Steed-etal-Matisse-BigData15.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2015'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='./ASH2015/ASH2015.pdf'>
-                        <img class='paperimage img img-responsive' src='./ASH2015/ASH2015.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='./ASH2015/ASH2015.pdf'>Immersive Visualization for Materials Science Data Analysis using the Oculus Rift</a>
-                      </div>
-                      <div>Margaret Drouhard, <strong>Chad A.&nbsp;Steed</strong>, Steven Hahn, Thomas Proffen,
-                      Jamison Daniel, and Michael Matheson</div>
-                      <div>2nd Workshop on Advances in Software and Hardware for Big Data to Knowledge Discovery 2015 at IEEE Big Data 2015</div>
-                      <div>
-                        <a href='./ASH2015/ASH2015.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2015'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1186/s40679-015-0006-6'>
-                        <img class='paperimage img img-responsive' src='ASCI-2015/ASCI-2015.jpg' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1186/s40679-015-0006-6'>Big Data and
-                          Deep Data in Scanning and Electron Microscopies: Deriving Functionality from Multidimensional Data Sets</a>
-                      </div>
-                      <div>Alex Belianinov, Rama K. Vasudevan, Evgheni Strelcov, <strong>Chad Steed</strong>, Sang Mo Yang, Alexander Tselev, Stephen Jesse, Michael Biegalski, Galen Shipman, Christopher Symons, Albina Borisevich, Richard Archibald, and Sergei Kalinin</div>
-                      <div>Advanced Structural and Chemical Imaging, 1(6):1-25, 2015</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1186/s40679-015-0006-6'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2015'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://vialab.science.uoit.ca/textvis2015/papers/Steed-textvis2015.pdf'>
-                        <img class='paperimage img img-responsive' src='TEXTVIS2015/TEXTVIS2015.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://vialab.science.uoit.ca/textvis2015/papers/Steed-textvis2015.pdf'>Text Stream Trend Analysis using Multiscale Visual Analytics with Applications to Social Media Systems</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Justin Beaver, Paul L.&nbsp;Bogen II, Margaret Drouhard, and Joshua Pyle</div>
-                      <div>ACM IUI Workshop on Visual Text Analytics</div>
-                      <div>
-                        <a href='http://vialab.science.uoit.ca/textvis2015/papers/Steed-textvis2015.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='TEXTVIS2015/Matisse-IUITextVis15-Steed.pdf'>slides</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2014'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1109/BigData.2014.7004255'>
-                        <img class='paperimage img img-responsive' src='BigData2014/BigData14.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/BigData.2014.7004255'>Web-based Visual Analytics for Extreme Scale Climate Science</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Katherine J.&nbsp;Evans, John F.&nbsp;Harney, Brian C.&nbsp;Jewell, Galen Shipman, Brian E.&nbsp;Smith, Peter E.&nbsp;Thornton, and Dean N.&nbsp;Williams</div>
-                      <div>IEEE International Conference on Big Data&nbsp;2014</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/BigData.2014.7004255'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' >
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1016/j.envsoft.2014.01.015'>
-                        <img class='paperimage img img-responsive' src='EMS2014/EMS14.gif' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1016/j.envsoft.2014.01.015'>A Functional Test Platform for the Community Land Model</a>
-                      </div>
-                      <div>Dali Wang, Yang Xu, Peter Thornton, Anthony King, <strong>Chad Steed</strong>, Lianhong Gu, and Joseph Schuchart</div>
-                      <div>Environmental Modeling &amp; Software, 55:25-31, 2014</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1016/j.envsoft.2014.01.015'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='row paper-row' id='2013'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://sc13.supercomputing.org/sites/default/files/WorkshopsArchive/pdfs/wp130s1.pdf'>
-                        <img class='paperimage img img-responsive' src='SC2013/SC13.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://sc13.supercomputing.org/sites/default/files/WorkshopsArchive/pdfs/wp130s1.pdf'>Extreme Scale Visual Analytics</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Thomas E.&nbsp;Potok, Laura L.&nbsp;Pullum, Arvind Ramanathan, Galen Shipman, and Peter E.&nbsp;Thornton</div>
-                      <div>4th SC Workshop on Petascale (Big) Data Analytics @ SC 2013, 2013</div>
-                      <div>
-                        <a href='http://sc13.supercomputing.org/sites/default/files/WorkshopsArchive/pdfs/wp130s1.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' >
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://vialab.science.uoit.ca/textvis2013/papers/Ramanathan-TextVis2013.pdf'>
-                        <img class='paperimage img img-responsive' src='TEXTVIS2013/TEXTVIS2013.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://vialab.science.uoit.ca/textvis2013/papers/Ramanathan-TextVis2013.pdf'>Integrating Heterogeneous Healthcare Datasets and Visual Analytics for Disease Bio-surveillance and Dynamics</a>
-                      </div>
-                      <div>Arvind Ramanathan, Laura L.&nbsp;Pullum, <strong>Chad A.&nbsp;Steed</strong>, Shannon S.&nbsp;Quinn, Chakra S.&nbsp;Chennubhotla, and Tara Parker</div>
-                      <div>3rd Interactive Visual Text Analytics Workshop @ IEEE VIS, 2013</div>
-                      <div>
-                        <a href='http://vialab.science.uoit.ca/textvis2013/papers/Ramanathan-TextVis2013.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' >
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://www.cc.gatech.edu/gvu/ii/PublicHealthVis/Papers/OrBIT_PHDecisionMaking_F.pdf'>
-                        <img class='paperimage img img-responsive' src='VASTHEALTH2013/VASTHEALTH2013.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://www.cc.gatech.edu/gvu/ii/PublicHealthVis/Papers/OrBIT_PHDecisionMaking_F.pdf'>Oak Ridge Bio-surveillance Toolkit (ORBiT): Integrating Big-Data Analytics with Visual Analysis for Public Health Dynamics</a>
-                      </div>
-                      <div>Arvind Ramanathan, Laura L.&nbsp;Pullum, <strong>Chad A.&nbsp;Steed</strong>, Shannon S.&nbsp;Quinn,
-                Chakra S.&nbsp;Chennubhotla</div>
-                      <div>IEEE VAST Workshop on Public Health's Wicked Problems: Can InfoVis Save Lives?, 2013</div>
-                      <div>
-                        <a href='http://www.cc.gatech.edu/gvu/ii/PublicHealthVis/Papers/OrBIT_PHDecisionMaking_F.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' >
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1016/j.cageo.2013.07.025'>
-                        <img class='paperimage img img-responsive' src='CAGEO2013/CAGEO2013.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1016/j.cageo.2013.07.025'>Big Data Visual Analytics for Earth System Simulation Analysis.</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Daniel M.&nbsp;Ricciuto, Galen Shipman, Brian Smith, Peter E.&nbsp;Thornton, Dali Wang, and Dean N.&nbsp;Williams</div>
-                      <div>Computers &amp; Geosciences, 61:71-82, 2013</div>
-                      <div>
-                        <span class="label label-msb award">2013 best paper award</span><a href='http://dx.doi.org/10.1016/j.cageo.2013.07.025'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' >
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1109/MC.2013.119'>
-                        <img class='paperimage img img-responsive' src='UVCDAT2013/UVCDAT2013.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/MC.2013.119'>The Ultra-scale Visualization Climate data Analysis Tools (UV-CDAT): Data Analysis and Visualization for Geoscience Data</a>
-                      </div>
-                      <div>Dean N.&nbsp;Williams, Timo Bremer, Charles Doutriaux, John Patchett, Sean Williams, Galen Shipman, Ross Miller, David R.&nbsp;Pugmire, Brian Smith, <strong>Chad A.&nbsp;Steed</strong>, E.&nbsp;Wes Bethel, Hank Childs, Harinarayan Krishnan, Prabhat, Claudio T.&nbsp;Silva, Emanuele Santos, David Koop, Tommy Ellqvist, Jorge Poco, Berk Geveci, Aashish Chaudhary, Andy Bauer, Alexander Pletzer, Dave Kindig, Gerald L.&nbsp;Potter, and Thomas P.&nbsp;Maxwell</div>
-                      <div>IEEE Computer, 46(9):68-76, 2013</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/MC.2013.119'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' >
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.4018/978-1-4666-4309-3.ch002'>
-                        <img class='paperimage img img-responsive' src='DVVA2013/DVVA2013.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.4018/978-1-4666-4309-3.ch002'>A Visual Analytics Approach for Correlation, Classification, and Regression Analysis</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, J.&nbsp;Edward Swan II, Patrick J.&nbsp;Fitzpatrick, T.J.&nbsp;Jankun-Kelly</div>
-                      <div>Innovative Approaches of Data Visualization and Visual Analytics, pp.&nbsp;25-45, 2013</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.4018/978-1-4666-4309-3.ch002'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' >
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1007/978-3-642-39640-3_36'>
-                        <img class='paperimage img img-responsive' src='ICCSA2013/ICCSA2013.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1007/978-3-642-39640-3_36'>Observing Community Resiliency in Social Media</a>
-                      </div>
-                      <div>Robert Patton, <strong>Chad A.&nbsp;Steed</strong>, Chris G.&nbsp;Stahl, and Jim N.&nbsp;Treadwell</div>
-                      <div>International Conference on Computational Science and Applications (ICCSA 2013), 2013</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1007/978-3-642-39640-3_36'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' >
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1016/j.procs.2013.05.408'>
-                        <img class='paperimage img img-responsive' src='ICCS2013/ICCS2013.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1016/j.procs.2013.05.408'>ParCAT: Parallel Climate Analysis Toolkit</a>
-                      </div>
-                      <div>Brian Smith, Daniel M.&nbsp;Ricciuto, Peter E.&nbsp;Thornton, Galen Shipman, <strong>Chad A.&nbsp;Steed</strong>, and Dean Williams</div>
-                      <div>International Conference on Computational Science, 2013</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1016/j.procs.2013.05.408'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' id='2012'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1109/BioMedCom.2012.18'>
-                        <img class='paperimage img img-responsive' src='BIOMEDCOM2012/BIOMEDCOM2012.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/BioMedCom.2012.18'>Verification of Compartmental Epidemiological Models using Metamorphic Testing, Model Checking and Visual Analytics</a>
-                      </div>
-                      <div>Arvind Ramanathan, <strong>Chad A.&nbsp;Steed</strong>, and Laura L.&nbsp;Pullum</div>
-                      <div>ASE/IEEE International Conference on BioMedical Computing (BioMedCom), Dec.&nbsp;2012</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/BioMedCom.2012.18'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://research.microsoft.com/en-us/um/people/shliu/tasmc/'>
-                        <img class='paperimage img img-responsive' src='TEXTVIS2012/TEXTVIS2012.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://research.microsoft.com/en-us/um/people/shliu/tasmc/'>Interactive Visual Analysis of High Throughput Text Streams.</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Thomas E.&nbsp;Potok, Robert M.&nbsp;Patton, John R.&nbsp;Goodall, Christopher Maness, James Senter</div>
-                      <div>2nd Interactive Visual Text Analytics Workshop @ IEEE VisWeek, Oct.&nbsp;2012</div>
-                      <div>
-                        <a href='http://research.microsoft.com/en-us/um/people/shliu/tasmc/'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='GeoVA2012/GeoVA2012.pdf'>
-                        <img class='paperimage img img-responsive' src='GeoVA2012/GeoVA2012.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='GeoVA2012/GeoVA2012.pdf'>An Integrated Geovisual Analytics Framework for Analysis of Energy Consumption Data and Renewable Energy Potentials</a>
-                      </div>
-                      <div>Olufemi A.&nbsp;Omitaomu, Christopher S.&nbsp;Maness, Ian S.&nbsp;Kramer, Jeffrey B.&nbsp;Kodysh, Budhendra L.&nbsp;Bhaduri, <strong>Chad A.&nbsp;Steed</strong>, Rajasekar Karthik, Philip J.&nbsp;Nugent, Aaron T.&nbsp;Myers</div>
-                      <div>GeoSpatial Visual Analytics Workshop @ GIScience, Sep.&nbsp;2012</div>
-                      <div>
-                        <a href='GeoVA2012/GeoVA2012.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='AHFE2012/AHFE2012.pdf'>
-                        <img class='paperimage img img-responsive' src='AHFE2012/AHFE2012.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='AHFE2012/AHFE2012.pdf'>Verification of Compartmental Epidemiological Models using Metamorphic Testing, Model Checking and Visual Analytics</a>
-                      </div>
-                      <div>Songhua Xu, Brian Jewell, <strong>Chad Steed</strong>, and Jack Schryver</div>
-                      <div>International Conference on Applied Human Factors and Ergonomics (AHFE), July 2012</div>
-                      <div>
-                        <a href='AHFE2012/AHFE2012.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1016/j.procs.2012.04.094'>
-                        <img class='paperimage img img-responsive' src='ICCS2012/ICCS2012.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1016/j.procs.2012.04.094'>Practical Application of Parallel Coordinates for Climate Model Analysis</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Galen Shipman, Peter Thornton, Daniel Ricciuto, David Erickson, and Marcia Branstetter</div>
-                      <div>International Conference on Computational Science (ICCS), June 2012</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1016/j.procs.2012.04.094'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1117/12.904904'>
-                        <img class='paperimage img img-responsive' src='VDA2012/VDA2012.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1117/12.904904'>Guided Text Analysis Using Adaptive Visual Analytics</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Christopher Symons, Frank DeNap, and Thomas E.&nbsp;Potok</div>
-                      <div>Visualization and Data Analysis Conference (VDA), Jan.&nbsp;2012</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1117/12.904904'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        ParCAT: A Parallel Climate Analysis Toolkit
-                      </div>
-                      <div>Blake Haugen, Brian Smith, <strong>Chad A.&nbsp;Steed</strong>, Daniel Ricciuto, Peter E.&nbsp;Thornton, and Galen Shipman</div>
-                      <div>AGU 2012 Fall Meeting, 2012</div>
-
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='InfoVis2012/InfoVis2012-Paper.pdf'>
-                        <img class='paperimage img img-responsive' src='InfoVis2012/InfoVis2012.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='InfoVis2012/InfoVis2012-Paper.pdf'>Practical Web Based Visualization for Comparative Energy Usage Analysis</a>
-                      </div>
-                      <div>Christopher Maness, <strong>Chad A.&nbsp;Steed</strong>, and Olufemi Omitaomu</div>
-                      <div>IEEE Visualization Conference Posters Compendium, 2012</div>
-                      <div>
-                        <a href='InfoVis2012/InfoVis2012-Paper.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='InfoVis2012/InfoVis2012-Poster.pdf'>poster</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' id='2011'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1109/IWCMC.2011.5982725'>
-                        <img class='paperimage img img-responsive' src='WCMC2011/WCMC2011.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/IWCMC.2011.5982725'>Hierarchical Clustering and Visualization of Aggregate Cyber Data</a>
-                      </div>
-                      <div>Robert M.&nbsp;Patton, Justin M.&nbsp;Beaver, <strong>Chad A.&nbsp;Steed</strong>, Thomas E.&nbsp;Potok, and Jim N.&nbsp;Treadwell</div>
-                      <div>International Wireless Communications and Mobile Computing Conference (WCMC), 2011</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/IWCMC.2011.5982725'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1117/12.883487'>
-                        <img class='paperimage img img-responsive' src='DSS2011/DSS2011.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1117/12.883487'>Visualization Techniques for Computer Network Defense</a>
-                      </div>
-                      <div>Justin M.&nbsp;Beaver, <strong>Chad A.&nbsp;Steed</strong>, Robert M.&nbsp;Patton, Xiaohui Cui, and Matthew Schultz</div>
-                      <div>SPIE Defense &amp; Security Symposium (DSS), 2011</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1117/12.883487'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        Massively Parallel Algorithms for Scalable Exascale Analysis
-                      </div>
-                      <div>Yu Jiao, Erik Ferragut, Sudharshan Vazhkudai, Stuart Campbell, Mark Hagen, Stephen Miller, Christopher Griffin, and <strong>Chad A.&nbsp;Steed</strong></div>
-                      <div>ORNL Technical Report 31964, 2011</div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        Scale Dependency in Dynamic Downscaling of Extreme Climate Events over Complex Topography
-                      </div>
-                      <div>David J.&nbsp;Erickson, Auroop R.&nbsp;Ganguly, Robert James Oglesby, Evan A.&nbsp;Kodra, Debasish Das, Anthony W.&nbsp;King, Cindy Hays, <strong>Chad Steed</strong>, Robert Patton, and Chris Lenhardt</div>
-                      <div>AGU Fall Meeting, 2011</div>
-
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' id='2010'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        Under Sea Warfare Visual Analytics: Fiscal Year 2010 Prototype System Report
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Jeffrey Russell, and J.&nbsp;Paquin Fabre</div>
-                      <div>NRL Technical Report NRL/MR/7440-10-9285, 2010</div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        Geophysical Data Base Variable Resolution Version 2: Final Design Report
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Chiu-Fu "Tiger" Cheng, and David W.&nbsp;Harvey</strong></div>
-                      <div>NRL Technical Report NRL/MR/7440–09-9229, 2010</div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        Scale Dependency in Dynamic Downscaling of Extreme Climate Events Over Complex Topography
-                      </div>
-                      <div>Debasish Das, Evan Kodra, Karsten Steinhaeuser, Shih-Chieh Kao, Auroop R.&nbsp;Ganguly, Marcia L.&nbsp;Branstetter, David J.&nbsp;Erickson, Raymond Flanery, Maria Martinez Gonzalez, Cynthia Hays, Anthony W.&nbsp;King, Christopher Lenhardt, Robert Oglesby, Robert M.&nbsp;Patton, Clinton M.&nbsp;Rowe, Alexander Sorokine, <strong>Chad Steed</strong></div>
-                      <div>AGU Fall Meeting Poster Session, 2010</div>
-
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' id='2009'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1016/j.cageo.2008.11.004'>
-                        <img class='paperimage img img-responsive' src='CAGEO2009/CAGEO2009.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1016/j.cageo.2008.11.004'>An Interactive Parallel Coordinates Technique Applied to a Tropical Cyclone Climate Analysis</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Patrick J.&nbsp;Fitzpatrick, T.J.&nbsp;Jankun-Kelly, Amber N.&nbsp;Yancey, and J.&nbsp;Edward Swan II</div>
-                      <div>Computers &amp; Geosciences, 35(7):1529-1539, 2009</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1016/j.cageo.2008.11.004'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1559/152304009788988314'>
-                        <img class='paperimage img img-responsive' src='CAGIS2009/CAGIS2009.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1559/152304009788988314'>Tropical Cyclone Trend Analysis using Enhanced Parallel Coordinates and Statistical Analytics</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Patrick J.&nbsp;Fitzpatrick, J.&nbsp;Edward Swan II, and T.J.&nbsp;Jankun-Kelly</div>
-                      <div>Cartography and Geographic Information Science, 36(3):251–265, 2009</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1559/152304009788988314'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <a href='OCEANS2009VIS/OCEANS2009VIS.pdf'><img class='paperimage img img-responsive' src='OCEANS2009VIS/OCEANS2009VIS.png' /></a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='OCEANS2009VIS/OCEANS2009VIS.pdf'>Illustrative Visualization of Hurricane Advisory Information</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, T.J.&nbsp;Jankun-Kelly, and J.&nbsp;Edward Swan II</div>
-                      <div>MTS/IEEE Oceans Conference, 2009</div>
-                      <div>
-                        <a href='OCEANS2009VIS/OCEANS2009VIS.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='OCEANS2009VIS/OCEANS2009VIS-slides.pdf'>slides</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <a href='OCEANS2009USS/OCEANS2009USS.pdf'><img class='paperimage img img-responsive' src='OCEANS2009USS/OCEANS2009USS.png' /></a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='OCEANS2009USS/OCEANS2009USS.pdf'>
-                          Development of a New Unmanned Semi Submersible (USS) Vehicle
-                        </a>
-                      </div>
-                      <div>Art Kleiner, David Alleman, Pete Alleman, and <strong>Chad A.&nbsp;Steed</strong></div>
-                      <div>MTS/IEEE Oceans Conference, 2009</div>
-                      <div>
-                        <a href='OCEANS2009USS/OCEANS2009USS.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='OCEANS2009USS/OCEANS2009USS-slides.pdf'>slides</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1109/VAST.2009.5332586'>
-                        <img class='paperimage img img-responsive' src='VAST2009/VAST2009.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/VAST.2009.5332586'>Guided Analysis of Hurricane Trends using Statistical Processes Integrated with Interactive Parallel Coordinates</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, J.&nbsp;Edward Swan II, T.J.&nbsp;Jankun-Kelly, and Patrick J.&nbsp;Fitzpatrick</div>
-                      <div>IEEE Symposium on Visual Analytics Science and Technology (VAST), 2009</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/VAST.2009.5332586'>pdf</a>&nbsp;&middot;&nbsp;<a href='VAST2009/VAST2009-slides.pdf'>slides</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://geoanalytics.net/GeoVisualAnalytics08/'>
-                        <img class='paperimage img img-responsive' src='GeoVA2008/GeoVA2008.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://geoanalytics.net/GeoVisualAnalytics08/'>North Atlantic Hurricane Trend Analysis using Parallel Coordinates and Statistical Techniques</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Patrick J.&nbsp;Fitzpatrick, T.J.&nbsp;Jankun-Kelly, and J.&nbsp;Edward Swan II</div>
-                      <div>GeoSpatial Visual Analytics Workshop @ GIScience, 2009</div>
-                      <div>
-                        <a href='http://geoanalytics.net/GeoVisualAnalytics08/'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        Environmental Components Integrations and Dissemination (ECID) Study Preliminary Report
-                      </div>
-                      <div>Kevin Shaw, John Sample, and <strong>Chad Steed</strong></div>
-                      <div>NRL Technical Report NRL/FR/7440-09-10,177, 2009</div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        Geophysical Data Base Variable Resolution Version 2: Planning Report
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong> and David W.&nbsp;Harvey</div>
-                      <div>NRL Technical Report NRL/FR/7440-08-10,173, 2009</div>
-
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='VIS2009/VIS2009-paper.pdf'>
-                        <img class='paperimage img img-responsive' src='VIS2009/VIS2009.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='VIS2009/VIS2009-paper.pdf'>Illustrative Visualization of Hurricane Advisory Information</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, T.J.&nbsp;Jankun-Kelly, J.&nbsp;Edward Swan II, and Robert J.&nbsp;Moorhead</div>
-                      <div>IEEE Visualization Conference Posters Compendium, 2009</div>
-                      <div>
-                        <a href='VIS2009/VIS2009-paper.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='VIS2009/VIS2009-poster.pdf'>poster</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' id='2008'>
-                    <div class='col-md-2 col-xs-4'>
-
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        Algorithm for Bathymetry Fusion with Uncertainty Assessment
-                      </div>
-                      <div>Paul Elmore and <strong>Chad A.&nbsp;Steed</strong></div>
-                      <div>NRL Technical Metrics Workshop, 2008</div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        Advanced Visualization Techniques for Undersea Warfare
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong></div>
-                      <div>NRL Technical Metrics Workshop, 2008</div>
-
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='TR162/TR162.pdf'>
-                        <img class='paperimage img img-responsive' src='TR162/TR162.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='TR162/TR162.pdf'>Algorithm Design Study for Bathymetry Fusion--Review of Current State-of-the-Art and Recommended Design Approach</a>
-                      </div>
-                      <div>Paul A.&nbsp;Elmore and <strong>Chad A.&nbsp;Steed</strong></div>
-                      <div>NRL Technical Report NRL/FR/7440-08-10,162, 2008</div>
-                      <div>
-                        <a href='TR162/TR162.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='TR9130/TR9130.pdf'>
-                        <img class='paperimage img img-responsive' src='TR9130/TR9130.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='TR9130/TR9130.pdf'>Visual Analysis of North Atlantic Hurricane Trends Using Parallel Coordinates and Statistical Techniques</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Patrick J.&nbsp;Fitzpatrick, T.J.&nbsp;Jankun-Kelly, and J.&nbsp;Edward Swan II</div>
-                      <div>NRL Technical Report NRL/MR/7440-08-9130, 2008</div>
-                      <div>
-                        <a href='TR9130/TR9130.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='TR9126/TR9126.pdf'>
-                        <img class='paperimage img img-responsive' src='TR9126/TR9126.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='TR9126/TR9126.pdf'>An Interactive Parallel Coordinates Technique Applied to a Tropical Cyclone Climate Analysis</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Patrick Fitzpatrick, T.J.&nbsp;Jankun-Kelly, and J.&nbsp;Edward Swan II</div>
-                      <div>NRL Technical Report NRL/MR/7440-08-9126, 2008</div>
-                      <div>
-                        <a href='TR9126/TR9126.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        AUV Data Assimilation: Requirements, Limitations, and Recommendations
-                      </div>
-                      <div>Michael M.&nbsp;Harris, William E.&nbsp;Avera, and <strong>Chad A.&nbsp;Steed</strong></div>
-                      <div>NRL Technical Report NRL/FR/7440-08-1060, 2008</div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='DISS2008/SteedDISS2008.pdf'>
-                        <img class='paperimage img img-responsive' src='DISS2008/DISS2008.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='DISS2008/SteedDISS2008.pdf'>Development of a Geovisual Analytics Environment using Parallel Coordinates with Applications to Tropical Cyclone Trend Analysis</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong></div>
-                      <div>Ph.D. Dissertation, Mississippi State University, 2008</div>
-                      <div>
-                        <a href='DISS2008/SteedDISS2008.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' id='2007'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='InfoVis2007/InfoVis2007.pdf'>
-                        <img class='paperimage img img-responsive' src='InfoVis2007/InfoVis2007.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='InfoVis2007/InfoVis2007.pdf'>Practical Application of Parallel Coordinates to Hurricane Trend Analysis</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Patrick J.&nbsp;Fitzpatrick, T.J.&nbsp;Jankun-Kelly, Amber N.&nbsp;Yancey, and J.&nbsp;Edward Swan II</div>
-                      <div>IEEE Information Visualization Conference Compendium, 2007</div>
-                      <div>
-                        <a href='InfoVis2007/InfoVis2007.pdf'>pdf</a>&nbsp;&middot;&nbsp;<a href='InfoVis2007/InfoVis2007-poster.pdf'>poster</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' id='2006'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        AN/AQS-20 Environmental Data Collection: End-to-End Demonstration 3, Tactical Sensor to Tactical Decision Aid, June 1 Through 3, 2005
-                      </div>
-                      <div>Michael M.&nbsp;Harris, William E.&nbsp;Avera, John T.&nbsp;Sample, <strong>Chad A.&nbsp;Steed</strong>, Leonard D.&nbsp;Bibee, and Dave Morgerson</div>
-                      <div>NRL Technical Report NRL/FR/7440-06-10,134, 2006</div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        Standard Operating Procedure for the AQS-20 Rapid Transition Project: NAVOCEANO Value Added Processes
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong></div>
-                      <div>NRL Technical Report NRL/MR/7440-06-8936, 2006</div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        SeaBED User's Guide
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Kevyn Malpass, Edward Braithwaite, Michael M.&nbsp;Harris, William E.&nbsp;Avera, and John T.&nbsp;Sample</div>
-                      <div>NRL Technical Report NRL/FR/7440-06-10,128, 2006</div>
-
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' id='2005'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1109/OCEANS.2005.1640057'>
-                        <img class='paperimage img img-responsive' src='OCEANS2005Q20/OCEANS2005Q20.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/OCEANS.2005.1640057'>AQS-20 Sonar Processing Enhancement for Bathymetry Estimation</a>
-                      </div>
-                      <div>Costin Barbu, William E.&nbsp;Avera, Dale Bibee, Michael M.&nbsp;Harris, and <strong>Chad Steed</strong></div>
-                      <div>MTS/IEEE Oceans Conference, 2005</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/OCEANS.2005.1640057'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1109/OCEANS.2005.1639807'>
-                        <img class='paperimage img img-responsive' src='OCEANS2005-2/OCEANS2005-2.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/OCEANS.2005.1639807'>AQS-20 Through-The-Sensor (TTS) Performance Assessment</a>
-                      </div>
-                      <div>Michael Harris, William Avera, <strong>Chad Steed</strong>, John Sample, L.&nbsp;Dale Bibee, Dave Morgerson, Jim Hammack, and Mark Null</div>
-                      <div>MTS/IEEE Oceans Conference, 2005</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/OCEANS.2005.1639807'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1117/12.606327'>
-                        <img class='paperimage img img-responsive' src='DSS2005/DSS2005.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1117/12.606327'>AQS-20 Through-The-Sensor Environmental Data Sharing</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, John Sample, Michael Harris, William Avera, and L.&nbsp;Dale Bibee</div>
-                      <div>SPIE Defense &amp; Security Symposium, 2005</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1117/12.606327'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        AN/AQS-20 Environmental Data Collection Demonstration 2, March 21-25, 2005
-                      </div>
-                      <div>Michael M.&nbsp;Harris, William E.&nbsp;Avera, <strong>Chad A.&nbsp;Steed</strong>, and John T.&nbsp;Sample</div>
-                      <div>NRL Technical NRL/FR/7440-05-10,113, 2005</div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        Through-The-Sensor Determination of AN/AQS-20 Sensor Performance Demonstration 1, December 13 through 17, 2004
-                      </div>
-                      <div>Michael M.&nbsp;Harris, William E.&nbsp;Avera, <strong>Chad A.&nbsp;Steed</strong>, Leonard D.&nbsp;Bibee, Warren T.&nbsp;Wood, William D.&nbsp;Morgerson, and Christopher S.&nbsp;Robinson</div>
-                      <div>NRL Technical Report NRL/FR/7440-05-10,106, 2005</div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' id='2004'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='MINESYM2004/MINESYM2004.pdf'>
-                        <img class='paperimage img img-responsive' src='MINESYM2004/MINESYM2004.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='MINESYM2004/MINESYM2004.pdf'>Environmental Data Collection, Sensor to Decision Aid</a>
-                      </div>
-                      <div>Michael Harris, Will Avera, L.&nbsp;Dale Bibee, <strong>Chad Steed</strong>, John Sample, Mark Null, and Jim Hammack</div>
-                      <div>International Symposium on Technology and the Mine Problem, 2004</div>
-                      <div>
-                        <a href='MINESYM2004/MINESYM2004.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='HPSSA2004/HPSSA2004.pdf'>
-                        <img class='paperimage img img-responsive' src='HPSSA2004/HPSSA2004.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='HPSSA2004/HPSSA2004.pdf'>3D Enhancements for Visualizing Lane Navigation Performance</a>
-                      </div>
-                      <div>Stephanie Myrick and <strong>Chad Steed</strong></div>
-                      <div>Human Performance, Situation Awareness, and Automation Technology Conference, 2004</div>
-                      <div>
-                        <a href='HPSSA2004/HPSSA2004.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        3 Dimensional Scene Reconstruction and Animation using VRML/X3D
-                      </div>
-                      <div>Stephanie Myrick and <strong>Chad Steed</strong></div>
-                      <div>Mississippi Academy of Sciences Annual Meeting, 2004</div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        Results of the Conversion of the OAML SST to the GDBV Format
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong></div>
-                      <div>NRL Technical Report NRL/FR/7440-04-10,083, 2004</div>
-
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        GAIT GDBV Quick Start Guide
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong></div>
-                      <div>NRL Technical Report NRL/MR/7440-04-8772, 2004</div>
-
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' id='2003'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1109/OCEANS.2003.178534'>
-                        <img class='paperimage img img-responsive' src='OCEANS2003/OCEANS2003.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/OCEANS.2003.178534'>Geophysical Data Base Variable Resolution (GDBV): An Object-Oriented Database for Dynamic Geo-acoustic Data Storage</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Kim Koehler, Dave Harvey, and Bruce Northridge</div>
-                      <div>MTS/IEEE Oceans Conference, 2003</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/OCEANS.2003.178534'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href=''>
-                        <img class='paperimage img img-responsive' src='SPAWAR2003/SPAWAR2003.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href=''>Ocean Through The Sensor (TTS) Update</a>
-                      </div>
-                      <div>Kim Koehler, Michael Harris, Dale Bibee, <strong>Chad Steed</strong>, and Dave Bates</div>
-                      <div>SPAWAR PMW-150 Quarterly Newsletter, Dec. 2003</div>
-                      <div>
-                        <a href=''>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='TR052/TR052.pdf'>
-                        <img class='paperimage img img-responsive' src='TR052/TR052.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='TR052/TR052.pdf'>OAML Feathering Algorithm Overview</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong> and William E. Rankin</div>
-                      <div>NRL Technical Report NRL/FR/7440-03-10,052, 2003</div>
-                      <div>
-                        <a href='TR052/TR052.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='TR8295/TR8295.pdf'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='TR8295/TR8295.pdf'>Analysis of Global and Selected Geographic Areas with Depths Between 50 and 100 Feet</a>
-                      </div>
-                      <div>John T.&nbsp;Sample, <strong>Chad A.&nbsp;Steed</strong>, Frank P.&nbsp;McCreedy, and Michael M.&nbsp;Harris</div>
-                      <div>NRL Technical Report NRL/MR/7440-03-8295, 2003</div>
-                      <div>
-                        <a href='TR8295/TR8295.pdf'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row' id='2002'>
-                    <div class='col-md-2 col-xs-4'>
-                      <a href='http://dx.doi.org/10.1109/OCEANS.2002.1192087'>
-                        <img class='paperimage img img-responsive' src='OCEANS2002/OCEANS2002.png' />
-                      </a>
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/OCEANS.2002.1192087'>VGRID: A Generic, Dynamic HDF5 Storage Model for Georeferenced Grid Data</a>
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Kim Koehler, and James E.&nbsp;Braud</div>
-                      <div>MTS/IEEE Oceans Conference, 2002</div>
-                      <div>
-                        <a href='http://dx.doi.org/10.1109/OCEANS.2002.1192087'>pdf</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        A Method for Overcoming Discontinuity Between Neighboring UTM Zone Grids
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong> and Hillary Mesick</div>
-                      <div>Mississippi Academy of Sciences Annual Meeting, 2002</div>
-
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        A Flat Earth Model for DBDB-V
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong> and James E.&nbsp;Braud</div>
-                      <div>NRL Technical Report NRL/FR/7440-02-10,025, 2002</div>
-
-                    </div>
-                  </div>
-
-                  <div class='row paper-row'>
-                    <div class='col-md-2 col-xs-4'>
-                        <img class='paperimage img img-responsive' src='default-thumbnail.png' />
-                    </div>
-                    <div class='col-md-10 col-xs-8'>
-                      <div>
-                        PUMA-TEDS Technical Execution Plan
-                      </div>
-                      <div><strong>Chad A.&nbsp;Steed</strong>, Jerry Landrum, and Christopher Moreau</div>
-                      <div>NRL Technical Report NRL/FR/7440-02-10,003, 2002</div>
-
-                    </div>
-                  </div>
-
-                </div>
-
-            </div> <!-- /col-md-9 -->
-
-        </div> <!-- /row -->
-    </div> <!-- /container -->
-
-    <center>
-      <p>&copy; Chad A. Steed
-      <script type="text/javascript">
-        document.write(new Date().getFullYear());
-      </script>
-      </p>
-    </center>
-
-    <!-- ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript">
+  </div>
+</div>
+
+<div id="main">
+  <!-- <div id="navigate">
+    <h1><a class="nav" href="../index.html">about</a> &nbsp;&middot;&nbsp;
+    <a class="nav" href="../projects/index.html">projects</a> &nbsp;&middot;&nbsp;
+    publications &nbsp;&middot;&nbsp;
+    <a class="nav" href="../art/index.html">art</a> &nbsp;&middot;&nbsp;
+    <a class="nav" href="../talks/index.html">talks</a> &nbsp;&middot;&nbsp;
+    <a class="nav" href="../bio/index.html">bio</a> &nbsp;&middot;&nbsp;
+    <a class="nav" href="https://github.com/csteed/vitae/raw/master/chadsteed_cv.pdf" onclick="var that=this;_gaq.push(['_trackEvent','Download CV','PDF',this.href]);setTimeout(function(){location.href=that.href;},200);return false;">vita</a>
+    </h1>
+  </div> -->
+
+  <div id="project_group_first">
+<div id="project_group">
+  <h1> journal papers </h1>
+
+  <div id="pub">
+      <p><a class="nav"
+      href="http://doi.org/10.3389/fpubh.2015.00182">J7.&nbsp;&nbsp; <b>Discovering Multi-scale Co-occurence Patterns of Asthma and Influenza with Oak Ridge Bio-surveillance Toolkit.</b> Arvind Ramanathan, Laura L. Pullum, Tanner C. Hobson, Christopher G. Stahl, Chad A. Steed, Shannon P. Quinn, Chakra S. Chennubhotla, and Silvia Valkova. <i>Frontiers in Public Health, 3(2015):182, Oct. 2015.</i></a> </p>
+  </div>
+
+  <div id="pub">
+      <p><a class="nav"
+      href="http://doi.org/10.1186/s40679-015-0006-6">J6.&nbsp;&nbsp; <b>Big Data and Deep Data in Scanning and Electron Microscopies: Deriving Functionality from Multidimensional Data Sets.</b> Alex Belianinov, Rama K. Vasudevan, Evgheni Strelcov, Chad Steed, Sang Mo Yang, Alexander Tselev, Stephen Jesse, Michael Biegalski, Galen Shipman, Christopher Symons, Albina Borisevich, Richard Archibald, and Sergei Kalinin. <i>Advanced Structural and Chemical Imaging, 1(6):1-25, 2015.</i></a> </p>
+  </div>
+
+  <div id="pub">
+      <p><a class="nav"
+      href="http://doi.org/10.1016/j.envsoft.2014.01.015">J5.&nbsp;&nbsp; <b>A Functional Unit Testing Platform for the Community Land Model.</b>  Dali Wang, Yang Xu, Peter Thornton, Anthony King, Chad A. Steed, Lianhong Gu, and Joseph Schuchart. <i>Environmental Modeling and Software, 55:25–31, 2014.</i></a> </p>
+  </div>
+
+    <div id="pub">
+      <p><a class="nav"
+      href="http://dx.doi.org/10.1016/j.cageo.2013.07.025">J4.&nbsp;&nbsp; <b>Big Data Visual Analytics for Exploratory Earth System Simulation Analysis.</b> Chad A. Steed, Daniel M. Ricciuto, Galen Shipman, Brian Smith, Peter E. Thornton, Dali Wang, and Dean N. Williams. <i>Computers &amp; Geosciences, 61:71-82, 2013.</i></a> &nbsp;<b><font color="#e47701">CAGEO 2013 Best Paper Award.</font></b></p>
+  </div>
+
+    <div id="pub">
+      <p><a class="nav"
+      href="http://doi.org/10.1109/MC.2013.119">J3.&nbsp;&nbsp; <b>The Ultra-scale Visualization Climate data Analysis Tools (UV-CDAT): Data Analysis and Visualization for Geoscience Data.</b> Dean N. Williams, Timo Bremer, Charles Doutriaux, John Patchett, Sean Williams, Galen Shipman, Ross Miller, David R. Pugmire, Brian Smith, Chad A. Steed, E. Wes Bethel, Hank Childs, Harinarayan Krishnan, Prabhat, Claudio T. Silva, Emanuele Santos, David Koop, Tommy Ellqvist, Jorge Poco, Berk Geveci, Aashish Chaudhary, Andy Bauer, Alexander Pletzer, Dave Kindig, Gerald L. Potter, and Thomas P. Maxwell. <i>IEEE Computer, 46(9):68–76, 2013.</i></a> </p>
+  </div>
+
+    <div id="pub">
+      <p><a class="nav"
+      href="http://doi.org/10.1016/j.cageo.2008.11.004">J2.&nbsp;&nbsp; <b>An Interactive Parallel Coordinates Technique Applied to a Tropical Cyclone Climate Analysis.</b> Chad A. Steed, Patrick J. Fitzpatrick, T.J. Jankun-Kelly, Amber N. Yancey, and J. Edward Swan II. <i>Computers &amp; Geosciences, 35(7):1529–1539, 2009.</i></a> </p>
+  </div>
+
+  <div id="pub">
+      <p><a class="nav"
+      href="http://doi.org/10.1559/152304009788988314">J1.&nbsp;&nbsp; <b>Tropical Cyclone Trend Analysis using Enhanced Parallel Coordinates and Statistical Analytics.</b> Chad A. Steed, Patrick J. Fitzpatrick, J. Edward Swan II, and T.J. Jankun-Kelly. <i>Cartography and Geographic Information Science, 36(3):251–265, 2009.</i></a> </p>
+  </div>
+</div>
+
+<div id="project_group">
+  <h1> conference papers </h1>
+  <div id="pub">
+      <p><a class="nav"
+      href="http://doi.org/10.1016/j.procs.2016.05.344">C23.&nbsp;&nbsp; <b>In Situ Data Infrastructure for Scientific Unit Testing Platform.</b> Dali Wang, Zhuo Yao, Yulu Xu, Chad A. Steed, Scott Atchley, Jamison Daniel, Brian Smith. <i>Proceedings of the International Conference on Computational Science, pp. 587–598, June 2016.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p>C22.&nbsp;&nbsp; <b>Tracking Alcohol and Marijuana Usage and Behaviors from Social Media using Oak Ridge Bio-Surveillance Toolkit.</b> Arvind Ramanathan, Shannon Quinn, Laura Pullum, and Chad A. Steed. <i>Proceedings of the IEEE International Conference on Biomedical and Health Informatics, Feb. 2016.</i></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav"
+    href="http://doi.org/10.1109/BigData.2015.7363826">C21.&nbsp;&nbsp; <b>Matisse: A Visual Analytics System for Exploring Emotion Trends in Social Media Text Streams.</b> Chad A. Steed, Margaret Drouhard, Justin Beaver, Joshua Pyle, and Paul L. Bogen II. <i>Proceedings of the IEEE International Conference on Big Data (IEEE Big Data 2015), pp. 807–814, Oct. 2015.</i></a> </p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="http://doi.org/10.1109/BigData.2014.7004255">C20.&nbsp;&nbsp; <b>Web-based Visual Analytics for Extreme Scale Climate Science.</b> Chad A. Steed, Katherine J. Evans, John F. Harney, Brian C. Jewell, Galen Shipman, Brian E. Smith, Peter E. Thornton, and Dean N. Williams. <i>Proceedings of the IEEE International Conference on Big Data (IEEE Big Data 2014), pp. 383–392, Oct. 2014.</i></a> </p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="http://doi.org/10.1007/978-3-642-39640-3_36">C19.&nbsp;&nbsp; <b>Observing Community Resiliency in Social Media.</b> Robert Patton, Chad A. Steed, Chris G. Stahl, and Jim N. Treadwell. <i>Proceedings of the International Conference on Computational Science and Applications (ICCS A 2013), pp. 491–501, June 2013.</i></a> </p>
+  </div>
+
+  <div id="pub">
+      <p><a class="nav"
+      href="http://doi.org/10.1016/j.procs.2013.05.408">C18.&nbsp;&nbsp; <b>ParCAT: Parallel Climate Analysis Toolkit.</b> Brian Smith, Daniel M. Ricciuto, Peter E. Thornton, Galen Shipman, Chad Steed, and Dean Williams. <i>Proceedings of the International Conference on Computational Science, pp. 2367–2375, June 2013.</i></a> </p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav"
+    href="http://doi.org/10.1109/BioMedCom.2012.18">C17.&nbsp;&nbsp; <b>Verification of Compartmental Epidemiological Models using Metamorphic Testing, Model Checking and Visual Analytics.</b> Arvind Ramanathan, Chad A. Steed, and Laura L. Pullum.  <i>Proceedings of the ASE/IEEE International Conference on BioMedical Computing (BioMedCom), Dec. 2012.</i></a> </p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./AHFE2012/AHFE2012.pdf">C16.&nbsp;&nbsp; <b>A New Collaborative Tool for Visually Understanding National Health Indicators.</b> Songhua Xu, Brian Jewell, Chad Steed, and Jack Schryver.  <i>Proceedings of the International Conference on Applied Human Factors and Ergonomics, July 2012.</i></a> </p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="http://doi.org/10.1016/j.procs.2012.04.094">C15.&nbsp;&nbsp; <b>Practical Application of Parallel Coordinates for Climate Model Analysis.</b> Chad A. Steed, Galen Shipman, Peter Thornton, Daniel Ricciuto, David Erickson, and Marcia Branstetter.  <i>Proceedings of the International Conference on Computational Science, pp. 877–886, June 2012.</i></a> </p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="http://doi.org/10.1117/12.904904">C14.&nbsp;&nbsp; <b>Guided Text Analysis Using Adaptive Visual Analytics.</b> Chad A. Steed, Christopher Symons, Frank DeNap, and Thomas E. Potok.  <i>Proceedings of the Visualization and Data Analysis Conference, Jan. 2012.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav"
+        href="http://doi.org/10.1109/IWCMC.2011.5982725">C13.&nbsp;&nbsp; <b>Hierarchical Clustering and Visualization of Aggregate Cyber Data.</b> Robert M. Patton, Justin M. Beaver, Chad A. Steed, Thomas E. Potok, and Jim N. Treadwell. <i>Proceedings of the International Wireless Communications and Mobile Computing Conference, pp. 1287–1291, 2011.</i> </a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="http://doi.org/10.1117/12.883487">C12.&nbsp;&nbsp; <b>Visualization Techniques for Computer Network Defense.</b> Justin M. Beaver, Chad A. Steed, Robert M. Patton, Xiaohui Cui, and Matthew Schultz. <i>Proceedings of the Defense &amps; Security Symposium, vol. 8019, pp. 1–9, 2011.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="http://doi.org/10.1109/VAST.2009.5332586">C11.&nbsp;&nbsp; <b>Guided Analysis of Hurricane Trends using Statistical Processes Integrated with Interactive Parallel Coordinates.</b> Chad A. Steed, J. Edward Swan II, T.J. Jankun-Kelly, and Patrick J. Fitzpatrick.  <i>Proceedings of Symposium on Visual Analytics Science and Technology (VAST), pp. 19–26, Oct. 2009.</i></a>  &nbsp;<b><font color="#e47701">Proceedings cover page featured a figure from this paper.</font></b></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./OCEANS2009USS/OCEANS2009USS.pdf">C10.&nbsp;&nbsp; <b>Development of a New Unmanned Semi Submersible (USS) Vehicle.</b> Art Kleiner, David Alleman, Pete Alleman, and Chad A. Steed.  <i>Proceedings of MTS/IEEE Oceans 2009, pp. 1–6, 2009.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p>C9.&nbsp;&nbsp; <b>Development of a Flexible, Geophysical Database using HDF5.</b> Chad A. Steed, Chiu-Fu “Tiger” Cheng, and David W. Harvey.  <i> Proceedings of MTS/IEEE Oceans 2009, pp. 1–6, Oct. 2009.</i></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./OCEANS2009VIS/OCEANS2009VIS.pdf">C8.&nbsp;&nbsp; <b>Illustrative Visualization of Hurricane Advisory Information.</b> Chad A. Steed, T.J. Jankun-Kelly, and J. Edward Swan II.  <i>Proceedings of MTS/IEEE Oceans 2009, pp. 1–9, Oct. 2009.</i></a> </p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="http://doi.org/10.1109/OCEANS.2005.1640057">C7.&nbsp;&nbsp; <b>AQS-20 Sonar Processing Enhancement for Bathymetry Estimation.</b> Costin Barbu, William E. Avera, Dale Bibee, Michael M. Harris, and Chad Steed. <i>Proceedings of MTS/IEEE Oceans 2005, pp. 2025–2029, Sep. 2005.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="http://doi.org/10.1109/OCEANS.2005.1639807">C6.&nbsp;&nbsp; <b>AQS-20 Through-The-Sensor (TTS) Performance Assessment.</b> Michael Harris, William Avera, Chad Steed, John Sample, L. Dale Bibee, Dave Morgerson, Jim Hammack, and Mark Null.  <i>Proceedings of MTS/IEEE Oceans 2005, pp. 460–465, Sep. 2005.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="http://doi.org/10.1117/12.606327">C5.&nbsp;&nbsp; <b>AQS-20 Through-The-Sensor Environmental Data Sharing.</b> Chad A. Steed, John Sample, Michael Harris, William Avera, and L. Dale Bibee.  <i>Proceedings of the Defense &amp; Security Symposium, p. 32–41, Mar. 2005.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./MINESYM2004/MINESYM2004.pdf">C4.&nbsp;&nbsp; <b>Environmental Data Collection, Sensor to Decision Aid.</b> Michael Harris, Will Avera, L. Dale Bibee, Chad Steed, John Sample, Mark Null, and Jim Hammack.  <i>International Symposium on Technology and the Mine Problem, pp. pp. 818-823, May 2004.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./HPSSA2004/HPSSA2004.pdf">C3.&nbsp;&nbsp; <b>3D Enhancements for Visualizing Lane Navigation Performance.</b> Stephanie Myrick and Chad Steed. <i>Proceedings of the Human Performance, Situation Awareness, and Automation Technology Conference, pp. 248-252, Mar. 2004.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="http://dx.doi.org/10.1109/OCEANS.2003.178534">C2.&nbsp;&nbsp; <b>Geophysical Data Base Variable Resolution (GDBV): An Object-Oriented Database for Dynamic Geo-acoustic Data Storage.</b> Chad A. Steed, Kim Koehler, Dave Harvey, and Bruce Northridge.  <i>Proceedings of MTS/IEEE Oceans 2003, pp. 132–140, Sep. 2003.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="http://dx.doi.org/10.1109/OCEANS.2002.1192087">C1.&nbsp;&nbsp; <b>VGRID: A Generic, Dynamic HDF5 Stor- age Model for Georeferenced Grid Data.</b> Chad A. Steed, Kim Koehler, and James E. Braud.  <i>Proceedings of MTS/IEEE Oceans 2002, pp. 900-907, Oct. 2002.</i></a></p>
+  </div>
+</div>
+
+<div id="project_group">
+  <h1> book chapters </h1>
+  <div id="pub">
+    <p>B2.&nbsp;&nbsp; <b>Interactive Data Visualization.</b> Chad A. Steed. <i>In Data Analytics for Intelligent Transportation, Elsevier, 30pp. In Press.</i></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="http://doi.org/10.4018/978-1-4666-4309-3.ch002">B1.&nbsp;&nbsp; <b>A Visual Analytics Approach for Correlation, Classification, and Regression Analysis.</b> Chad A. Steed, J. Edward Swan II, Patrick J. Fitzpatrick, and T.J. Jankun-Kelly. <i>Chapter 2 in Innovative Approaches of Data Visualization and Visual Analytics, pp. 22-45, 2013.</i></a></p>
+  </div>
+</div>
+
+<div id="project_group">
+  <h1> abstracts </h1>
+  <div id="pub">
+    <p><a class="nav"
+        href="./VDS2016/SteedVDS2016.pdf">A8.&nbsp;&nbsp; <b>Advancing Additive Manufacturing Through Visual Data Science.</b> Chad A. Steed, Ryan Dehoff, William Halsey, Sean Yoder, Vincent Paquit, and Sarah Powers.  <i>The Symposium on Visualization in Data Science at IEEE VIS 2016, pp. 1–2, Oct. 2016.</i> </a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav"
+        href="./LDAV2016/LDAV2016-Abstract.pdf">A7.&nbsp;&nbsp; <b>Segmented Time Series Visualization Tool for Additive Manufacturing.</b> William Halsey, Chad A. Steed, Ryan Dehoff, Vincent Paquit, and Sean Yoder.  <i>IEEE Large Data Analysis and Visualization (LDAV) Symposium Posters Compendium, pp. 1–2, Oct. 2016.</i> </a></p>
+  </div>
+
+  <div id="pub">
+    <p>A6.&nbsp;&nbsp; <b>ParCAT: A Parallel Climate Analysis Toolkit.</b> Blake Haugen, Brian Smith, Chad A. Steed, Daniel Ricciuto, Peter E. Thornton, and Galen Shipman. <i>AGU 2012 Fall Meeting, Dec. 2012.</i></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav"
+      href="./InfoVis2012/InfoVis2012-Paper.pdf">A5.&nbsp;&nbsp; <b>Practical Web Based Visualization for Comparative Energy Usage Analysis.</b> Christopher Maness, Chad A. Steed, and Olufemi Omitaomu.  <i>IEEE Visualization Conference Compendium, pp. 1–2.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p>A4.&nbsp;&nbsp; <b>Scale Dependency in Dynamic Downscaling of Extreme Climate Events over Complex Topography.</b> David J. Erickson, Auroop R. Ganguly, Robert James Oglesby, Evan A. Kodra, Debasish Das, Anthony W. King, Cindy Hays, Chad Steed, Robert Patton, and Chris Lenhardt.  <i>AGU 2011 Fall Meeting, Dec. 2011.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>A3.&nbsp;&nbsp; <b>Scale Dependency in Dynamic Downscaling of Extreme Climate Events Over Complex Topography.</b> Debasish Das, Evan Kodra, Karsten Steinhaeuser, Shih-Chieh Kao, Auroop R. Ganguly, Marcia L. Branstetter, David J. Erickson, Raymond Flanery, Maria Martinez Gonzalez, Cynthia Hays, Anthony W. King, Christopher Lenhardt, Robert Oglesby, Robert M. Patton, Clinton M. Rowe, Alexander Sorokine, Chad Steed. <i>AGU Fall Meeting Poster Session, Dec. 2010.</i></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./VIS2009/VIS2009-paper.pdf">A2.&nbsp;&nbsp; <b>Illustrative Visualization of Hurricane Advisory Information.</b> Chad A. Steed, T.J. Jankun-Kelly, J. Edward Swan II, and Robert J. Moorhead. <i>IEEE Visualization Conference Compendium, pp. 1-2, Oct. 2009.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./InfoVis2007/InfoVis2007.pdf">A1.&nbsp;&nbsp; <b>Practical Application of Parallel Coordinates to Hurricane Trend Analysis.</b> Chad A. Steed, Patrick J. Fitzpatrick, T.J. Jankun-Kelly, Amber N. Yancey, and J. Edward Swan II. <i>IEEE Information Visualization Conference Compendium, pp. 4-5, Oct. 2007.</i></a></p>
+  </div>
+</div>
+
+<div id="project_group">
+  <h1> workshop and position papers </h1>
+  <div id="pub">
+    <p>W19.&nbsp;&nbsp; <b>Application of Data Analytics to Additive Manufacturing.</b> Sarah Powers, Ryan Dehoff, Vincent Paquit, Chad A. Steed, and Derek Kistler.  <i>Proceedings of the INFORMS Workshop on Data Mining and Decision Analytics, Nov. 2016.</i></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./IA2016/IA2016.pdf">W18.&nbsp;&nbsp; <b>Immersive Visual Analytics for Transformative Neutron Scattering Science.</b> Chad A. Steed, Jamison Daniel, Margaret Drouhard, Thomas Proffen, and Steven Hahn. <i>Proceedings of the Workshop on Immersive Analytics at IEEE Virtual Reality 2016, Mar. 2016.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./BHI/quinn_bhi_2016.pdf">W17.&nbsp;&nbsp; <b>Dr. Twitter: The Logistics of Practical Disease Surveillance using Social Media.</b> Shannon Quinn, Arvind Ramanathan, Laura Pullum, and Chad A. Steed.  <i>Proceedings of the Web-based Public Health Informatics Workshop at IEEE BHI 2016, Feb. 2016.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="http://doi.org/10.1145/2835238.2835240">W16.&nbsp;&nbsp; <b>Visualizing Execution Traces with Task Dependencies.</b> Blake Haugen, Stephen Richmond, Jakub Kurzak, Chad A. Steed, and Jack Dongarra. <i>Proceedings of the Workshop on Visual Performance Analysis at SC15, Nov. 2015.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="http://doi.org/10.1109/BigData.2015.7364040">W15.&nbsp;&nbsp; <b>Immersive Visualization for Materials Science Data Analysis using the Oculus Rift.</b> Margaret Drouhard, Chad A.&nbsp;Steed, Steven Hahn, Thomas Proffen, Jamison Daniel, and Michael Matheson.  <i>Proceedings of the Workshop on Advances in Software and Hardware for Big Data to Knowledge Discovery at IEEE Big Data 2015, pp. 2453–2461, Oct. 2015.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./TEXTVIS2015/Steed-TextVis2015.pdf">W14.&nbsp;&nbsp; <b>Text Stream Trend Analysis using Multiscale Visual Analytics with Applications to Social Media Systems.</b> Chad A. Steed, Justin Beaver, Paul L. Bogen II, Margaret Drouhard, and Joshua Pyle.  <i>Proceedings of the ACM IUI Visual Text Analytics Workshop, Mar. 2015.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./SC13/Steed-SC13.pdf">W13.&nbsp;&nbsp; <b>Extreme Scale Visual Analytics.</b> Chad A. Steed, Thomas E. Potok, Laura L. Pullum, Arvind Ramanathan, Galen Shipman, and Peter E. Thornton.  <i>Proceedings of the Workshop on Petascale Data Analytics at SC13, Nov. 2013.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./VAST13/ORBIT-VAST13.pdf">W12.&nbsp;&nbsp; <b>Oak Ridge Bio-surveillance Toolkit.</b> Arvind Ramanathan, Laura L. Pullum, Chad A. Steed, Shannon S. Quinn, and Chakra S. Chennubhotla.  <i>Proceedings of IEEE VAST Workshop on Public Health’s Wicked Problems: Can InfoVis Save Lives?, Oct. 2013.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./TEXTVIS13/Ramanathan-TextVis2013">W11.&nbsp;&nbsp; <b>Integrating Heterogeneous Healthcare Datasets and Visual Analytics for Disease Bio-surveillance and Dynamics.</b> Arvind Ramanathan, Laura L. Pullum, Chad A. Steed, Shannon S. Quinn, Chakra S. Chennubhotla, and Tara Parker. <i>Proceedings of the Interactive Visual Text Analytics Workshop, Oct. 2013.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p>W10.&nbsp;&nbsp; <b>A Pilot Study on Functional Unit Testing for Community Land Model.</b> Dali Wang, Yang Xu, Peter Thornton, Anthony King, and Chad A. Steed. <i>Proceedings of the Computational Data Analytics Workshop (CDAW-13), Oct. 2013.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>W9.&nbsp;&nbsp; <b>Visualizing Community Resilience Metrics from Twitter Data.</b> Robert Patton, Chad A. Steed, Chris Stahl. <i>The Workshop on Social Media Visualization (ICWSM-13), Jul. 2013.</i></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./TEXTVIS2012/steed-etal-ivta-2012.pdf/">W8.&nbsp;&nbsp; <b>Interactive Visual Analysis of High Throughput Text Streams.</b>Chad A. Steed, Thomas E. Potok, Robert M. Patton, John R. Goodall, Christopher Maness, James Senter. <i> Proceedings of the Interactive Visual Text Analytics Workshop at VIS2012, Oct. 2012.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="http://geoanalytics.net/GeoVA(t)2012/">W7.&nbsp;&nbsp; <b>An Integrated Geovisual Analytics Framework for Analysis of Energy Consumption Data and Renewable Energy Potentials.</b> Olufemi A. Omitaomu, Christopher S. Maness, Ian S. Kramer, Jeffrey B. Kodysh, Budhendra L. Bhaduri, Chad A. Steed, Rajasekar Karthik, Philip J. Nugent, Aaron T. Myers. <i>Proceedings of the GeoSpatial Visual Analytics Workshop at GIScience, Sep. 2012.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./GEOVA08/Steed-GEOVA08.pdf">W6.&nbsp;&nbsp; <b>North Atlantic Hurricane Trend Analysis using Parallel Coordinates and Statistical Techniques.</b> Chad A. Steed, Patrick J. Fitzpatrick, T.J. Jankun-Kelly, and J. Edward Swan II. <i>Proceedings of the GeoSpatial Visual Analytics Workshop, pp. 1-4, Sep. 2008.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p>W5.&nbsp;&nbsp; <b>Algorithm for Bathymetry Fusion with Uncertainty Assessment.</b> Paul Elmore and Chad A. Steed. <i>Proceedings of the NRL Technical Metrics Workshop, May 2008.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>W4.&nbsp;&nbsp; <b>Advanced Visualization Techniques for Undersea Warfare.</b> Chad A. Steed. <i>Proceedings of the NRL Technical Metrics Workshop, May 2008.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>W3.&nbsp;&nbsp; <b>3-Dimensional Scene Reconstruction and Animation using VRML/X3D.</b> Stephanie Myrick and Chad Steed.  <i>Proceedings of Mississippi Academy of Sciences Annual Meeting, Feb. 2004.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>W2.&nbsp;&nbsp; <b>Ocean Through The Sensor (TTS) Update.</b> Kim Koehler, Michael Harris, Dale Bibee, Chad Steed, and Dave Bates.  <i>SPAWAR PMW-150 Quarterly Newsletter, pp. 1–-11, Space and Naval Warfare Command, Dec. 2003.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>W1.&nbsp;&nbsp; <b>A Method for Overcoming Discontinuity Between Neighboring UTM Zone Grids.</b> Chad A.&nbsp;Steed and Hillary Mesick.  <i>Proceedings of Mississippi Academy of Sciences Annual Meeting, Feb. 2002.</i></p>
+  </div>
+</div>
+
+<div id="project_group">
+  <h1> dissertation </h1>
+  <div id="pub">
+    <p><a class="nav" href="./DISS2008/SteedDISS2008.pdf">D1.&nbsp;&nbsp; <b>Development of a Geovisual Analytics Environment using Parallel Coordinates with Applications to Tropical Cyclone Trend Analysis.</b> Chad A.&nbsp;Steed. <i>PhD Dissertation, Computer Science and Engineering Department, Mississippi State University, 221 pp., Dec. 2008.</i></a></p>
+  </div>
+</div>
+
+<div id="project_group">
+  <h1> patents </h1>
+  <div id="pub">
+    <p>P3.&nbsp;&nbsp; <b>Interactive Visual Analytics for Situational Awareness of Social Media.</b> Chad A. Steed, Thomas E. Potok, Robert Patton, Paul Bogen, and Christopher Symons. <i>Pub. No. US20150113018 A1, Apr. 23, 2015.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>P2.&nbsp;&nbsp; <b>Method and System to Discover and Recommend Interesting Documents.</b> Thomas E. Potok, Chad A. Steed, Robert Patton. <i>Pub. No. US 2014/0032539 A1, Jan. 30, 2014.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>P1.&nbsp;&nbsp; <b>Information Assisted Visual Interface, System, and Method for Identifying and Quantifying Multivariate Associations.</b> Chad A. Steed, J. Edward Swan II, T.J. Jankun-Kelly, and Patrick J. Fitzpatrick.  <i>Pub. No. US8346682 B2, Jan. 1, 2013.</i></p>
+  </div>
+</div>
+
+<div id="project_group">
+  <h1> technical reports </h1>
+
+  <div id="pub">
+    <p><a class="nav" href="./TR393/Steed-etal-Falcon-TM2016_393.pdf">T25.&nbsp;&nbsp; <b>Falcon: A Temporal Visual Analytics System Applied to the Analysis of 3D Printer Log Data.</b> Chad A. Steed, Ryan Dehoff, William Halsey, Sean Yoder, Vincent Paquit, and Sarah Powers.  <i>ORNL Technical Report, ORNL/TM-2016/393, Oak Ridge National Laboratory, Aug. 2016. 25 pp.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p>T24.&nbsp;&nbsp; <b>Ultrascale Visualization Climate Data Analysis Tools.</b> Dean N. Williams, Andrew Bauer, Aashish Chaudhary, Berk Geveci, Harinarayan Krishnan, David Bader, Timo Bremer, Charles Doutriaux, Daniel Fedor-Thurman, Matthew Harris, Elo Leung, Renata McCoy, James Ahrens, Curt Canada, Phil Jones, Boonthanome Nouanesengsy, John Patchett, Sean Williams, Thomas Maxwell, Gerald Potter, Cecelia DeLuca, Ryan O’Kuinghttons, Robert Oehmke, David Pugmire, Galen Shipman, Brian Smith, Chad Steed, Ben Burnett, Aritra Dasgupta, Tommy Ellqvist, David Koop, Emanuele Marques, Jorge Poco, Remi Rampin, Claudio Silva, Huy Vo, David Kindig, Alexander Pletzer, Cameron Christensen, Sidharth Kumar, Valerio Pascucci, Giorgio Scorzelli, Brian Summa. <i>LLNL Technical Report, LLNL-TR-643624, Lawrence Livermore National Laboratory, Sep. 2013. 96 pp.</i></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./TR-GRYFFIN/SteedGryffinTR.pdf">T23.&nbsp;&nbsp; <b>Guided Text Search Using Adaptive Visual Analytics.</b> Chad A. Steed, Christopher T. Symons, James K. Senter, and Frank A. DeNap.  <i>ORNL Technical Report, ORNL/TM-2012/479, Oak Ridge National Laboratory, Oct. 2012. 20 pp.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p>T22.&nbsp;&nbsp; <b>A Visual Analytics Approach for Correlation, Classification, and Regression Analysis.</b> Chad A. Steed, J. Edward Swan II, Patrick J. Fitzpatrick, and T.J. Jankun-Kelly. <i>ORNL Technical Report, ORNL/TM-2012/68, Oak Ridge National Laboratory, Feb. 2012. 30 pp.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>T21.&nbsp;&nbsp; <b>Massively Parallel Algorithms for Scalable Exascale Analysis.</b> Yu Jiao, Erik Ferragut, Sudharshan Vazhkudai, Stuart Campbell, Mark Hagen, Stephen Miller, Christopher Griffin, and Chad A. Steed.  <i>ORNL LDRD Report 31964, Oak Ridge National Laboratory, Oct. 2011. 2 pp.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>T20.&nbsp;&nbsp; <b>Under Sea Warfare Visual Analytics: Fiscal Year 2010 Prototype System Report.</b> Chad A. Steed, Jeffrey Russell, and J. Paquin Fabre.  <i>Memorandum Report, NRL/MR/7440–10-9285, U.S. Naval Research Laboratory, Nov. 2010. 13 pp.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>T19.&nbsp;&nbsp; <b>Geophysical Data Base Variable Resolution Version 2: Final Design Report.</b> Chad A. Steed, Chiu-Fu "Tiger" Cheng, and David W. Harvey.  <i>Memorandum Report, NRL/MR/7440–09-9229, U.S. Naval Research Laboratory, April 2010. 16 pp.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>T18.&nbsp;&nbsp; <b>Environmental Components Integrations and Dissemination (ECID) Study Preliminary Report.</b> Kevin Shaw, John Sample, and Chad Steed. <i>Formal Report, NRL/FR/7440–09-10,177, U.S. Naval Research Laboratory, Dec. 2009. 30 pp.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>T17.&nbsp;&nbsp; <b>Geophysical Data Base Variable Resolution Version 2: Planning Report.</b> Chad A. Steed and David W. Harvey. <i>Formal Report, NRL/FR/7440–08-10,173, U.S. Naval Research Laboratory, Jan. 2009. 12 pp.</i></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./TR162/Elmore-TR162.pdf">T16.&nbsp;&nbsp; <b>Algorithm Design Study for Bathymetry Fusion: Review of Current State-of-the-Art and Recommended Design Approach.</b> Paul A. Elmore and Chad A. Steed. <i>Formal Report, NRL/FR/7440–08-10,162, U.S. Naval Research Laboratory, Oct. 2008. 26 pp.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./TR9130/Steed-TR9130.pdf">T15.&nbsp;&nbsp; <b>Visual Analysis of North Atlantic Hurricane Trends Using Parallel Coordinates and Statistical Techniques.</b> Chad A. Steed, Patrick J. Fitzpatrick, T.J. Jankun-Kelly, and J. Edward Swan II. <i>Memorandum Report, NRL/MR/7440–08-9130, U.S. Naval Research Laboratory, Jul. 2008. 18 pp.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./TR9126/Steed-TR9126.pdf">T14.&nbsp;&nbsp; <b>An Interactive Parallel Coordinates Technique Applied to a Tropical Cyclone Climate Analysis.</b> Chad A. Steed, Patrick Fitzpatrick, T.J. Jankun-Kelly, and J. Edward Swan II.  <i>Memorandum Report, NRL/MR/7440–08-9126, U.S. Naval Research Laboratory, Jun. 2008. 25 pp.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p>T13.&nbsp;&nbsp; <b>AUV Data Assimilation: Requirements, Limitations, and Recommendations.</b> Michael M. Harris, William E. Avera, and Chad A. Steed. <i>Formal Report, NRL/FR/7440–08-1060, U.S. Naval Research Laboratory, May 2008. 18 pp.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>T12.&nbsp;&nbsp; <b>AN/AQS-20 Environmental Data Collection: End-to-End Demonstration 3, Tactical Sensor to Tactical Decision Aid, June 1 Through 3, 2005.</b> Michael M. Harris, William E. Avera, John T. Sample, Chad A. Steed, Leonard D. Bibee, and Dave Morgerson. <i>Formal Report, NRL/FR/7440–06-10,134, U.S. Naval Research Laboratory, Jul. 2006. 66 pp.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>T11.&nbsp;&nbsp; <b>Standard Operating Procedure for the AQS-20 Rapid Transition Project: NAVOCEANO Value Added Processes.</b> Chad A. Steed. <i>Memorandum Report NRL/MR/7440–06-8936, U.S. Naval Research Laboratory, Mar. 2006. 7 pp.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>T10.&nbsp;&nbsp; <b>SeaBED User’s Guide.</b> Chad A. Steed, Kevyn Malpass, Edward Braithwaite, Michael M. Harris, William E. Avera, and John T. Sample. <i>Formal Report, NRL/FR/7440–06-10,128, U.S. Naval Research Laboratory, Mar. 2006. 50 pp.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>T9.&nbsp;&nbsp; <b>AN/AQS-20 Environmental Data Collection Demonstration 2, March 21-25, 2005.</b> Michael M. Harris, William E. Avera, Chad A. Steed, and John T. Sample. <i>Formal Report NRL/FR/7440–05-10,113, U.S. Naval Research Laboratory, Dec. 2005. 63 pp.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>T8.&nbsp;&nbsp; <b>Through-The-Sensor Determination of AN/AQS-20 Sensor Performance Demonstration 1, December 13 through 17, 2004.</b> Michael M. Harris, William E. Avera, Chad A. Steed, Leonard D. Bibee, Warren T. Wood, William D. Morgerson, and Christopher S. Robinson. <i>Formal Report, NRL/FR/7440–05-10,106, U.S. Naval Research Laboratory, Jun. 2005. 21 pp.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>T7.&nbsp;&nbsp; <b>Results of the Conversion of the OAML SST to the GDBV Format.</b> Chad A. Steed. <i>Formal Report, NRL/FR/7440–04-10,083, U.S. Naval Research Laboratory, Sep. 2004. 15 pp.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>T6.&nbsp;&nbsp; <b>GAIT GDBV Quick Start Guide.</b> Chad A. Steed. <i>Memorandum Report, NRL/MR/7440–04-8772, U.S. Naval Research Laboratory, May 2004. 8 pp.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>T5.&nbsp;&nbsp; <b>Geophysical Data Base Variable Resolution (GDBV): Database Definition Document.</b> Chad A. Steed.  <i>Formal Report, NRL/FR/7440–03-10,063, U.S. Naval Research Laboratory, Dec. 2003. 27 pp.</i></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./TR052/Steed-TR052.pdf">T4.&nbsp;&nbsp; <b>OAML Feathering Algorithm Overview.</b> Chad A. Steed and William E. Rankin. <i>Formal Report NRL/FR/7440–03-10,052, U.S. Naval Research Laboratory, May 2003. 10 pp.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p><a class="nav" href="./TR8295/Sample-TR8295.pdf">T3.&nbsp;&nbsp; <b>Analysis of Global and Selected Geographic Areas with Depths Between 50 and 100 Feet.</b> John T. Sample, Chad A. Steed, Frank P. McCreedy, and Michael M. Harris.  <i>Memorandum Report, NRL/MR/7440–03-8295, U.S. Naval Research Laboratory, Feb. 2003. 23 pp.</i></a></p>
+  </div>
+
+  <div id="pub">
+    <p>T2.&nbsp;&nbsp; <b>A Flat Earth Model for DBDB-V.</b> Chad A. Steed and James E. Braud. <i>Formal Report, NRL/FR/7440–02-10,025, U.S. Naval Research Laboratory, Aug. 2002. 12 pp.</i></p>
+  </div>
+
+  <div id="pub">
+    <p>T1.&nbsp;&nbsp; <b>PUMA-TEDS Technical Execution Plan.</b> Chad A. Steed, Jerry Landrum, and Christopher Moreau.  <i>Formal Report, NRL/FR/7440-02-10,003, U.S. Naval Research Laboratory, Jun. 2002. 32 pp.</i></p>
+  </div>
+</div>
+
+</div>
+
+
+  <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-39778348-1']);
       _gaq.push(['_trackPageview']);
@@ -1291,6 +480,6 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-    </script>
+  </script>
 </body>
 </html>
