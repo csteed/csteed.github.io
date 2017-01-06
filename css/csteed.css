@@ -114,19 +114,19 @@ a:hover, a.nav:hover { color: #1a1aff; }
 }
 
 #navigate {
-	float:left;
-	margin-top:7px;
+	float:right;
+	margin-top:14px;
   width:214px;
   /*width: 600px;*/
 }
 #navigate h1 {
 	/*font-family:  "Times New Roman", Times, serif;*/
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
- font-size: 24px;
+ font-size: 18px;
  font-weight: bold;
- margin: 0px 0px 4px 0px;
+ margin: 0px 0px 5px 0px;
  text-align:right;
- font-variant: small-caps;
+ /*font-variant: small-caps;*/
 }
 
 #navigate h2 {
