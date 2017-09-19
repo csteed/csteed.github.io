@@ -90,7 +90,7 @@ a:hover, a.nav:hover { color: #1a1aff; }
 
 
 #info {
-  width: 240px;
+  width: 260px;
   float: left;
   /*background: #FFFFFF;*/
   margin-right:20px;
@@ -147,7 +147,7 @@ a:hover, a.nav:hover { color: #1a1aff; }
 float: left;
 width: 600px;
 margin-top:0px;
-margin-left:260px;
+margin-left:280px;
 }
 
 #maintable {
