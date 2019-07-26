@@ -101,6 +101,7 @@
         data.forEach(function (d) {
           let chartDiv = document.createElement("div");
           chartDiv.id = `${d.symbol}Chart`;
+          chartDiv.style.padding = "0px 10px";
           document.getElementById("individualCharts").append(chartDiv);
           let chart = timeseriesLineChart()
             .margin(margin)
