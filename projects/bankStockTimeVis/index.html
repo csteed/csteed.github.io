@@ -10,29 +10,39 @@
     <style>
       body{
         font: 12px sans-serif;
-        margin: 4px 20px 0px 40px;
+        margin: 4px 20px 0px 80px;
         background: whitesmoke;
         /*margin: 0;*/
       }
     </style>
   </head>
   <body>
-    <center><h2>Bank Stock Performance</h2></center>
+    <center><h2>Temporal Bank Stock Performance</h2></center>
     <div id="multiChart">
-      <center><h3>Overview Comparison Chart</h3></center>
-      <label>Chart Line Metric:</label>
-      <select class="select-metric" id="metric-select" onChange="metricChanged()">
-        <option>Open</option>
-        <option>High</option>
-        <option>Low</option>
-        <option selected>Close</option>
-        <option>Volume</option>
-      </select>
+      <center>
+        <h3>Overview Comparison Chart</h3>
+        <label>Chart Line Metric:</label>
+        <select class="select-metric" id="metric-select" onChange="metricChanged()">
+          <option>Open</option>
+          <option>High</option>
+          <option>Low</option>
+          <option selected>Close</option>
+          <option>Volume</option>
+        </select>
+      </center>
     </div>
     <hr/>
     <div id="individualCharts">
       <center><h3>Zooming Individual Charts</h3></center>
     </div>
+
+    <center>
+        <p>&copy; <a href="http://csteed.com">Chad A. Steed</a>
+        <script type="text/javascript">
+            document.write(new Date().getFullYear());
+        </script>
+        </p>
+    </center>
 
     <script>
       let multiChart;
@@ -159,8 +169,6 @@
       }).catch(function (error) {
           console.log(error);
       });
-
-
     </script>
   </body>
 </html>
