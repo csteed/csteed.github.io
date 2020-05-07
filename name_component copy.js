@@ -1,5 +1,7 @@
 'use strict';
 
+const e = React.createElement;
+
 class NameComponent extends React.Component {
   constructor(props) {
     super(props);
@@ -7,11 +9,17 @@ class NameComponent extends React.Component {
   }
 
   render() {
-    return (
-      <h2 id='name'><a href="#">chad a. steed</a></h2>
+    return e(
+      'h2',
+      {id: 'name'},
+      e (
+        'a',
+        {href: "https://www.csteed.com"},
+        "chad a. steed"
+      )
     );
   }
 }
 
 const domContainer = document.querySelector('#name_component');
-ReactDOM.render(<NameComponent />, domContainer);
+ReactDOM.render(e(NameComponent), domContainer);
