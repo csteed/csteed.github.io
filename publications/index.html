@@ -105,23 +105,23 @@
               //   text = `<a class="nav" href="files/journals/${p.file}">` + text + '</a>';
               // }
             } else if (typeGrp === "conference papers") {
-              text = `<u>${num_prefix}${pubs.length - i}</u>, <b>${p.title}</b>, ${p.authors}, <i>${p.conference}</i>, ${p.pages ? `${p.pages}, ` : ''}${p.year}.`;
+              text = `<u>${num_prefix}${pubs.length - i}</u>. <b>${p.title}</b>, ${p.authors}, <i>${p.conference}</i>, ${p.pages ? `${p.pages}, ` : ''}${p.year}.`;
               text = p.file ? `<a class="nav" href="files/conferences/${p.file}">` + text + '</a>' : text;
             } else if (typeGrp === "abstracts") {
               // text = `<u>${num_prefix}${pubs.length - i}</u>, <b>${p.title}</b>,`
-              text = `<u>${num_prefix}${pubs.length - i}</u>, <b>${p.title}</b>, ${p.authors}, <i>${p.conference}</i>, ${p.pages ? `${p.pages}, ` : ''}${p.year}.`;
+              text = `<u>${num_prefix}${pubs.length - i}</u>. <b>${p.title}</b>, ${p.authors}, <i>${p.conference}</i>, ${p.pages ? `${p.pages}, ` : ''}${p.year}.`;
               text = p.file ? `<a class="nav" href="files/abstracts/${p.file}">` + text + '</a>' : text;
             } else if (typeGrp === "workshop papers") {
               // text = `<u>${num_prefix}${pubs.length - i}</u>, <b>${p.title}</b>,`
-              text = `<u>${num_prefix}${pubs.length - i}</u>, <b>${p.title}</b>, ${p.authors}, <i>${p.workshop}</i>, ${p.pages ? `${p.pages}, ` : ''}${p.year}.`;
+              text = `<u>${num_prefix}${pubs.length - i}</u>. <b>${p.title}</b>, ${p.authors}, <i>${p.workshop}</i>, ${p.pages ? `${p.pages}, ` : ''}${p.year}.`;
               text = p.file ? `<a class="nav" href="files/workshops/${p.file}">` + text + '</a>' : text;
             } else if (typeGrp === "dissertations") {
-              text = `<u>${num_prefix}${pubs.length - i}</u>, <b>${p.title}</b>, ${p.authors}, <i>${p.booktitle}</i>, ${p.pages}, ${p.month} ${p.year}.`;
+              text = `<u>${num_prefix}${pubs.length - i}</u>. <b>${p.title}</b>, ${p.authors}, <i>${p.booktitle}</i>, ${p.pages}, ${p.month} ${p.year}.`;
               text = p.file ? `<a class="nav" href="files/books/${p.file}">` + text + '</a>' : text;
             } else if (typeGrp === "patents") {
-              text = `<u>${num_prefix}${pubs.length - i}</u>, <b>${p.title}</b>, ${p.authors}, <i>${p.number}</i>, ${p.date}.`;
+              text = `<u>${num_prefix}${pubs.length - i}</u>. <b>${p.title}</b>, ${p.authors}, <i>${p.number}</i>, ${p.date}.`;
             } else if (typeGrp === "reports") {
-              text = `<u>${num_prefix}${pubs.length - i}</u>, <b>${p.title}</b>, ${p.authors}, <i>${p.id}</i>, ${p.institution}, ${p.date}, ${p.pages}`;
+              text = `<u>${num_prefix}${pubs.length - i}</u>. <b>${p.title}</b>, ${p.authors}, <i>${p.id}</i>, ${p.institution}, ${p.date}, ${p.pages}`;
               text = p.file ? `<a class="nav" href="files/reports/${p.file}">` + text + '</a>' : text;
             }
 

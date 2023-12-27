@@ -1,6 +1,16 @@
 [
   {
     "type": "journal papers",
+    "title": "Visualization for AI Explainability",
+    "authors": "L. Miguel Encarnação, Jörn Kohlhammer, and Chad A. Steed",
+    "journal": "Graphics Graphics and Applications",
+    "volume": 42,
+    "issue": 6,
+    "year": 2022,
+    "file": "CGA_2022.pdf"
+  },
+  {
+    "type": "journal papers",
     "title": "CrossVis: A Visual Analytics System for Exploring Heterogeneous Multivariate Data with Applications to Materials and Climate Sciences",
     "authors": "Chad A. Steed, John R. Goodall, Junghoon Chae, and Artem Trofimov",
     "journal": "Graphics & Visual Computing",
@@ -114,6 +124,23 @@
     "pages": "251-265",
     "year": 2009,
     "file": "CAGIS_2009.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "QVis: A Visual Analytics Tool for Exploring Noise and Errors in Quantum Computing Systems",
+    "authors": "Chad A. Steed, Junghoon Chae, Samudra Dasgupta, Travis S. Humble",
+    "conference": "Proceedings of the IEEE International Conference on Quantum Computing and Engineering",
+    "month": "Sep.",
+    "year": 2023,
+    "file": "ICQCE_2023_QVIS.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "Examining and Presenting Cycles in Temperature Logs from the Vulcan Diffractometer",
+    "authors": "Regan Moreno, Chad A. Steed, Katherine Engstrom, and Erik Schmidt",
+    "conference": "Proceedings of the ORNL Smoky Mountains Computational Sciences and Engineering Conference",
+    "month": "Aug.",
+    "year": 2020
   },
   {
     "type": "conference papers",
@@ -650,10 +677,9 @@
   },
   {
     "type": "patents",
-    "title": "Interactive Visual Analytics for Situational Awareness of Social Media",
-    "authors": "Chad A. Steed, Thomas E. Potok, Robert Patton, Paul Bogen, and Christopher Symons",
-    "number": "Pub. No. US20150113018 A",
-    "date": "Apr. 23, 2015"
+    "title": "Machining Parameter Recommendations Using In-process Machining Data Aggregation",
+    "authors": "Jaydeep Karandikar, Junghoon Chae, Scott Smith, Tony Schmitz, and Chad A. Steed",
+    "date": "filed 30 Aug. 2023"
   },
   {
     "type": "patents",
@@ -668,6 +694,15 @@
     "authors": "Chad A. Steed, J. Edward Swan II, T.J. Jankun-Kelly, and Patrick J. Fitzpatrick",
     "number": "Pub. No. US8346682 B2",
     "date": "Jan. 1, 2013"
+  },
+  {
+    "type": "reports",
+    "title": "SD Card and DCM-C5 Camera Thermal Neutron Testing 2019 Results",
+    "authors": "James Garner, Susan Smith, Scott Stewart, Greg Westphal, Erik Schmidt, Chad Steed, Natalie McGirl, and Mark Adams",
+    "id": "ORNL Technical Report, ORNL/TM-2021/1980",
+    "institution": "Oak Ridge National Laboratory",
+    "date": "Aug. 2022",
+    "pages": "38 pp."
   },
   {
     "type": "reports",

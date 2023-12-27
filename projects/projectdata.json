@@ -1,5 +1,39 @@
 [
   {
+    "title": "CrossVis2",
+    "category": "multivariate",
+    "image": "crossvis2/crossvis2-thumbnail.png",
+    "website": "https://ornl.github.io/CrossVis2/",
+    "description": "CrossVis2 is a web-based multivariate visual analytics tool based on most of the features in the original CrossVis parallel coordinates standalong application.",
+    "software": [
+      {
+        "name": "Web App",
+        "link": "https://ornl.github.io/CrossVis2/"
+      },
+      {
+        "name": "Github",
+        "link": "https://github.com/ORNL/CrossVis2"
+      }
+    ]
+  },
+  {
+    "title": "SnapshotVis",
+    "category": "graph",
+    "image": "snapshot/snapshot-thumbnail.png",
+    "website": "https://ornl.github.io/SnapshotVis/",
+    "description": "SnapshotVis is an interactive visualizations of network paths derived from concepts in PubMed literature.",
+    "software": [
+      {
+        "name": "Web App",
+        "link": "https://ornl.github.io/SnapshotVis/"
+      },
+      {
+        "name": "Github",
+        "link": "https://github.com/ORNL/SnapshotVis"
+      }
+    ]
+  },
+  {
     "title": "COVID19 Vis",
     "category": "time",
     "image": "covid19/covid-thumbnail.png",
