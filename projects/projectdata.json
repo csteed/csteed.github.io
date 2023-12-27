@@ -1,0 +1,425 @@
+[
+  {
+    "title": "COVID19 Vis",
+    "category": "time",
+    "image": "covid19/covid-thumbnail.png",
+    "website": "https://ornl.github.io/COVID19Vis/",
+    "description": "At the onset of the COVID-19 pandemic, I created several geographic and time series visualizations of the JHU COVID-19 case statistics dataset. This website represents selected results from that effort.",
+    "software": [
+      {
+        "name": "Web App",
+        "link": "https://ornl.github.io/COVID19Vis/"
+      },
+      {
+        "name": "Github",
+        "link": "https://github.com/ORNL/COVID19Vis"
+      }
+    ]
+  },
+  {
+    "title": "ORAgendaVis",
+    "category": "time",
+    "image": "oragendavis/oragendavis-thumbnail.png",
+    "website": "https://ornl.github.io/ORAgendaVis/",
+    "description": "For this project, I developed a web application to visualize temporal variations in ORNL Lab Agendas from 2000 to 2020. ORNL Lab Agendas are set by UT-Battelle and determine LDRD and other institutional objectives.",
+    "software": [
+      {
+        "name": "Web App",
+        "link": "https://ornl.github.io/ORAgendaVis/"
+      },
+      {
+        "name": "Github",
+        "link": "https://github.com/ORNL/ORAgendaVis"
+      }
+    ]
+  },
+  {
+    "title": "Top500 Vis",
+    "category": "time",
+    "image": "top500/top500-thumbnail.png",
+    "website": "https://csteed.com/Top500Vis",
+    "description": "The project features several visualizations of the Supercomputing Top500 List, which is maintained by the University of Tennessee's Innovative Computing Laboratory.",
+    "software": [
+      {
+        "name": "Web App",
+        "link": "https://csteed.com/Top500Vis"
+      },
+      {
+        "name": "Github",
+        "link": "https://github.com/csteed/Top500Vis"
+      }
+    ]
+  },
+  {
+    "title": "CrossVis",
+    "category": "multivariate",
+    "image": "crossvis/CrossVis_thumbnail.png",
+    "website": "https://github.com/ORNL/CrossVis",
+    "description": "CrossVis is an interactive visual analytics system for exploring heterogeneous multivariate data. It extends our earlier work with the EDEN.fx system providing additional support for categorical, image, numerical, and bi-variate axes in parallel coordinates as well as other linked views supporting general data exploration.",
+    "papers": [
+      {
+        "name": "GVC_2020",
+        "link": "journals/GVC_2020.pdf"
+      },
+      {
+        "name": "NPJCM_2019",
+        "link": "journals/NPJCM_2019.pdf"
+      }
+    ],
+    "video": [
+      {
+        "name": "CrossVis Demo",
+        "link": "https://youtu.be/xQqeX1yVwiw"
+      }
+    ],
+    "software": [
+      {
+        "name": "Github",
+        "link": "https://github.com/ORNL/CrossVis"
+      }
+    ]
+  },
+  {
+    "title": "VitalVis",
+    "category": "time",
+    "image": "vitalvis/vitalvis-thumbnail.png",
+    "website": "https://ornl.github.io/VitalVis/",
+    "description": "VitalVis is a web-based visual analytics application for analyzing historical patient vitals from surgeries. The goal of these tools is to give AI developers the ability to understand the data and help them choose appropriate predictive techniques.",
+    "software": [
+      {
+        "name": "Web App",
+        "link": "https://ornl.github.io/VitalVis/"
+      },
+      {
+        "name": "Github",
+        "link": "https://github.com/ORNL/VitalVis"
+      }
+    ]
+  },
+  {
+    "title": "Parallel Coordinates Chart",
+    "category": "multivariate",
+    "image": "PCPChart/PCPChart-thumbnail.png",
+    "website": "http://csteed.com/PCPChart",
+    "description": "The project allows users to upload a CSV file and visually analyze the data using an interactive parallel coordinates chart implemented with SVG and Canvas elements in d3.js.",
+    "software": [
+      {
+        "name": "Web App",
+        "link": "http://csteed.com/PCPChart"
+      },
+      {
+        "name": "Github",
+        "link": "https://github.com/csteed/PCPChart"
+      }
+    ]
+  },
+  {
+    "title": "Stacked Time Charts",
+    "category": "time",
+    "image": "StackedTimeCharts/StackedTimeCharts-thumbnail.png",
+    "website": "http://csteed.com/StackedTimeCharts",
+    "description": "The project allows users to upload a CSV file with time series data into a set of stacked time series visualizations using d3.js.",
+    "software": [
+      {
+        "name": "Web App",
+        "link": "http://csteed.com/StackedTimeCharts"
+      },
+      {
+        "name": "Github",
+        "link": "https://github.com/csteed/StackedTimeCharts"
+      }
+    ]
+  },
+  {
+    "title": "Mulitvariate Bank Stock Performance Visualization",
+    "category": "multivariate",
+    "image": "bankStockPCPVis/bankVis_thumbnail.png",
+    "website": "http://csteed.com/BankPCPVis/",
+    "description": "This page shows a web-based parallel coordinates visualization of bank stock performance data using d3.js. The visualizations use stock market data covering 5 years from Kaggle.",
+    "software": [
+      {
+        "name": "Web App",
+        "link": "http://csteed.com/BankPCPVis"
+      },
+      {
+        "name": "Github",
+        "link": "https://github.com/csteed/BankPCPVis"
+      }
+    ]
+  },
+  {
+    "title": "Temporal Bank Stock Performance Visualization",
+    "category": "time",
+    "image": "bankStockPCPVis/bankVis_thumbnail.png",
+    "website": "http://csteed.com/BankTimeVis/",
+    "description": "This project is a collage of web-based temporal visualizations examining the performance of selected banks' stock using d3.js. The visualizations use stock market data covering 5 years from Kaggle.",
+    "software": [
+      {
+        "name": "Web App",
+        "link": "http://csteed.com/BankTimeVis"
+      },
+      {
+        "name": "Github",
+        "link": "https://github.com/csteed/BankTimeVis"
+      }
+    ]
+  },
+  {
+    "title": "EDEN.fx",
+    "category": "multivariate",
+    "image": "edenfx/edenfx_thumbnail.png",
+    "website": "https://github.com/ORNL/EDEN.fx",
+    "description": "EDEN.fx is an interactive data visualization system for large multivariate data sets that extends the original EDEN system.",
+    "software": [
+      {
+        "name": "Github",
+        "link": "https://github.com/csteed/edenfx"
+      }
+    ],
+    "video": [
+      {
+        "name": "EDEN.fx Demo",
+        "link": "https://youtu.be/7S5QNvf-i-M"
+      }
+    ]
+  },
+  {
+    "title": "Falcon",
+    "category": "time",
+    "image": "falcon/falcon_thumbnail.png",
+    "website": "https://github.com/csteed/falcon",
+    "description": "Falcon is a temporal visual analytics system for exploring long, complex, and multivariate time series data. Falcon was developed for analyzing sensor data from 3D printer log files but is suitable for any time-oriented data.",
+    "papers": [
+      {
+        "name": "CAG_2017",
+        "link": "journals/CAG_2017.pdf"
+      },
+      {
+        "name": "VDS_2016",
+        "link": "abstracts/VDS_2016.pdf"
+      },
+      {
+        "name": "FALCON_TM2016",
+        "link": "reports/Steed-etal-Falcon-TM2016_393.pdf"
+      },
+      {
+        "name": "LDAV16",
+        "link": "abstracts/LDAV_2016_poster.pdf"
+      }
+    ],
+    "video": [
+      {
+        "name": "ORNL Highlight",
+        "link": "https://youtu.be/0MeYx3g91D4"
+      }
+    ],
+    "software": [
+      {
+        "name": "Github",
+        "link": "https://github.com/csteed/falcon"
+      }
+    ]
+  },
+  {
+    "title": "Immersive Scientific Data Visualization",
+    "category": "vr",
+    "image": "sns-vr/snsvr_thumbnail.png",
+    "website": "https://github.com/mdrouhard/turbine-exploration",
+    "description": "In this project, we developed an immersive data visualization prototype using the Oculus Rift and the Unity game engine. The prototype was developed in close collaboration with neutron scattering scientists at ORNL's Spallation Neutron Source.",
+    "papers": [
+      {
+        "name": "IA_2016",
+        "link": "workshops/IA_2016.pdf"
+      },
+      {
+        "name": "ASHBD_2015",
+        "link": "workshops/BD_2015.pdf"
+      }
+    ],
+    "software": [
+      {
+        "name": "Gaze Interaction Demo",
+        "link": "https://github.com/mdrouhard/gaze-interaction-test"
+      },
+      {
+        "name": "Turbine Exploration Demo",
+        "link": "https://github.com/mdrouhard/turbine-exploration"
+      }
+    ]
+  },
+  {
+    "title": "UTK 557 Course Evaluations Vis",
+    "category": "multivariate",
+    "image": "utk557/utk557_thumbnail.png",
+    "website": "http://csteed.com/UTK557EvalVis/",
+    "description": "This page shows the student evaluation results of UTK 557 Fall 2013, a data visualization course I taught at the University of Tennessee. The survey results are presented at bullet charts using d3.js.",
+    "software": [
+      {
+        "name": "Web App",
+        "link": "http://csteed.com/UTK557EvalVis/"
+      },
+      {
+        "name": "Github",
+        "link": "https://github.com/csteed/UTK557EvalVis"
+      }
+    ]
+  },
+  {
+    "title": "EDEN",
+    "category": "multivariate",
+    "image": "eden/eden_thumbnail.png",
+    "website": "https://github.com/csteed/eden",
+    "description": "EDEN is an interactive visual analytics system for multivariate data analysis that extends the parallel coordinates information visualization technique providing new statistical analysis capabilities.",
+    "papers": [
+      {
+        "name": "CAGEO13",
+        "link": "journals/CAGEO_2013.pdf"
+      },
+      {
+        "name": "COMP13",
+        "link": "journals/COMP_2013.pdf"
+      },
+      {
+        "name": "ICCS12",
+        "link": "conferences/ICCS_2012.pdf"
+      }
+    ], 
+    "software": [
+      {
+        "name": "Github",
+        "link": "https://github.com/csteed/eden"
+      }
+    ]
+  },
+  {
+    "title": "MultiVar",
+    "category": "multivariate",
+    "image": "multivar/multivar_thumbnail.png",
+    "website": "http://csteed.github.io/multivar",
+    "description": "MultiVar is a web application that allows one to explore different visual features for encoding data from a climate simulation.",
+    "software": [
+      {
+        "name": "Web App",
+        "link": "http://csteed.github.io/multivar"
+      },
+      {
+        "name": "Github",
+        "link": "https://github.com/csteed/multivar"
+      }
+    ]
+  },
+  {
+    "title": "Matisse",
+    "category": "text",
+    "image": "matisse/matisse_thumbnail.png",
+    "description": "Matisse is a visual analytics system for exploring sentiment and emotion trends in social media text streams.",
+    "papers": [
+      {
+        "name": "BigData15",
+        "link": "conferences/BD_2015.pdf"
+      },
+      {
+        "name": "TextVis15",
+        "link": "workshops/TV_2015.pdf"
+      },
+      {
+        "name": "TextVis12",
+        "link": "workshops/TV_2012.pdf"
+      }
+    ]
+  },
+  {
+    "title": "Gryffin",
+    "category": "text",
+    "image": "gryffin/gryffin_thumbnail.png",
+    "description": "Gryffin is a text visual analytics system for searching large document repositories. It includes machine learning component that learns interesting documents based on the user interactions.",
+    "papers": [
+      {
+        "name": "VDA12",
+        "link": "conferences/VDA_2012.pdf"
+      },
+      {
+        "name": "GryffinTR12",
+        "link": "reports/SteedGryffinTR.pdf"
+      }
+    ]
+  },
+  {
+    "title": "jMuse",
+    "category": "multivariate",
+    "image": "jmuse/jmuse_thumbnail.png",
+    "website": "https://github.com/csteed/jmuse",
+    "description": "jMuse is an interactive scatterplot matrix visualization tool for exploring quantitative multivariate data.",
+    "software": [
+      {
+        "name": "Github",
+        "link": "https://github.com/csteed/jmuse"
+      }
+    ]
+  },
+  {
+    "title": "StormBrush",
+    "category": "multivariate",
+    "image": "stormbrush/stormbrush_thumbnail.png",
+    "website": "https://github.com/csteed/stormbrush",
+    "description": "StormBrush renders hurricane advisory information using illustrative data visualization techniques inspired by the artwork of Impressionist painters.",
+    "software": [
+      {
+        "name": "Github",
+        "link": "https://github.com/csteed/stormbrush"
+      }
+    ],
+    "papers": [
+      {
+        "name": "OCEANS09",
+        "link": "conferences/OCEANS_2009_VIS.pdf"
+      }
+    ]
+  },
+  {
+    "title": "MDX",
+    "category": "multivariate",
+    "image": "mdx/mdx_thumbnail.png",
+    "description": "MDX is a visual analytics system for exploring multivariate data. In my dissertation research, MDX was applied extensively to tropical cyclone season prediction variables and it includes a stepwise regression component that automatically ranks predictors for a variable of interest.",
+    "papers": [
+      {
+        "name": "VAST09",
+        "link": "conferences/VAST_2009.pdf"
+      },
+      {
+        "name": "CAGIS09",
+        "link": "journals/CAGIS_2009.pdf"
+      },
+      {
+        "name": "CAGEO09",
+        "link": "journals/CAGEO_2009.pdf"
+      },
+      {
+        "name": "Dissertation",
+        "link": "books/SteedMSU2008.pdf"
+      },
+      {
+        "name": "GEOVA09",
+        "link": "workshops/GVA_2008.pdf"
+      },
+      {
+        "name": "TR9130",
+        "link": "reports/Steed-TR9130.pdf"
+      },
+      {
+        "name": "TR9126",
+        "link": "reports/Steed-TR9126.pdf"
+      },
+      {
+        "name": "IV07",
+        "link": "abstracts/IV_2007_poster.pdf"
+      }
+    ]
+  },
+  {
+    "title": "jRay Ray Tracer",
+    "category": "misc",
+    "image": "jray/jray_thumbnail.png",
+    "description": "jRay is a ray tracer implemented in Java with a full GUI and scene parameter file specification. This system was developed in Dr. Ed Swan's Advanced Computer Graphics course at Mississippi State University. <i>Source code coming soon!</i>"
+  }
+]

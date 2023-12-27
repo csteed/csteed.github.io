@@ -1,0 +1,904 @@
+[
+  {
+    "type": "journal papers",
+    "title": "CrossVis: A Visual Analytics System for Exploring Heterogeneous Multivariate Data with Applications to Materials and Climate Sciences",
+    "authors": "Chad A. Steed, John R. Goodall, Junghoon Chae, and Artem Trofimov",
+    "journal": "Graphics & Visual Computing",
+    "volume": 3,
+    "issue": 20013,
+    "year": 2020,
+    "file": "GVC_2020.pdf"
+  },
+  {
+    "type": "journal papers",
+    "title": "Deep Data Analytics for Genetic Engineering of Diatoms Linking Genotype to Phenotype via Machine Learning",
+    "authors": "Artem A. Trofimov, Alison A. Pawlicki, Nikolay Borodinov, Shovon Mandal, Teresa J. Mathews, Mark Hildebrand, Maxim A. Ziatdinov, Katherine A. Hausladen, Paulina K. Urbanowicz, Chad A. Steed, Anton V. Ievlev, Alex Belianinov, Joshua K. Michener, Rama Vasudevan, and Olga S. Ovchinnikova",
+    "journal": "npj Computational Materials",
+    "volume": 5,
+    "issue": 4,
+    "year": 2019,
+    "file": "NPJCM_2019.pdf"
+  },
+  {
+    "type": "journal papers",
+    "title": "Situ: Identifying and Explaining Suspicious Behavior in Networks",
+    "authors": "John R. Goodall, Eric D. Ragan, Chad A. Steed, Joel W. Reed, G. David Richardson, Kelly M.T. Huffer, Robert A. Bridges, and Jason A. Laska",
+    "journal": "IEEE Transactions on Visualization and Computer Graphics",
+    "volume": 25,
+    "issue": 1,
+    "pages": "204-214",
+    "year": 2019,
+    "file": "TVCG_2019.pdf"
+  },
+  {
+    "type": "journal papers",
+    "title": "Falcon: Visual Analysis of Large, Irregularly Sampled, and Multivariate Time Series Data in Additive Manufacturing",
+    "authors": "Chad A. Steed, William Halsey, Ryan Dehoff, Sean L. Yoder, Vincent Paquit, and Sarah Powers",
+    "journal": "Computers & Graphics",
+    "volume": 63,
+    "pages": "50-64",
+    "year": 2017,
+    "file": "CAG_2017.pdf"
+  },
+  {
+    "type": "journal papers",
+    "title": "Discovering Multi-scale Co-occurence Patterns of Asthma and Influenza with Oak Ridge Bio-surveillance Toolkit",
+    "authors": "Arvind Ramanathan, Laura L. Pullum, Tanner C. Hobson, Christopher G. Stahl, Chad A. Steed, Shannon P. Quinn, Chakra S. Chennubhotla, and Silvia Valkova",
+    "journal": "Frontiers in Public Health",
+    "volume": 3,
+    "issue": 2015,
+    "pages": 182,
+    "year": 2015,
+    "file": "FPH_2015.pdf"
+  },
+  {
+    "type": "journal papers",
+    "title": "Big Data and Deep Data in Scanning and Electron Microscopies: Deriving Functionality from Multidimensional Data Sets",
+    "authors": "Alex Belianinov, Rama K. Vasudevan, Evgheni Strelcov, Chad Steed, Sang Mo Yang, Alexander Tselev, Stephen Jesse, Michael Biegalski, Galen Shipman, Christopher Symons, Albina Borisevich, Richard Archibald, and Sergei Kalinin",
+    "journal": "Advanced Structural and Chemical Imaging",
+    "volume": 1,
+    "issue": 6,
+    "pages": "1-25",
+    "year": 2015,
+    "file": "ASCI_2015.pdf"
+  },
+  {
+    "type": "journal papers",
+    "title": "A Functional Unit Testing Platform for the Community Land Model",
+    "authors": "Dali Wang, Yang Xu, Peter Thornton, Anthony King, Chad A. Steed, Lianhong Gu, and Joseph Schuchart",
+    "journal": "Environmental Modeling and Software",
+    "volume": 55,
+    "pages": "25-31",
+    "year": 2014,
+    "file": "EMS_2014.pdf"
+  },
+  {
+    "type": "journal papers",
+    "title": "Big Data Visual Analytics for Exploratory Earth System Simulation Analysis",
+    "authors": "Chad A. Steed, Daniel M. Ricciuto, Galen Shipman, Brian Smith, Peter E. Thornton, Dali Wang, and Dean N. Williams",
+    "journal": "Computers & Geosciences",
+    "volume": 61,
+    "pages": "71-82",
+    "year": 2013,
+    "file": "CAGEO_2013.pdf"
+  },
+  {
+    "type": "journal papers",
+    "title": "The Ultra-scale Visualization Climate data Analysis Tools (UV-CDAT): Data Analysis and Visualization for Geoscience Data",
+    "authors": "Dean N. Williams, Timo Bremer, Charles Doutriaux, John Patchett, Sean Williams, Galen Shipman, Ross Miller, David R. Pugmire, Brian Smith, Chad A. Steed, E. Wes Bethel, Hank Childs, Harinarayan Krishnan, Prabhat, Claudio T. Silva, Emanuele Santos, David Koop, Tommy Ellqvist, Jorge Poco, Berk Geveci, Aashish Chaudhary, Andy Bauer, Alexander Pletzer, Dave Kindig, Gerald L. Potter, and Thomas P. Maxwell",
+    "journal": "IEEE Computer",
+    "volume": 49,
+    "issue": 9,
+    "pages": "68-76",
+    "year": 2013,
+    "file": "COMP_2013.pdf"
+  },
+  {
+    "type": "journal papers",
+    "title": "An Interactive Parallel Coordinates Technique Applied to a Tropical Cyclone Climate Analysis",
+    "authors": "Chad A. Steed, Patrick J. Fitzpatrick, T.J. Jankun-Kelly, Amber N. Yancey, and J. Edward Swan II",
+    "journal": "Computers & Geosciences",
+    "volume": 35,
+    "issue": 7,
+    "pages": "1529-1539",
+    "year": 2009,
+    "file": "CAGEO_2009.pdf"
+  },
+  {
+    "type": "journal papers",
+    "title": "Tropical Cyclone Trend Analysis using Enhanced Parallel Coordinates and Statistical Analytics",
+    "authors": "Chad A. Steed, Patrick J. Fitzpatrick, J. Edward Swan II, and T.J. Jankun-Kelly",
+    "journal": "Cartography and Geographic Information Science",
+    "volume": 36,
+    "issue": 3,
+    "pages": "251-265",
+    "year": 2009,
+    "file": "CAGIS_2009.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "Visual Analytics for Deep Embeddings of Large Scale Molecular Dynamics Simulations",
+    "authors": "Junghoon Chae, Debsindhu Bhowmik, Heng Ma, Arvind Ramanathan, and Chad A. Steed",
+    "conference": "Proceedings of the IEEE International Conference on Big Data",
+    "month": "Dec.",
+    "year": 2019,
+    "file": "BD_2019.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "Dynamic Color Mapping with a Multi-scale Histogram: A Design Study with Physical Scientists",
+    "authors": "Junghoon Chae, Chad A. Steed, John Goodall, and Steven Hahn",
+    "conference": "Proceedings of the SPIE Visualization and Data Analysis Conference",
+    "month": "Jan.",
+    "year": 2019,
+    "file": "VDA_2019.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "In Situ Data Infrastructure for Scientific Unit Testing Platform",
+    "authors": "Zhuo Yao, Yulu Xu, Dali Wang, Chad A. Steed, Scott Atchley, Jamison Daniel, and Brian Smith",
+    "conference": "Proceedings of the International Conference on Computational Science",
+    "month": "June",
+    "pages": "pp. 587-598",
+    "year": 2016,
+    "file": "ICCS_2016.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "Tracking Alcohol and Marijuana Usage and Behaviors from Social Media using Oak Ridge Bio-Surveillance Toolkit",
+    "authors": "Arvind Ramanathan, Shannon Quinn, Laura Pullum, and Chad A. Steed",
+    "conference": "Proceedings of the IEEE International Conference on Biomedical and Health Informatics",
+    "month": "Feb.",
+    "year": 2016,
+    "file": "BMI_2016.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "Matisse: A Visual Analytics System for Exploring Emotion Trends in Social Media Text Streams",
+    "authors": "Chad A. Steed, Margaret Drouhard, Justin Beaver, Joshua Pyle, and Paul L. Bogen II",
+    "conference": "Proceedings of the IEEE International Conference on Big Data",
+    "month": "Oct.",
+    "pages": "807-814",
+    "year": 2015,
+    "file": "BD_2015.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "Web-based Visual Analytics for Extreme Scale Climate Science",
+    "authors": "Chad A. Steed, Katherine J. Evans, John F. Harney, Brian C. Jewell, Galen Shipman, Brian E. Smith, Peter E. Thornton, and Dean N. Williams",
+    "conference": "Proceedings of the IEEE International Conference on Big Data",
+    "month": "Oct.",
+    "pages": "383-392",
+    "year": 2014,
+    "file": "BD_2014.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "Observing Community Resiliency in Social Media",
+    "authors": "Robert Patton, Chad A. Steed, Chris G. Stahl, and Jim N. Treadwell",
+    "conference": "Proceedings of the International Conference on Computational Science and Applications",
+    "month": "June",
+    "pages": "491-501",
+    "year": 2013,
+    "file": "ICCSA_2013.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "ParCAT: Parallel Climate Analysis Toolkit",
+    "authors": "Brian Smith, Daniel M. Ricciuto, Peter E. Thornton, Galen Shipman, Chad Steed, and Dean Williams",
+    "conference": "Proceedings of the International Conference on Computational Science",
+    "month": "June",
+    "pages": "2367-2375",
+    "year": 2013,
+    "file": "ICCS_2013.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "Verification of Compartmental Epidemiological Models using Metamorphic Testing, Model Checking and Visual Analytics",
+    "authors": "Arvind Ramanathan, Chad A. Steed, and Laura L. Pullum",
+    "conference": "Proceedings of the ASE/IEEE International Conference on BioMedical Computing",
+    "month": "Dec.",
+    "year": 2012,
+    "file": "BMC_2012.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "A New Collaborative Tool for Visually Understanding National Health Indicators",
+    "authors": "Songhua Xu, Brian Jewell, Chad Steed, and Jack Schryver",
+    "conference": "Proceedings of the International Conference on Applied Human Factors and Ergonomics",
+    "month": "July",
+    "year": 2012,
+    "file": "AHFE_2012.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "Practical Application of Parallel Coordinates for Climate Model Analysis",
+    "authors": "Chad A. Steed, Galen Shipman, Peter Thornton, Daniel Ricciuto, David Erickson, and Marcia Branstetter",
+    "conference": "Proceedings of the International Conference on Computational Science",
+    "month": "June",
+    "pages": "pp. 877-886",
+    "year": 2012,
+    "file": "ICCS_2012.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "Guided Text Analysis Using Adaptive Visual Analytics",
+    "authors": "Chad A. Steed, Christopher Symons, Frank DeNap, and Thomas E. Potok",
+    "conference": "Proceedings of the Visualization and Data Analysis Conference",
+    "month": "Jan.",
+    "year": 2012,
+    "file": "VDA_2012.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "Hierarchical Clustering and Visualization of Aggregate Cyber Data",
+    "authors": "Robert M. Patton, Justin M. Beaver, Chad A. Steed, Thomas E. Potok, and Jim N. Treadwell",
+    "conference": "Proceedings of the International Wireless Communications and Mobile Computing Conference",
+    "pages": "pp. 1287–1291",
+    "year": 2011,
+    "file": "WCMC_2011.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "Visualization Techniques for Computer Network Defense",
+    "authors": "Justin M. Beaver, Chad A. Steed, Robert M. Patton, Xiaohui Cui, and Matthew Schultz",
+    "conference": "Proceedings of the Defense & Security Symposium",
+    "pages": "pp. 1–9",
+    "year": 2011,
+    "file": "DSS_2011.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "Guided Analysis of Hurricane Trends using Statistical Processes Integrated with Interactive Parallel Coordinates",
+    "authors": "Chad A. Steed, J. Edward Swan II, T.J. Jankun-Kelly, and Patrick J. Fitzpatrick",
+    "conference": "Proceedings of Symposium on Visual Analytics Science and Technology",
+    "month": "Oct.",
+    "pages": "pp. 19–26",
+    "year": 2009,
+    "file": "VAST_2009.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "Development of a New Unmanned Semi Submersible (USS) Vehicle",
+    "authors": "Art Kleiner, David Alleman, Pete Alleman, and Chad A. Steed",
+    "conference": "Proceedings of MTS/IEEE Oceans 2009",
+    "pages": "pp. 1-6",
+    "year": 2009,
+    "file": "OCEANS_2009_USS.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "Development of the Geophysical Data Base Variable Resolution (GDBV) using HDF5",
+    "authors": "Chad A. Steed, Chiu-Fu “Tiger” Cheng, and David W. Harvey",
+    "conference": "Proceedings of MTS/IEEE Oceans 2009",
+    "month": "Oct.",
+    "pages": "pp. 1–6",
+    "year": 2009,
+    "file": "OCEANS_2009_GDBV.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "Illustrative Visualization of Hurricane Advisory Information",
+    "authors": "Chad A. Steed, T.J. Jankun-Kelly, and J. Edward Swan II",
+    "conference": "Proceedings of MTS/IEEE Oceans 2009",
+    "pages": "pp. 1–9",
+    "year": 2009,
+    "file": "OCEANS_2009_VIS.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "AQS-20 Sonar Processing Enhancement for Bathymetry Estimation",
+    "authors": "Costin Barbu, William E. Avera, Dale Bibee, Michael M. Harris, and Chad Steed",
+    "conference": "Proceedings of MTS/IEEE Oceans 2005",
+    "month": "Sep.",
+    "pages": "pp. 2025–2029",
+    "year": 2005,
+    "file": "OCEANS_2005_BATHY.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "AQS-20 Through-The-Sensor (TTS) Performance Assessment",
+    "authors": "Michael Harris, William Avera, Chad Steed, John Sample, L. Dale Bibee, Dave Morgerson, Jim Hammack, and Mark Null",
+    "conference": "Proceedings of MTS/IEEE Oceans 2005",
+    "month": "Sep.",
+    "pages": "",
+    "year": 2005,
+    "file": "OCEANS_2005_PERF.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "AQS-20 Through-The-Sensor Environmental Data Sharing",
+    "authors": "Chad A. Steed, John Sample, Michael Harris, William Avera, and L. Dale Bibee",
+    "conference": "Proceedings of the Defense & Security Symposium",
+    "month": "Mar.",
+    "pages": "pp. 460–465",
+    "year": 2005,
+    "file": "DSS_2005.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "Environmental Data Collection, Sensor to Decision Aid",
+    "authors": "Michael Harris, Will Avera, L. Dale Bibee, Chad Steed, John Sample, Mark Null, and Jim Hammack",
+    "conference": "International Symposium on Technology and the Mine Problem",
+    "month": "May",
+    "pages": "pp. 818-823",
+    "year": 2004,
+    "file": "MINESYM_2004.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "3D Enhancements for Visualizing Lane Navigation Performance",
+    "authors": "Stephanie Myrick and Chad Steed",
+    "conference": "Proceedings of the Human Performance, Situation Awareness, and Automation Technology Conference",
+    "month": "Mar.",
+    "pages": "pp. 248-252",
+    "year": 2004,
+    "file": "HPSSA_2004.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "Geophysical Data Base Variable Resolution (GDBV): An Object-Oriented Database for Dynamic Geo-acoustic Data Storage",
+    "authors": "Chad A. Steed, Kim Koehler, Dave Harvey, and Bruce Northridge",
+    "conference": "Proceedings of MTS/IEEE Oceans 2003",
+    "month": "Sep.",
+    "pages": "pp. 132–140",
+    "year": 2003,
+    "file": "OCEANS_2003.pdf"
+  },
+  {
+    "type": "conference papers",
+    "title": "VGRID: A Generic, Dynamic HDF5 Storage Model for Georeferenced Grid Data",
+    "authors": "Chad A. Steed, Kim Koehler, and James E. Braud",
+    "conference": "Proceedings of MTS/IEEE Oceans 2002",
+    "month": "Oct.",
+    "pages": "pp. 900-907",
+    "year": 2002,
+    "file": "OCEANS_2002.pdf"
+  },
+  {
+    "type": "book chapters",
+    "title": "Interactive Data Visualization",
+    "authors": "Chad A. Steed",
+    "editors": "Eds. Mashrur Chowdhury, Amy Apon, and Kakan Dey",
+    "booktitle": "In Data Analytics for Intelligent Transportation",
+    "publisher": "Elsevier",
+    "pages": "pp. 165–190",
+    "year": 2017,
+    "file": "ITS_2017.pdf"
+  },
+  {
+    "type": "book chapters",
+    "title": "A Visual Analytics Approach for Correlation, Classification, and Regression Analysis",
+    "authors": "Chad A. Steed, J. Edward Swan II, Patrick J. Fitzpatrick, and T.J. Jankun-Kelly",
+    "booktitle": "In Innovative Approaches of Data Visualization and Visual Analytics",
+    "pages": "pp. 22-45",
+    "year": 2013
+  },
+  {
+    "type": "abstracts",
+    "title": "Improving Scientific Data Analysis Through Multi-touch Enabled Interactive Data Visualization with Applications to Neutron Science",
+    "authors": "Chad A. Steed, Junghoon Chae, John Goodall, and Steven Hahn",
+    "conference": "Proceedings of the Workshop on Immersive Analytics at IEEE VIS",
+    "month": "Oct.",
+    "pages": "pp. 1–2",
+    "year": 2017,
+    "file": "IA_2017.pdf",
+    "slides": "IA_2017_poster.pdf"
+  },
+  {
+    "type": "abstracts",
+    "title": "Advancing Additive Manufacturing Through Visual Data Science",
+    "authors": "Chad A. Steed, Ryan Dehoff, William Halsey, Sean Yoder, Vincent Paquit, and Sarah Powers",
+    "conference": "Symposium on Visualization in Data Science at IEEE VIS 2016",
+    "month": "Oct.",
+    "pages": "pp. 1–2",
+    "year": 2016,
+    "file": "VDS_2016.pdf",
+    "slides": "VDS_2016_slides.pdf"
+  },
+  {
+    "type": "abstracts",
+    "title": "Segmented Time Series Visualization Tool for Additive Manufacturing",
+    "authors": "William Halsey, Chad A. Steed, Ryan Dehoff, Vincent Paquit, and Sean Yoder",
+    "conference": "IEEE Large Data Analysis and Visualization (LDAV) Symposium Posters Compendium",
+    "month": "Oct.",
+    "pages": "pp. 1–2",
+    "year": 2016,
+    "file": "LDAV_2016.pdf",
+    "poster": "LDAV_2016_poster.pdf"
+  },
+  {
+    "type": "abstracts",
+    "title": "ParCAT: A Parallel Climate Analysis Toolkit",
+    "authors": "Blake Haugen, Brian Smith, Chad A. Steed, Daniel Ricciuto, Peter E. Thornton, and Galen Shipman",
+    "conference": "AGU 2012 Fall Meeting",
+    "month": "Dec.",
+    "year": 2012
+  },
+  {
+    "type": "abstracts",
+    "title": "Practical Web Based Visualization for Comparative Energy Usage Analysis",
+    "authors": "Christopher Maness, Chad A. Steed, and Olufemi Omitaomu",
+    "conference": "IEEE Visualization Conference Compendium",
+    "month": "Oct.",
+    "pages": "pp. 1–2",
+    "year": 2012,
+    "file": "IV_2012.pdf",
+    "poster": "IV_2012_poster.pdf"
+  },
+  {
+    "type": "abstracts",
+    "title": "Scale Dependency in Dynamic Downscaling of Extreme Climate Events over Complex Topography",
+    "authors": "David J. Erickson, Auroop R. Ganguly, Robert James Oglesby, Evan A. Kodra, Debasish Das, Anthony W. King, Cindy Hays, Chad Steed, Robert Patton, and Chris Lenhardt",
+    "conference": "AGU 2011 Fall Meeting",
+    "month": "Dec.",
+    "year": 2011
+  },
+  {
+    "type": "abstracts",
+    "title": "Scale Dependency in Dynamic Downscaling of Extreme Climate Events Over Complex Topography",
+    "authors": "Debasish Das, Evan Kodra, Karsten Steinhaeuser, Shih-Chieh Kao, Auroop R. Ganguly, Marcia L. Branstetter, David J. Erickson, Raymond Flanery, Maria Martinez Gonzalez, Cynthia Hays, Anthony W. King, Christopher Lenhardt, Robert Oglesby, Robert M. Patton, Clinton M. Rowe, Alexander Sorokine, Chad Steed",
+    "conference": "AGU Fall Meeting Poster Session",
+    "month": "Dec.",
+    "year": 2010
+  },
+  {
+    "type": "abstracts",
+    "title": "Illustrative Visualization of Hurricane Advisory Information",
+    "authors": "Chad A. Steed, T.J. Jankun-Kelly, J. Edward Swan II, and Robert J. Moorhead",
+    "conference": "IEEE Visualization Conference Compendium",
+    "month": "Oct.",
+    "pages": "pp. 1-2",
+    "year": 2009,
+    "file": "VIS_2009.pdf",
+    "poster": "VIS_2009_poster.pdf"
+  },
+  {
+    "type": "abstracts",
+    "title": "Practical Application of Parallel Coordinates to Hurricane Trend Analysis",
+    "authors": "Chad A. Steed, Patrick J. Fitzpatrick, T.J. Jankun-Kelly, Amber N. Yancey, and J. Edward Swan II",
+    "conference": "IEEE Information Visualization Conference Compendium",
+    "month": "Oct.",
+    "pages": "pp. 4-5",
+    "year": 2007,
+    "file": "IV_2007.pdf",
+    "poster": "IV_2007_poster.pdf"
+  },
+  {
+    "type": "workshop papers",
+    "title": "Visualization for Classification in Deep Neural Networks",
+    "authors": "Junghoon Chae, Shang Gao, Arvind Ramanathan, Chad A. Steed, and Georgia D. Tourassi",
+    "workshop": "Proceedings of the Workshop on Visual Analytics for Deep Learning at IEEE VIS",
+    "month": "Oct.",
+    "year": 2017,
+    "file": "VADL_2017.pdf"
+  },
+  {
+    "type": "workshop papers",
+    "title": "Application of Data Analytics to Additive Manufacturing",
+    "authors": "Sarah Powers, Ryan Dehoff, Vincent Paquit, Chad A. Steed, and Derek Kistler",
+    "workshop": "Proceedings of the INFORMS Workshop on Data Mining and Decision Analytics",
+    "month": "Nov.",
+    "year": 2016,
+    "file": "DMDA_2016.pdf"
+  },
+  {
+    "type": "workshop papers",
+    "title": "Immersive Visual Analytics for Transformative Neutron Scattering Science",
+    "authors": "Chad A. Steed, Jamison Daniel, Margaret Drouhard, Thomas Proffen, and Steven Hahn",
+    "workshop": "Proceedings of the Workshop on Immersive Analytics at IEEE Virtual Reality 2016",
+    "month": "Mar.",
+    "year": 2016,
+    "file": "IA_2016.pdf"
+  },
+  {
+    "type": "workshop papers",
+    "title": "Dr. Twitter: The Logistics of Practical Disease Surveillance using Social Media",
+    "authors": "Shannon Quinn, Arvind Ramanathan, Laura Pullum, and Chad A. Steed.",
+    "workshop": "Proceedings of the Web-based Public Health Informatics Workshop at IEEE BHI 2016",
+    "month": "Feb.",
+    "year": 2016,
+    "file": "BHI_2016.pdf"
+  },
+  {
+    "type": "workshop papers",
+    "title": "Visualizing Execution Traces with Task Dependencies",
+    "authors": "Blake Haugen, Stephen Richmond, Jakub Kurzak, Chad A. Steed, and Jack Dongarra",
+    "workshop": "Proceedings of the Workshop on Visual Performance Analysis at SC15",
+    "month": " Nov.",
+    "year": 2015,
+    "file": "VPA_2015.pdf"
+  },
+  {
+    "type": "workshop papers",
+    "title": "Immersive Visualization for Materials Science Data Analysis using the Oculus Rift",
+    "authors": "Margaret Drouhard, Chad A. Steed, Steven Hahn, Thomas Proffen, Jamison Daniel, and Michael Matheson",
+    "workshop": "Proceedings of the Workshop on Advances in Software and Hardware for Big Data to Knowledge Discovery at IEEE Big Data 2015",
+    "month": "Oct.",
+    "pages": "pp. 2453–2461",
+    "year": 2015,
+    "file": "BD_2015.pdf"
+  },
+  {
+    "type": "workshop papers",
+    "title": "Text Stream Trend Analysis using Multiscale Visual Analytics with Applications to Social Media Systems",
+    "authors": "Chad A. Steed, Justin Beaver, Paul L. Bogen II, Margaret Drouhard, and Joshua Pyle",
+    "workshop": "Proceedings of the ACM IUI Visual Text Analytics Workshop",
+    "month": "Mar.",
+    "year": 2015,
+    "file": "TV_2015.pdf",
+    "slides": "TV_2015_slides.pdf"
+  },
+  {
+    "type": "workshop papers",
+    "title": "Extreme Scale Visual Analytics",
+    "authors": "Chad A. Steed, Thomas E. Potok, Laura L. Pullum, Arvind Ramanathan, Galen Shipman, and Peter E. Thornton",
+    "workshop": "Proceedings of the Workshop on Petascale Data Analytics at SC13",
+    "month": "Nov.",
+    "year": 2013,
+    "file": "SC_2013.pdf"
+  },
+  {
+    "type": "workshop papers",
+    "title": "Oak Ridge Bio-surveillance Toolkit",
+    "authors": "Arvind Ramanathan, Laura L. Pullum, Chad A. Steed, Shannon S. Quinn, and Chakra S. Chennubhotla",
+    "workshop": "Proceedings of IEEE VAST Workshop on Public Health’s Wicked Problems: Can InfoVis Save Lives?",
+    "month": "Oct.",
+    "year": 2013,
+    "file": "VAST_2013.pdf"
+  },
+  {
+    "type": "workshop papers",
+    "title": "Integrating Heterogeneous Healthcare Datasets and Visual Analytics for Disease Bio-surveillance and Dynamics",
+    "authors": "Arvind Ramanathan, Laura L. Pullum, Chad A. Steed, Shannon S. Quinn, Chakra S. Chennubhotla, and Tara Parker",
+    "workshop": "Proceedings of the Interactive Visual Text Analytics Workshop",
+    "month": "Oct.",
+    "year": 2013,
+    "file": "TV_2013.pdf"
+  },
+  {
+    "type": "workshop papers",
+    "title": "A Pilot Study on Functional Unit Testing for Community Land Model",
+    "authors": "Dali Wang, Yang Xu, Peter Thornton, Anthony King, and Chad A. Steed",
+    "workshop": "Proceedings of the Computational Data Analytics Workshop (CDAW-13)",
+    "month": "Oct.",
+    "year": 2013
+  },
+  {
+    "type": "workshop papers",
+    "title": "Visualizing Community Resilience Metrics from Twitter Data",
+    "authors": "Robert Patton, Chad A. Steed, and Chris Stahl",
+    "workshop": "The Workshop on Social Media Visualization (ICWSM-13)",
+    "month": "July",
+    "year": 2013
+  },
+  {
+    "type": "workshop papers",
+    "title": "Interactive Visual Analysis of High Throughput Text Streams",
+    "authors": "Chad A. Steed, Thomas E. Potok, Robert M. Patton, John R. Goodall, Christopher Maness, James Senter",
+    "workshop": "Proceedings of the Interactive Visual Text Analytics Workshop at VIS2012",
+    "month": "Oct.",
+    "year": 2012,
+    "file": "TV_2012.pdf"
+  },
+  {
+    "type": "workshop papers",
+    "title": "An Integrated Geovisual Analytics Framework for Analysis of Energy Consumption Data and Renewable Energy Potentials",
+    "authors": "Olufemi A. Omitaomu, Christopher S. Maness, Ian S. Kramer, Jeffrey B. Kodysh, Budhendra L. Bhaduri, Chad A. Steed, Rajasekar Karthik, Philip J. Nugent, Aaron T. Myers",
+    "workshop": "Proceedings of the GeoSpatial Visual Analytics Workshop at GIScience",
+    "month": "Sep.",
+    "year": 2012
+  },
+  {
+    "type": "workshop papers",
+    "title": "North Atlantic Hurricane Trend Analysis using Parallel Coordinates and Statistical Techniques",
+    "authors": "Chad A. Steed, Patrick J. Fitzpatrick, T.J. Jankun-Kelly, and J. Edward Swan II",
+    "workshop": "Proceedings of the GeoSpatial Visual Analytics Workshop",
+    "month": "Sep.",
+    "year": 2008,
+    "file": "GVA_2008.pdf" 
+  },
+  {
+    "type": "workshop papers",
+    "title": "Algorithm for Bathymetry Fusion with Uncertainty Assessment",
+    "authors": "Paul Elmore and Chad A. Steed",
+    "workshop": "Proceedings of the NRL Technical Metrics Workshop",
+    "month": "May",
+    "year": 2008
+  },
+  {
+    "type": "workshop papers",
+    "title": "Advanced Visualization Techniques for Undersea Warfare",
+    "authors": "Chad A. Steed",
+    "workshop": "Proceedings of the NRL Technical Metrics Workshop",
+    "month": "May",
+    "year": 2008
+  },
+  {
+    "type": "workshop papers",
+    "title": "3-Dimensional Scene Reconstruction and Animation using VRML/X3D",
+    "authors": "Stephanie Myrick and Chad Steed",
+    "workshop": "Proceedings of Mississippi Academy of Sciences Annual Meeting",
+    "month": "Feb.",
+    "year": 2004
+  },
+  {
+    "type": "workshop papers",
+    "title": "Ocean Through The Sensor (TTS) Update",
+    "authors": "Kim Koehler, Michael Harris, Dale Bibee, Chad Steed, and Dave Bates",
+    "workshop": "SPAWAR PMW-150 Quarterly Newsletter",
+    "month": "Dec.",
+    "year": 2003
+  },
+  {
+    "type": "workshop papers",
+    "title": "A Method for Overcoming Discontinuity Between Neighboring UTM Zone Grids",
+    "authors": "Chad A. Steed and Hillary Mesick",
+    "workshop": "Proceedings of Mississippi Academy of Sciences Annual Meeting",
+    "month": "Feb.",
+    "year": 2002
+  },
+  {
+    "type": "dissertations",
+    "title": "Development of a Geovisual Analytics Environment using Parallel Coordinates with Applications to Tropical Cyclone Trend Analysis",
+    "authors": "Chad A. Steed",
+    "booktitle": "PhD Dissertation, Computer Science and Engineering Department, Mississippi State University",
+    "pages": "221 pp.",
+    "month": "Dec.",
+    "year": 2008,
+    "file": "SteedMSU2008.pdf"
+  },
+  {
+    "type": "patents",
+    "title": "Interactive Visual Analytics for Situational Awareness of Social Media",
+    "authors": "Chad A. Steed, Thomas E. Potok, Robert Patton, Paul Bogen, and Christopher Symons",
+    "number": "Pub. No. US20150113018 A",
+    "date": "Apr. 23, 2015"
+  },
+  {
+    "type": "patents",
+    "title": "Method and System to Discover and Recommend Interesting Documents",
+    "authors": "Thomas E. Potok, Chad A. Steed, and Robert Patton",
+    "number": "Pub. No. US 2014/0032539 A1",
+    "date": "Jan. 30, 2014"
+  },
+  {
+    "type": "patents",
+    "title": "Information Assisted Visual Interface, System, and Method for Identifying and Quantifying Multivariate Associations",
+    "authors": "Chad A. Steed, J. Edward Swan II, T.J. Jankun-Kelly, and Patrick J. Fitzpatrick",
+    "number": "Pub. No. US8346682 B2",
+    "date": "Jan. 1, 2013"
+  },
+  {
+    "type": "reports",
+    "title": "Falcon: A Temporal Visual Analytics System Applied to the Analysis of 3D Printer Log Data",
+    "authors": "Chad A. Steed, Ryan Dehoff, William Halsey, Sean Yoder, Vincent Paquit, and Sarah Powers",
+    "id": "ORNL Technical Report, ORNL/TM-2016/393",
+    "institution": "Oak Ridge National Laboratory",
+    "date": "Aug. 2016",
+    "pages": "25 pp.",
+    "file": "Steed-etal-Falcon-TM2016_393.pdf"
+  },
+  {
+    "type": "reports",
+    "title": "Ultrascale Visualization Climate Data Analysis Tools",
+    "authors": "Dean N. Williams, Andrew Bauer, Aashish Chaudhary, Berk Geveci, Harinarayan Krishnan, David Bader, Timo Bremer, Charles Doutriaux, Daniel Fedor-Thurman, Matthew Harris, Elo Leung, Renata McCoy, James Ahrens, Curt Canada, Phil Jones, Boonthanome Nouanesengsy, John Patchett, Sean Williams, Thomas Maxwell, Gerald Potter, Cecelia DeLuca, Ryan O’Kuinghttons, Robert Oehmke, David Pugmire, Galen Shipman, Brian Smith, Chad Steed, Ben Burnett, Aritra Dasgupta, Tommy Ellqvist, David Koop, Emanuele Marques, Jorge Poco, Remi Rampin, Claudio Silva, Huy Vo, David Kindig, Alexander Pletzer, Cameron Christensen, Sidharth Kumar, Valerio Pascucci, Giorgio Scorzelli, Brian Summa",
+    "id": "LLNL Technical Report, LLNL-TR-643624",
+    "institution": "Lawrence Livermore National Laboratory",
+    "date": "Sep. 2013",
+    "pages": "96 pp."
+  },
+  {
+    "type": "reports",
+    "title": "Guided Text Search Using Adaptive Visual Analytics",
+    "authors": "Chad A. Steed, Christopher T. Symons, James K. Senter, and Frank A. DeNap",
+    "id": "ORNL Technical Report, ORNL/TM-2012/479",
+    "institution": "Oak Ridge National Laboratory",
+    "date": "Oct. 2012",
+    "pages": "20 pp.",
+    "file": "SteedGryffinTR.pdf"
+  },
+  {
+    "type": "reports",
+    "title": "A Visual Analytics Approach for Correlation, Classification, and Regression Analysis",
+    "authors": "Chad A. Steed, J. Edward Swan II, Patrick J. Fitzpatrick, and T.J. Jankun-Kelly",
+    "id": "ORNL Technical Report, ORNL/TM-2012/68",
+    "institution": "Oak Ridge National Laboratory",
+    "date": "Feb. 2012",
+    "pages": "30 pp."
+  },
+  {
+    "type": "reports",
+    "title": "Massively Parallel Algorithms for Scalable Exascale Analysis",
+    "authors": "Yu Jiao, Erik Ferragut, Sudharshan Vazhkudai, Stuart Campbell, Mark Hagen, Stephen Miller, Christopher Griffin, and Chad A. Steed",
+    "id": "ORNL LDRD Report 31964",
+    "institution": "Oak Ridge National Laboratory",
+    "date": "Oct. 2011",
+    "pages": "2 pp."
+  },
+  {
+    "type": "reports",
+    "title": "Under Sea Warfare Visual Analytics: Fiscal Year 2010 Prototype System Report",
+    "authors": "Chad A. Steed, Jeffrey Russell, and J. Paquin Fabre",
+    "id": "Memorandum Report, NRL/MR/7440–10-9285",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "Nov. 2010",
+    "pages": "13 pp."
+  },
+  {
+    "type": "reports",
+    "title": "Geophysical Data Base Variable Resolution Version 2: Final Design Report",
+    "authors": "Chad A. Steed, Chiu-Fu “Tiger” Cheng, and David W. Harvey",
+    "id": "Memorandum Report, NRL/MR/7440–09-9229",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "April 2010",
+    "pages": "16 pp."
+  },
+  {
+    "type": "reports",
+    "title": "Environmental Components Integrations and Dissemination (ECID) Study Preliminary Report",
+    "authors": "Kevin Shaw, John Sample, and Chad Steed",
+    "id": "Formal Report, NRL/FR/7440–09-10,177",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "Dec. 2009",
+    "pages": "30 pp."
+  },
+  {
+    "type": "reports",
+    "title": "Geophysical Data Base Variable Resolution Version 2: Planning Report",
+    "authors": "Chad A. Steed and David W. Harvey",
+    "id": "Formal Report, NRL/FR/7440–08-10,173",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "Jan. 2009",
+    "pages": "12 pp."
+  },
+  {
+    "type": "reports",
+    "title": "Algorithm Design Study for Bathymetry Fusion: Review of Current State-of-the-Art and Recommended Design Approach",
+    "authors": "Paul A. Elmore and Chad A. Steed",
+    "id": "Formal Report, NRL/FR/7440–08-10,162",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "Oct. 2008",
+    "pages": "26 pp.",
+    "file": "Elmore-TR162.pdf"
+  },
+  {
+    "type": "reports",
+    "title": "Visual Analysis of North Atlantic Hurricane Trends Using Parallel Coordinates and Statistical Techniques",
+    "authors": "Chad A. Steed, Patrick J. Fitzpatrick, T.J. Jankun-Kelly, and J. Edward Swan II",
+    "id": "Memorandum Report, NRL/MR/7440–08-9130",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "July 2008",
+    "pages": "18 pp.",
+    "file": "Steed-TR9130.pdf"
+  },
+  {
+    "type": "reports",
+    "title": "An Interactive Parallel Coordinates Technique Applied to a Tropical Cyclone Climate Analysis",
+    "authors": "Chad A. Steed, Patrick Fitzpatrick, T.J. Jankun-Kelly, and J. Edward Swan II",
+    "id": "Memorandum Report, NRL/MR/7440–08-9126",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "June 2008",
+    "pages": "25 pp.",
+    "file": "Steed-TR9126.pdf"
+  },
+  {
+    "type": "reports",
+    "title": "AUV Data Assimilation: Requirements, Limitations, and Recommendations",
+    "authors": "Michael M. Harris, William E. Avera, and Chad A. Steed",
+    "id": "Formal Report, NRL/FR/7440–08-1060",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "May 2008",
+    "pages": "18 pp."
+  },
+  {
+    "type": "reports",
+    "title": "AN/AQS-20 Environmental Data Collection: End-to-End Demonstration 3, Tactical Sensor to Tactical Decision Aid, June 1 Through 3, 2005",
+    "authors": "Michael M. Harris, William E. Avera, John T. Sample, Chad A. Steed, Leonard D. Bibee, and Dave Morgerson",
+    "id": "Formal Report, NRL/FR/7440–06-10,134",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "July 2006",
+    "pages": "66 pp."
+  },
+  {
+    "type": "reports",
+    "title": "Standard Operating Procedure for the AQS-20 Rapid Transition Project: NAVOCEANO Value Added Processes",
+    "authors": "Chad A. Steed",
+    "id": "Memorandum Report NRL/MR/7440–06-8936",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "Mar. 2006",
+    "pages": "7 pp."
+  },
+  {
+    "type": "reports",
+    "title": "SeaBED User’s Guide",
+    "authors": "Chad A. Steed, Kevyn Malpass, Edward Braithwaite, Michael M. Harris, William E. Avera, and John T. Sample",
+    "id": "Formal Report, NRL/FR/7440–06-10,128",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "Mar. 2006",
+    "pages": "50 pp."
+  },
+  {
+    "type": "reports",
+    "title": "AN/AQS-20 Environmental Data Collection Demonstration 2, March 21-25, 2005",
+    "authors": "Michael M. Harris, William E. Avera, Chad A. Steed, and John T. Sample",
+    "id": "Formal Report NRL/FR/7440–05-10,113",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "Dec. 2005",
+    "pages": "63 pp."
+  },
+  {
+    "type": "reports",
+    "title": "Through-The-Sensor Determination of AN/AQS-20 Sensor Performance Demonstration 1, December 13 through 17, 2004",
+    "authors": "Michael M. Harris, William E. Avera, Chad A. Steed, Leonard D. Bibee, Warren T. Wood, William D. Morgerson, and Christopher S. Robinson",
+    "id": "Formal Report, NRL/FR/7440–05-10,106",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "June 2005",
+    "pages": "21 pp."
+  }, 
+  {
+    "type": "reports",
+    "title": "Results of the Conversion of the OAML SST to the GDBV Format",
+    "authors": "Chad A. Steed",
+    "id": "Formal Report, NRL/FR/7440–04-10,083",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "Sep. 2004",
+    "pages": "15 pp."
+  },
+  {
+    "type": "reports",
+    "title": "GAIT GDBV Quick Start Guide",
+    "authors": "Chad A. Steed",
+    "id": "Memorandum Report, NRL/MR/7440–04-8772",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "May 2004",
+    "pages": "8 pp."
+  },
+  {
+    "type": "reports",
+    "title": "Geophysical Data Base Variable Resolution (GDBV): Database Definition Document",
+    "authors": "Chad A. Steed",
+    "id": "Formal Report, NRL/FR/7440–03-10,063",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "Dec. 2003",
+    "pages": "27 pp."
+  },
+  {
+    "type": "reports",
+    "title": "OAML Feathering Algorithm Overview",
+    "authors": "Chad A. Steed and William E. Rankin",
+    "id": "Formal Report NRL/FR/7440–03-10,052",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "May 2003",
+    "pages": "10 pp.",
+    "file": "Steed-TR052.pdf"
+  },
+  {
+    "type": "reports",
+    "title": "Analysis of Global and Selected Geographic Areas with Depths Between 50 and 100 Feet",
+    "authors": "John T. Sample, Chad A. Steed, Frank P. McCreedy, and Michael M. Harris",
+    "id": "Memorandum Report, NRL/MR/7440–03-8295",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "Feb. 2003",
+    "pages": "23 pp.",
+    "file": "Sample-TR8295.pdf"
+  },
+  {
+    "type": "reports",
+    "title": "A Flat Earth Model for DBDB-V",
+    "authors": "Chad A. Steed and James E. Braud",
+    "id": "Formal Report, NRL/FR/7440–02-10,025",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "Aug. 2002",
+    "pages": "12 pp."
+  },
+  {
+    "type": "reports",
+    "title": "PUMA-TEDS Technical Execution Plan",
+    "authors": "Chad A. Steed, Jerry Landrum, and Christopher Moreau",
+    "id": "Formal Report, NRL/FR/7440-02-10,003",
+    "institution": "U.S. Naval Research Laboratory",
+    "date": "Jun. 2002",
+    "pages": "32 pp."
+  }
+]
