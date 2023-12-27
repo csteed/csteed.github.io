@@ -125,7 +125,8 @@
               text = p.file ? `<a class="nav" href="files/reports/${p.file}">` + text + '</a>' : text;
             }
 
-            pubsDiv.append("p").html(text);
+            const pDiv = pubsDiv.append("div").attr("id", "pub");
+            pDiv.append("p").html(text);
           })
         });
       });
