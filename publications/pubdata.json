@@ -493,6 +493,15 @@
   },
   {
     "type": "workshop papers",
+    "title": "Visual Analytics of Performance of Quantum Computing Systems and Circuit Optimization",
+    "authors": "Junghoon Chae, Chad A. Steed, and Travis S. Humble",
+    "workshop": "Proceedings of the Workshop on Quantum Computing at ISVLSI",
+    "month": "Jul.",
+    "year": 2024,
+    "file": "ISVLSI_2024.pdf"
+  },
+  {
+    "type": "workshop papers",
     "title": "Visualization for Classification in Deep Neural Networks",
     "authors": "Junghoon Chae, Shang Gao, Arvind Ramanathan, Chad A. Steed, and Georgia D. Tourassi",
     "workshop": "Proceedings of the Workshop on Visual Analytics for Deep Learning at IEEE VIS",
