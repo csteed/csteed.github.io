@@ -1,110 +1,156 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Chad A.&nbsp;Steed&thinsp;&middot;&thinsp;Interactive Data Science and Human-Machine Teaming</title>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+      Chad A.&nbsp;Steed&thinsp;&middot;&thinsp;Interactive Data Science and
+      Human-Machine Teaming
+    </title>
 
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Varela+Round&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Varela+Round&display=swap" rel="stylesheet"> -->
 
-  <link href="../css/csteed.css" rel="stylesheet" type="text/css" />
+    <link href="../css/csteed.css" rel="stylesheet" type="text/css" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16">
-  <link rel="shortcut icon" href="../favicon.ico">
-</head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link rel="shortcut icon" href="../favicon.ico" />
+  </head>
 
-<body>
-  <div id="sidebar">
-    <div id="contact">
-      <h2 id="name">
-        <a href="https://www.csteed.com">chad a.&nbsp;steed</a>
-      </h2>
-      <p>
-        <strong>Visual Analytics Researcher<br />&amp; Group Leader</strong>
-      </p>
-      <p>
-        Data Science and Visualization Group<br />
-        Advanced Intelligent Systems Section<br />
-        <a href="https://www.ornl.gov/crid" target="_blank">Resilience & Intelligence Division</a><br />
-        <a href="https://www.ornl.gov/science-area/national-security" target="_blank">National Security Sciences Directorate</a><br />
-        <strong><a href="https://www.ornl.gov" target="_blank">Oak Ridge National Laboratory</a></strong><br/>
-      </p>
-      <!-- <p>
+  <body>
+    <div id="sidebar">
+      <div id="contact">
+        <h2 id="name">
+          <a href="https://www.csteed.com">chad a.&nbsp;steed</a>
+        </h2>
+        <p>
+          <strong>Vice President<br />&amp; Principal Developer</strong>
+        </p>
+        <p>
+          Enterprise Data &amp; Analytics<br />
+          Technology, Operations, Digital, &amp; Data<br />
+          <strong
+            ><a href="https://regions.com" target="_blank"
+              >Regions Financial Corp.</a
+            ></strong
+          ><br />
+        </p>
+        <!-- <p>
         Joint Faculty Appointment<br/>
         <a href="http://www.eecs.utk.edu/">EECS</a>, <a href="http://www.utk.edu/">University of Tennessee</a><br/>
       </p> -->
-      <p>
-        steedca (at) ornl (dot) gov<br/>
-      </p>
-    </div>
-    <div id="navigate">
-      <!-- <h1>about &#9679;</h1> -->
-      <h1><a class="nav" href="../index.html">about &#9675;</a></h1>
-      <h1>projects &#9679;</h1>
-      <h1><a class="nav" href="../publications/index.html">publications &#9675;</a></h1>
-      <h1><a class="nav" href="http://github.com/csteed/">code &#9675;</a></h1>
-      <h1><a class="nav" href="../bio/index.html">bio &#9675;</a></h1>
-      <h1><a class="nav" href="https://github.com/csteed/vitae/raw/master/chadsteed_cv.pdf"></a></h1>
-      <h1><a class="nav" href="https://github.com/csteed/vitae/raw/master/chadsteed_cv.pdf">cv &#9675;</a></h1>
-    </div>
-  </div>
-
-  <div id="main">
-    <div id="project_group_first">
-      <div id="project_group">
+        <p>steedca (at) ornl (dot) gov<br /></p>
+      </div>
+      <div id="navigate">
+        <!-- <h1>about &#9679;</h1> -->
+        <h1><a class="nav" href="../index.html">about &#9675;</a></h1>
+        <h1>projects &#9679;</h1>
+        <h1>
+          <a class="nav" href="../publications/index.html"
+            >publications &#9675;</a
+          >
+        </h1>
+        <h1>
+          <a class="nav" href="http://github.com/csteed/">code &#9675;</a>
+        </h1>
+        <h1><a class="nav" href="../bio/index.html">bio &#9675;</a></h1>
+        <h1>
+          <a
+            class="nav"
+            href="https://github.com/csteed/vitae/raw/master/chadsteed_cv.pdf"
+          ></a>
+        </h1>
+        <h1>
+          <a
+            class="nav"
+            href="https://github.com/csteed/vitae/raw/master/chadsteed_cv.pdf"
+            >cv &#9675;</a
+          >
+        </h1>
       </div>
     </div>
-    <br/><br/>
-  </div>
 
-  <script type="module">
-    import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
-    d3.json("./projectdata.json")
-      .then(projdata => {
-        projdata.forEach(proj => {
-          const softwareText = proj.software ? 
-            "<u>Software:</u> " + 
-            proj.software.map(d => {
-              return `<a href=${d.link} target="_blank">${d.name}</a>`;
-            }).join(", ") + '<br/>'
+    <div id="main">
+      <div id="project_group_first">
+        <div id="project_group"></div>
+      </div>
+      <br /><br />
+    </div>
+
+    <script type="module">
+      import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+      d3.json("./projectdata.json").then((projdata) => {
+        projdata.forEach((proj) => {
+          const softwareText = proj.software
+            ? "<u>Software:</u> " +
+              proj.software
+                .map((d) => {
+                  return `<a href=${d.link} target="_blank">${d.name}</a>`;
+                })
+                .join(", ") +
+              "<br/>"
             : null;
-          const videoText = proj.video ? 
-            "<u>Video:</u> " + 
-            proj.video.map(d => {
-              return `<a href=${d.link} target="_blank">${d.name}</a>`;
-            }).join(", ") + '<br/>'
+          const videoText = proj.video
+            ? "<u>Video:</u> " +
+              proj.video
+                .map((d) => {
+                  return `<a href=${d.link} target="_blank">${d.name}</a>`;
+                })
+                .join(", ") +
+              "<br/>"
             : null;
-          const papersText = proj.papers ? 
-            "<u>Papers:</u> " + 
-            proj.papers.map(d => {
-              return `<a href="../publications/files/${d.link}" target="_blank">${d.name}</a>`;
-            }).join(", ") + '<br/>'
+          const papersText = proj.papers
+            ? "<u>Papers:</u> " +
+              proj.papers
+                .map((d) => {
+                  return `<a href="../publications/files/${d.link}" target="_blank">${d.name}</a>`;
+                })
+                .join(", ") +
+              "<br/>"
             : null;
 
-          const text = 
-            `${proj.website ? `<a href=${proj.website} target="_blank">` : ''}` +
+          const text =
+            `${
+              proj.website ? `<a href=${proj.website} target="_blank">` : ""
+            }` +
             `<h2>${proj.title}</h2>` +
-            `${proj.website ? '</a>' : ''}` +
+            `${proj.website ? "</a>" : ""}` +
             `<p>${proj.description}</p>` +
-            `${proj.software ? softwareText : ''}` +
-            `${proj.video ? videoText : ''}` +
-            `${proj.papers ? papersText : ''}`;
+            `${proj.software ? softwareText : ""}` +
+            `${proj.video ? videoText : ""}` +
+            `${proj.papers ? papersText : ""}`;
 
-          const proj_div = d3.select('#project_group').append("div")
+          const proj_div = d3
+            .select("#project_group")
+            .append("div")
             .attr("id", "project");
-          
-          proj_div.append("div")
-            .attr("id", "project_text")
-            .html(text);
 
-          proj_div.append("div")
+          proj_div.append("div").attr("id", "project_text").html(text);
+
+          proj_div
+            .append("div")
             .attr("id", "project_img")
-            .html(`<a href="${proj.website}" target="_blank"><img src="projects/${proj.image}" alt="${proj.title}"</a>`);
+            .html(
+              `<a href="${proj.website}" target="_blank"><img src="projects/${proj.image}" alt="${proj.title}"</a>`
+            );
         });
       });
-  </script>
-<!-- 
+    </script>
+    <!-- 
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-39778348-1']);
@@ -120,5 +166,5 @@
       s.parentNode.insertBefore(ga, s);
     })();
   </script> -->
-</body>
+  </body>
 </html>
