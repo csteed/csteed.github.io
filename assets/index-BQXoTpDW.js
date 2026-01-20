@@ -190,7 +190,7 @@
     <footer class="simple-footer">
       <div class="ticker-wrapper">
         <p id="flap-footer" class="copyright-statement">
-          &copy; 2026 CHAD STEED &mdash; ALL RIGHTS RESERVED
+          &copy; 2026 CHAD STEED
         </p>
       </div>
     </footer>
