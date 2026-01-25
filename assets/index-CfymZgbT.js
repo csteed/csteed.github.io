@@ -33,6 +33,7 @@
                 src="./images/everest.png"
                 alt="Research"
                 class="hero-img"
+                fetchpriority="high"
               />
               <div class="project-title-overlay">Data Science Research</div>
             </a>
@@ -44,6 +45,7 @@
                 src="./images/top500_stream.png"
                 alt="Software"
                 class="hero-img"
+                fetchpriority="high"
               />
               <div class="project-title-overlay">Software Projects</div>
             </a>
@@ -55,6 +57,7 @@
                 src="./images/fireworks_stand.jpg"
                 alt="Writing"
                 class="hero-img"
+                fetchpriority="high"
               />
               <div class="project-title-overlay">Writing</div>
             </a>
@@ -66,6 +69,7 @@
                 src="./images/zion_watchman.jpg"
                 alt="Selected Photographs"
                 class="hero-img"
+                fetchpriority="high"
               />
               <div class="project-title-overlay">Selected Photographs</div>
             </a>
