@@ -148,7 +148,7 @@
             University of Southern Mississippi.<br/><br/>
 
             Dr.&nbsp;Steed's research is focused on developing methods that
-            orchestra visual analytics, artificial intelligence, machine
+            orchestrate visual analytics, artificial intelligence, machine
             learning, and scalable data management to enable human-directed,
             machine-enabled, and data-driven analysis. He has applied these
             methods to a myriad of domains, namely wealth, intelligence,
